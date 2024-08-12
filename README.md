@@ -1,6 +1,6 @@
 # Portifólio POO-2
 
-| Academico:    | [José A. Q. C. Gomes <code>@JoseComparotto</code>](https://github.com/JoseComparotto) | RA: 398439413114     |
+| Academico:    | [José A. Q. C. Gomes <code>@JoseComparotto</code>](https://github.com/JoseComparotto) | RA: 398439413098     |
 | ------------- | ------------------------------------------------------------------------------------- | :------------------: |
 | Curso:        | Ciência da Computação                                                                 | Noturno              |
 | Professor:    | [Luiz Augusto Rodrigues <code>@profluizao</code>](https://github.com/profluizao)      |                      |
