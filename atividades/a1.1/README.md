@@ -10,23 +10,23 @@
 
 <h2 id="gabarito">Gabarito</h2>
 
-| **Questão**        | **Resposta**       | **Justificativa** 
-| :----------------: | :----------------: | :----------------
-|  [1](#questao-q1)  | [E](#resposta-q1)  | A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
-|  [2](#questao-q2)  | [B](#resposta-q2)  | 
-|  [3](#questao-q3)  | [D](#resposta-q3)  | 
-|  [4](#questao-q4)  | [A](#resposta-q4)  | 
-|  [5](#questao-q5)  | [C](#resposta-q5)  | 
-|  [6](#questao-q6)  | [A](#resposta-q6)  | 
-|  [7](#questao-q7)  | [C](#resposta-q7)  | 
-|  [8](#questao-q8)  | [C](#resposta-q8)  | 
-|  [9](#questao-q9)  | [C](#resposta-q9)  | 
-| [10](#questao-q10) | [B](#resposta-q10) | 
-| [11](#questao-q11) | [C](#resposta-q11) | 
-| [12](#questao-q12) | [ ](#resposta-q12) | 
-| [13](#questao-q13) | [ ](#resposta-q13) | 
-| [14](#questao-q14) | [ ](#resposta-q14) | 
-| [15](#questao-q15) | [ ](#resposta-q15) | 
+| **Questão**        | **Resposta** | **Justificativa** 
+| :----------------: | :----------: | :----------------
+|  [1](#questao-q1)  | E            | A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
+|  [2](#questao-q2)  | B            | 
+|  [3](#questao-q3)  | D            | 
+|  [4](#questao-q4)  | A            | 
+|  [5](#questao-q5)  | C            | 
+|  [6](#questao-q6)  | A            | 
+|  [7](#questao-q7)  | C            | 
+|  [8](#questao-q8)  | C            | 
+|  [9](#questao-q9)  | C            | 
+| [10](#questao-q10) | B            | 
+| [11](#questao-q11) | C            | 
+| [12](#questao-q12) |              | 
+| [13](#questao-q13) |              | 
+| [14](#questao-q14) |              | 
+| [15](#questao-q15) |              | 
 
 <details open>
 
