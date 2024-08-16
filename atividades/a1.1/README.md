@@ -16,7 +16,7 @@
 |  [2](#questao-q2)  | B            | 
 |  [3](#questao-q3)  | D            | 
 |  [4](#questao-q4)  | A            | 
-|  [5](#questao-q5)  | C            | 
+|  [5](#questao-q5)  | C            | Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
 |  [6](#questao-q6)  | A            | 
 |  [7](#questao-q7)  | C            | 
 |  [8](#questao-q8)  | C            | 
@@ -177,7 +177,7 @@ Marque a alternativa que representa corretamente as definições acima.
 <h4 id="justificativa-q5">Justificativa</h4>
 
 ```plain
-Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
+Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
 ```
 
 <h3 id="questao-q6">Questão 06</h3>
