@@ -19,7 +19,7 @@
 |  [5](#questao-q5)  | C            | Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
 |  [6](#questao-q6)  | A            | 
 |  [7](#questao-q7)  | C            | 
-|  [8](#questao-q8)  | C            | 
+|  [8](#questao-q8)  | C            | A afirmação “I” é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais. <br/> A afirmação “III” é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
 |  [9](#questao-q9)  | C            | 
 | [10](#questao-q10) | B            | 
 | [11](#questao-q11) | C            | 
