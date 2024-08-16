@@ -29,21 +29,14 @@
 | [15](#questao-q15) |              | 
 
 <h2 id="referencias">Referências</h2>
-
-<details open>
-
-<summary>
  
 <h2 id="questoes">Questões</h2>
-
-</summary>
   
-<details>
-
-<summary>
 <h3 id="questao-q1">Questão 01</h3>
 
 Sobre programação estruturada e programação orientada a objetos, marque a afirmação incorreta.</summary>
+
+<h4 id="alternativas-q1">Alternativas</h4>
 
 - (A) Existem vários paradigmas de programação, dentre eles o estruturado e o orientado a objetos.
 
@@ -54,8 +47,6 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 - (D) O paradigma orientado a objetos entende o problema como um conjunto de objetos interagindo por meio de troca de mensagens.
 
 - ***(E) A linguagem de programação C++ é um exemplo de linguagem orientada a objetos, que não permite a utilização do paradigma estruturado na solução de um problema.***
-
-</details>
 
 <h4 id="resposta-q1">Resposta</h4>
 
@@ -69,15 +60,12 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q2">Questão 02</h3>
 
 "Em um programa que utiliza linguagem orientada a objetos, podemos ter um objeto que realiza ações diferentes, ou seja, a mesma operação pode atuar de modos diversos em classes diferentes". Observando a afirmação, podemos ver que se trata de um aspecto muito importante da POO.
 Marque qual afirmação explica este aspecto.
 
-</summary>
+<h4 id="alternativas-q2">Alternativas</h4>
 
 - (A) Herança múltipla.
 
@@ -88,8 +76,6 @@ Marque qual afirmação explica este aspecto.
 - (D) Atributo multivalorado.
 
 - (E) Superclasse.
-
-</details>
 
 <h4 id="resposta-q2">Resposta</h4>
 
@@ -103,14 +89,11 @@ Marque qual afirmação explica este aspecto.
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q3">Questão 03</h3>
 
 Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo utilizado para impedir o acesso direto ao estado de um objeto, restando apenas os métodos externos que podem alterar esses estados. Marque a alternativa que apresenta o nome deste mecanismo.
 
-</summary>
+<h4 id="alternativas-q3">Alternativas</h4>
 
 - (A) Mensagem.
 
@@ -121,8 +104,6 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 - ***(D) Encapsulamento.***
 
 - (E) Subclasse.
-
-</details>
 
 <h4 id="resposta-q3">Resposta</h4>
 
@@ -136,14 +117,11 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q4">Questão 04</h3>
 
 Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus métodos e atributos. Marque a alternativa que apresenta o nome deste mecanismo.
 
-</summary>
+<h4 id="alternativas-q4">Alternativas</h4>
 
 - ***(A) Herança.***
 
@@ -154,9 +132,6 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 - (D) Polimorfismo.
 
 - (E) Subclasse.
-
-</details>
-
 
 <h4 id="resposta-q4">Resposta</h4>
 
@@ -170,9 +145,6 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q5">Questão 05</h3>
 
 Sobre Programação Orientada a Objetos, considere:
@@ -184,7 +156,7 @@ II. O polimorfismo garante que objetos possam herdar métodos e atributos de uma
 III. A herança possibilita que distintas operações na mesma classe tenham o mesmo nome, desde que alterada a assinatura.
 Marque a alternativa que representa corretamente as definições acima.
 
-</summary>
+<h4 id="alternativas-q5">Alternativas</h4>
 
 - (A) III, apenas.
 
@@ -195,8 +167,6 @@ Marque a alternativa que representa corretamente as definições acima.
 - (D) II e III, apenas.
 
 - (E) I, II e III.
-
-</details>
 
 <h4 id="resposta-q5">Resposta</h4>
 
@@ -210,14 +180,11 @@ Marque a alternativa que representa corretamente as definições acima.
 Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q6">Questão 06</h3>
 
 "É o mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus comportamentos e variáveis possíveis". Considerando os conceitos de Programação Orientada a Objetos, marque a alternativa que representa essa afirmação.
 
-</summary>
+<h4 id="alternativas-q6">Alternativas</h4>
 
 - ***(A) Trata-se dos conceitos de herança, métodos e atributos.***
 
@@ -228,8 +195,6 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 - (D) herança, abstração e associação.
 
 - (E) encapsulamento, polimorfismo e interface.
-
-</details>
 
 <h4 id="resposta-q6">Resposta</h4>
 
@@ -243,9 +208,6 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q7">Questão 07</h3>
 
 Analise as afirmações a seguir, sobre a programação orientada a objetos.
@@ -260,7 +222,7 @@ IV. A tecnologia orientada a objetos permite que classes projetadas adequadament
 
 Marque a alternativa que representa corretamente as definições acima.
 
-</summary>
+<h4 id="alternativas-q7">Alternativas</h4>
 
 - (A) II, III e IV, apenas.
 
@@ -271,8 +233,6 @@ Marque a alternativa que representa corretamente as definições acima.
 - (D) I, II e III, apenas.
 
 - (E) I, II, III e IV.
-
-</details>
 
 <h4 id="resposta-q7">Resposta</h4>
 
@@ -286,9 +246,6 @@ Marque a alternativa que representa corretamente as definições acima.
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q8">Questão 08</h3>
 
 Observe as afirmações abaixo.
@@ -303,7 +260,7 @@ IV. A programação estruturada é uma filosofia de projeto procedimental que re
 
 Marque Verdadeiro ou Falso nas afirmações abaixo.
 
-</summary>
+<h4 id="alternativas-q8">Alternativas</h4>
 
 - (A) II, III e IV, apenas.
 
@@ -314,8 +271,6 @@ Marque Verdadeiro ou Falso nas afirmações abaixo.
 - (D) I, II e III, apenas.
 
 - (E) I, II, III e IV.
-
-</details>
 
 <h4 id="resposta-q8">Resposta</h4>
 
@@ -330,16 +285,13 @@ Marque Verdadeiro ou Falso nas afirmações abaixo.
   A afirmação “III” é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q9">Questão 09</h3>
 
 Observe a afirmação a seguir, considerando os conceitos de Programação Orientada a Objetos.
 "Nos conceitos de orientação a objetos, ..... é uma estrutura composta por ..... que descrevem suas propriedades e também por ..... que moldam seu comportamento ..... são ..... dessa estrutura e só existem em tempo de execução".
 Marque a alternativa que representa as lacunas a serem preenchidas.
 
-</summary>
+<h4 id="alternativas-q9">Alternativas</h4>
 
 - (A) objeto, métodos, assinaturas, Classes, cópias.
 
@@ -350,8 +302,6 @@ Marque a alternativa que representa as lacunas a serem preenchidas.
 - (D) multiplicidade, símbolos, números, Classes, herdeiros.
 
 - (E) domínio, diagramas, casos de caso, Diagramas de classe, exemplos.
-
-</details>
 
 <h4 id="resposta-q9">Resposta</h4>
 
@@ -365,9 +315,6 @@ Marque a alternativa que representa as lacunas a serem preenchidas.
 
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q10">Questão 10</h3>
 
 No contexto de programação orientada a objetos, considere as afirmativas abaixo, e marque a alternativa correta.
@@ -384,7 +331,7 @@ V. Ocorre herança múltipla quando mais de um método é herdado.
 
 VI. Herança é uma relação entre classes.
 
-</summary>
+<h4 id="alternativas-q10">Alternativas</h4>
 
 - (A) I, III e IV.
 
@@ -395,8 +342,6 @@ VI. Herança é uma relação entre classes.
 - (D) II, III e V.
 
 - (E) II, IV e V.
-
-</details>
 
 <h4 id="resposta-q10">Resposta</h4>
 
@@ -410,14 +355,11 @@ VI. Herança é uma relação entre classes.
 A afirmação “II” é incorreta pois Herança é uma relação entre classes e não entre objetos. A afirmação “IV” é incorreta pois classe são mais do que agrupamento de métodos. São definições da estrutura de objetos, que podem conter métodos.
 ```
 
-<details>
-
-<summary>
 <h3 id="questao-q11">Questão 11</h3>
 
 Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  a  objetos.  Com  relação  a  estes conceitos, marque a alternativa correta.
 
-</summary>
+<h4 id="alternativas-q11">Alternativas</h4>
 
 - (A)  uma classe é uma descrição de um ou mais objetos por meio de um conjunto uniforme de atributos e serviços. Além disso, pode conter uma descrição de como criar novos objetos na classe.
 
@@ -428,8 +370,6 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 - (D) um objeto em uma classe é apenas uma definição, pois a ação só ocorre quando o objeto é invocado através de um método.
 
 - (E) herança  é  o  mecanismo  pelo  qual  um  objeto  pode  estender  outro  objeto,  aproveitando  seus comportamentos e variáveis possíveis.
-
-</details>
 
 <h4 id="resposta-q11">Resposta</h4>
 
@@ -442,7 +382,5 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 ```plain
 
 ```
-
-</details>
 
 
