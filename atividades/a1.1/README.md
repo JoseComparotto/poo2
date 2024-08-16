@@ -28,10 +28,12 @@
 | [14](#questao-q14) |              | 
 | [15](#questao-q15) |              | 
 
+<h2 id="referencias">Referências</h2>
+
 <details open>
 
 <summary>
-  
+ 
 <h2 id="questoes">Questões</h2>
 
 </summary>
@@ -442,7 +444,5 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 ```
 
 </details>
-
-<h2 id="referencias"> Referências </h2>
 
 
