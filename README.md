@@ -1,4 +1,4 @@
-# Portifólio - Programação Orientada a Objetos II
+# Programação Orientada a Objetos II
 
 | Academico:    | [José A. Q. C. Gomes <code>@JoseComparotto</code>](https://github.com/JoseComparotto) | RA: 398439413098     |
 | ------------- | ------------------------------------------------------------------------------------- | :------------------: |
