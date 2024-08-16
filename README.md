@@ -9,4 +9,4 @@
 
 ## Atividades
 
-### [Atividade A1 - Parte 1](atividades/a1.1)
+-  **[Atividade A1 - Parte 1](atividades/a1.1)**
