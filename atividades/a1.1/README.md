@@ -1,14 +1,14 @@
-# Atividade 01
+# Atividade A1 - Parte 1
 
 | Academico:    | [José A. Q. C. Gomes <code>@JoseComparotto</code>](https://github.com/JoseComparotto) | RA: 398439413098     |
 | ------------- | ------------------------------------------------------------------------------------- | :------------------: |
 | Curso:        | Ciência da Computação                                                                 | Noturno              |
 | Professor:    | [Luiz Augusto Rodrigues <code>@profluizao</code>](https://github.com/profluizao)      |                      |
-| Disciplina:   | Programação Orientada a Objetos                                                       | 2024.2 - 6º Semestre |
+| Disciplina:   | Programação Orientada a Objetos II                                                    | 2024.2 - 6º Semestre |
 | Universidade: | Anhanguera-Uniderp - Matriz                                                           | Campo Grande, MS     |
 | Atividade:    | [Atividade A1 - Pate 1](docs/POO2%20-%20Atividade%20A1-1.pdf)                         | Data: 05/08/2024     |
 
-<h2 id="gabarito"> Gabarito </h2>
+<h2 id="gabarito">Gabarito</h2>
 
 | **Questão**        | **Resposta**       | **Justificativa** 
 | :----------------: | :----------------: | :----------------
@@ -28,18 +28,18 @@
 | [14](#questao-q14) | [ ](#resposta-q14) | 
 | [15](#questao-q15) | [ ](#resposta-q15) | 
 
-<details>
+<details open>
 
 <summary>
   
-<h2 id="questoes"> Questões </h2>
+<h2 id="questoes">Questões</h2>
 
 </summary>
   
 <details>
 
 <summary>
-<h3 id="questao-q1"> Questão 01 </h3>
+<h3 id="questao-q1">Questão 01</h3>
 
 Sobre programação estruturada e programação orientada a objetos, marque a afirmação incorreta.</summary>
 
@@ -55,13 +55,13 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 
 </details>
 
-<h4 id="resposta-q1"> Resposta </h4>
+<h4 id="resposta-q1">Resposta</h4>
 
 ```palin
 (E) A linguagem de programação C++ é um exemplo de linguagem orientada a objetos, que não permite a utilização do paradigma estruturado na solução de um problema.
 ```
 
-<h4 id="justificativa-q1"> Justificativa </h4>
+<h4 id="justificativa-q1">Justificativa</h4>
 
 ```plain
 A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
@@ -70,7 +70,7 @@ A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradi
 <details>
 
 <summary>
-<h3 id="questao-q2"> Questão 02 </h3>
+<h3 id="questao-q2">Questão 02</h3>
 
 "Em um programa que utiliza linguagem orientada a objetos, podemos ter um objeto que realiza ações diferentes, ou seja, a mesma operação pode atuar de modos diversos em classes diferentes". Observando a afirmação, podemos ver que se trata de um aspecto muito importante da POO.
 Marque qual afirmação explica este aspecto.
@@ -89,13 +89,13 @@ Marque qual afirmação explica este aspecto.
 
 </details>
 
-<h4 id="resposta-q2"> Resposta </h4>
+<h4 id="resposta-q2">Resposta</h4>
 
 ```palin
 (B) Polimorfismo.
 ```
 
-<h4 id="justificativa-q2"> Justificativa </h4>
+<h4 id="justificativa-q2">Justificativa</h4>
 
 ```plain
 
@@ -104,7 +104,7 @@ Marque qual afirmação explica este aspecto.
 <details>
 
 <summary>
-<h3 id="questao-q3"> Questão 03 </h3>
+<h3 id="questao-q3">Questão 03</h3>
 
 Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo utilizado para impedir o acesso direto ao estado de um objeto, restando apenas os métodos externos que podem alterar esses estados. Marque a alternativa que apresenta o nome deste mecanismo.
 
@@ -122,13 +122,13 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 </details>
 
-<h4 id="resposta-q3"> Resposta </h4>
+<h4 id="resposta-q3">Resposta</h4>
 
 ```palin
 (D) Encapsulamento.
 ```
 
-<h4 id="justificativa-q3"> Justificativa </h4>
+<h4 id="justificativa-q3">Justificativa</h4>
 
 ```plain
 
@@ -137,7 +137,7 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 <details>
 
 <summary>
-<h3 id="questao-q4"> Questão 04 </h3>
+<h3 id="questao-q4">Questão 04</h3>
 
 Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus métodos e atributos. Marque a alternativa que apresenta o nome deste mecanismo.
 
@@ -156,13 +156,13 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 </details>
 
 
-<h4 id="resposta-q4"> Resposta </h4>
+<h4 id="resposta-q4">Resposta</h4>
 
 ```palin
 (A) Herança.
 ```
 
-<h4 id="justificativa-q4"> Justificativa </h4>
+<h4 id="justificativa-q4">Justificativa</h4>
 
 ```plain
 
@@ -171,7 +171,7 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 <details>
 
 <summary>
-<h3 id="questao-q5"> Questão 05 </h3>
+<h3 id="questao-q5">Questão 05</h3>
 
 Sobre Programação Orientada a Objetos, considere:
 
@@ -196,13 +196,13 @@ Marque a alternativa que representa corretamente as definições acima.
 
 </details>
 
-<h4 id="resposta-q5"> Resposta </h4>
+<h4 id="resposta-q5">Resposta</h4>
 
 ```palin
 (C) I, apenas.
 ```
 
-<h4 id="justificativa-q5"> Justificativa </h4>
+<h4 id="justificativa-q5">Justificativa</h4>
 
 ```plain
 Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
@@ -211,7 +211,7 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 <details>
 
 <summary>
-<h3 id="questao-q6"> Questão 06 </h3>
+<h3 id="questao-q6">Questão 06</h3>
 
 "É o mecanismo pelo qual uma classe pode estender outra classe, aproveitando seus comportamentos e variáveis possíveis". Considerando os conceitos de Programação Orientada a Objetos, marque a alternativa que representa essa afirmação.
 
@@ -229,13 +229,13 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 
 </details>
 
-<h4 id="resposta-q6"> Resposta </h4>
+<h4 id="resposta-q6">Resposta</h4>
 
 ```palin
 (A) Trata-se dos conceitos de herança, métodos e atributos.
 ```
 
-<h4 id="justificativa-q6"> Justificativa </h4>
+<h4 id="justificativa-q6">Justificativa</h4>
 
 ```plain
 
@@ -244,7 +244,7 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidos.
 <details>
 
 <summary>
-<h3 id="questao-q7"> Questão 07 </h3>
+<h3 id="questao-q7">Questão 07</h3>
 
 Analise as afirmações a seguir, sobre a programação orientada a objetos.
 
@@ -272,13 +272,13 @@ Marque a alternativa que representa corretamente as definições acima.
 
 </details>
 
-<h4 id="resposta-q7"> Resposta </h4>
+<h4 id="resposta-q7">Resposta</h4>
 
 ```palin
 (C) II e IV, apenas.
 ```
 
-<h4 id="justificativa-q7"> Justificativa </h4>
+<h4 id="justificativa-q7">Justificativa</h4>
 
 ```plain
 
@@ -287,7 +287,7 @@ Marque a alternativa que representa corretamente as definições acima.
 <details>
 
 <summary>
-<h3 id="questao-q8"> Questão 08 </h3>
+<h3 id="questao-q8">Questão 08</h3>
 
 Observe as afirmações abaixo.
 
@@ -315,13 +315,13 @@ Marque Verdadeiro ou Falso nas afirmações abaixo.
 
 </details>
 
-<h4 id="resposta-q8"> Resposta </h4>
+<h4 id="resposta-q8">Resposta</h4>
 
 ```palin
 (C) II e IV, apenas.
 ```
 
-<h4 id="justificativa-q8"> Justificativa </h4>
+<h4 id="justificativa-q8">Justificativa</h4>
 
 ```plain
   A afirmação “I” é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais.
@@ -331,7 +331,7 @@ Marque Verdadeiro ou Falso nas afirmações abaixo.
 <details>
 
 <summary>
-<h3 id="questao-q9"> Questão 09 </h3>
+<h3 id="questao-q9">Questão 09</h3>
 
 Observe a afirmação a seguir, considerando os conceitos de Programação Orientada a Objetos.
 "Nos conceitos de orientação a objetos, ..... é uma estrutura composta por ..... que descrevem suas propriedades e também por ..... que moldam seu comportamento ..... são ..... dessa estrutura e só existem em tempo de execução".
@@ -351,13 +351,13 @@ Marque a alternativa que representa as lacunas a serem preenchidas.
 
 </details>
 
-<h4 id="resposta-q9"> Resposta </h4>
+<h4 id="resposta-q9">Resposta</h4>
 
 ```palin
 (C) classe, atributos, operações, Objetos, instâncias.
 ```
 
-<h4 id="justificativa-q9"> Justificativa </h4>
+<h4 id="justificativa-q9">Justificativa</h4>
 
 ```plain
 
@@ -366,7 +366,7 @@ Marque a alternativa que representa as lacunas a serem preenchidas.
 <details>
 
 <summary>
-<h3 id="questao-q10"> Questão 10 </h3>
+<h3 id="questao-q10">Questão 10</h3>
 
 No contexto de programação orientada a objetos, considere as afirmativas abaixo, e marque a alternativa correta.
 
@@ -396,13 +396,13 @@ VI. Herança é uma relação entre classes.
 
 </details>
 
-<h4 id="resposta-q10"> Resposta </h4>
+<h4 id="resposta-q10">Resposta</h4>
 
 ```plain
 (B) I, III e VI.
 ```
 
-<h4 id="justificativa-q10"> Justificativa </h4>
+<h4 id="justificativa-q10">Justificativa</h4>
 
 ```plain
 A afirmação “II” é incorreta pois Herança é uma relação entre classes e não entre objetos. A afirmação “IV” é incorreta pois classe são mais do que agrupamento de métodos. São definições da estrutura de objetos, que podem conter métodos.
@@ -411,7 +411,7 @@ A afirmação “II” é incorreta pois Herança é uma relação entre classes
 <details>
 
 <summary>
-<h3 id="questao-q11"> Questão 11 </h3>
+<h3 id="questao-q11">Questão 11</h3>
 
 Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  a  objetos.  Com  relação  a  estes conceitos, marque a alternativa correta.
 
@@ -429,13 +429,13 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 
 </details>
 
-<h4 id="resposta-q11"> Resposta </h4>
+<h4 id="resposta-q11">Resposta</h4>
 
 ```plain
 (C) uma classe é uma abstração de alguma coisa no domínio de um problema ou na sua implementação, refletindo a capacidade de um sistema para manter informações sobre ela, interagir com ela ou ambos.
 ```
 
-<h4 id="justificativa-q11"> Justificativa </h4>
+<h4 id="justificativa-q11">Justificativa</h4>
 
 ```plain
 
