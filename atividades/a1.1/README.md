@@ -12,7 +12,7 @@
 
 | **Questão**        | **Resposta** | **Justificativa** 
 | :----------------: | :----------: | :----------------
-|  [1](#questao-q1)  | E            | A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
+|  [1](#questao-q1)  | E            | A afirmação da alternativa (E) é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C. Conforme especificado na página inicial do guia de referência da linguagem C++ (Cplusplus.com).
 |  [2](#questao-q2)  | B            | 
 |  [3](#questao-q3)  | D            | 
 |  [4](#questao-q4)  | A            | 
@@ -26,9 +26,17 @@
 | [12](#questao-q12) |              | 
 | [13](#questao-q13) |              | 
 | [14](#questao-q14) |              | 
-| [15](#questao-q15) |              | 
+| [15](#questao-q15) |              |  
+| [16](#questao-q16) |              | 
+| [17](#questao-q17) |              | 
+| [18](#questao-q18) |              | 
+| [19](#questao-q19) |              | 
+| [20](#questao-q20) |              | 
 
 <h2 id="referencias">Referências</h2>
+
+- Cplusplus.com. (n.d.). Standard C++ Library reference. Disponível em: <[https://cplusplus.com/reference/](https://cplusplus.com/reference/)>.
+- Booch, G., Rumbaugh, J., & Jacobson, I. (2006). UML - Guia do Usuário (tradução de Fábio Freitas da Silva e Cristina de Amorim Machado. – Rio de Janeiro: Elsevier, 2012. – 12ª reimpressão.). Página 117.
  
 <h2 id="questoes">Questões</h2>
   
@@ -56,8 +64,9 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 
 <h4 id="justificativa-q1">Justificativa</h4>
 
-```plain
+```palin
 A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
+Conforme especificado na página inicial do guia de referência da linguagem C++ (Cplusplus.com).
 ```
 
 <h3 id="questao-q2">Questão 02</h3>
@@ -85,8 +94,9 @@ Marque qual afirmação explica este aspecto.
 
 <h4 id="justificativa-q2">Justificativa</h4>
 
-```plain
-
+```palin
+O polimorfismo permite que um método com o mesmo nome seja implementado de maneiras diferentes em classes distintas, dependendo do objeto que o invoca.
+Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 117.
 ```
 
 <h3 id="questao-q3">Questão 03</h3>
@@ -113,8 +123,9 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 <h4 id="justificativa-q3">Justificativa</h4>
 
-```plain
-
+```palin
+Encapsulamento é o mecanismo que protege o estado interno de um objeto, permitindo que ele seja acessado e modificado apenas através de métodos específicos, evitando o acesso direto às variáveis internas.
+Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 307.
 ```
 
 <h3 id="questao-q4">Questão 04</h3>
@@ -141,8 +152,9 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 <h4 id="justificativa-q4">Justificativa</h4>
 
-```plain
-
+```palin
+Herança é o mecanismo pelo qual uma classe (subclasse) pode estender outra classe (superclasse), reutilizando e especializando seus métodos e atributos.
+Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 118.
 ```
 
 <h3 id="questao-q5">Questão 05</h3>
@@ -361,7 +373,7 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 
 <h4 id="alternativas-q11">Alternativas</h4>
 
-- (A)  uma classe é uma descrição de um ou mais objetos por meio de um conjunto uniforme de atributos e serviços. Além disso, pode conter uma descrição de como criar novos objetos na classe.
+- (A) uma classe é uma descrição de um ou mais objetos por meio de um conjunto uniforme de atributos e serviços. Além disso, pode conter uma descrição de como criar novos objetos na classe.
 
 - (B) uma classe é capaz de armazenar estados através de seus atributos e reagir a mensagens enviadas a ela, assim como se relacionar e enviar mensagens a outras classes.
 
@@ -383,4 +395,304 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 
 ```
 
+<h3 id="questao-q12">Questão 12</h3>
+
+Considerando a definição teórica de OBJETO, na Programação Orientada a Objetos, marque a alternativa que explica corretamente a definição.
+
+<h4 id="alternativas-q12">Alternativas</h4>
+
+- (A) Um objeto é uma rotina de programação contida em uma classe que pode ser chamada diversas vezes possibilitando assim reuso de código de programação.
+
+- (B) Um objeto é um conjunto de atributos primitivos tipados contido em uma classe.
+
+- (C) Um objeto é uma entidade que possui um estado e um conjunto definido de operações definidas para funcionar nesse estado.
+
+- (D) Um objeto é um elemento de uma classe que representa uma operação (a implementação de uma operação).
+
+- (E) Um objeto é uma porção de código que resolve um problema muito específico, parte de um problema maior.
+
+<h4 id="resposta-q12">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q12">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q13">Questão 13</h3>
+
+“O aumento da produtividade de desenvolvimento e a capacidade de compartilhar o conhecimento 
+adquirido, representa uma vantagem no uso de projetos orientados a objeto.”
+
+Marque a alternativa que explica a afirmação.
+
+<h4 id="alternativas-q13">Alternativas</h4>
+
+- (A) um objeto pode ser chamado por objetos de classe diferente da sua.
+
+- (B) as classes podem ser potencialmente reutilizáveis.
+
+- (C) as classes devem ser concretas ou abstratas.
+
+- (D) todo método pode ser derivado naturalmente das operações de sua classe.
+
+- (E) o encapsulamento impossibilita equívocos de código.
+
+<h4 id="resposta-q13">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q13">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q14">Questão 14</h3>
+
+Observe as considerações a seguir.
+
+I. Os objetos têm seu estado definido pelos métodos e seu comportamento definido nas variáveis de instância.
+
+II. A classe é constituída por atributos que representam os dados e operações que representam os métodos que podem ser executados.
+
+III. Um objeto é capaz de armazenar estados através de seus atributos e reagir a mensagens enviadas a ele, assim como se relacionar e enviar mensagens a outros objetos.
+
+IV. Uma classe pode ser vista como uma descrição generalizada de uma coleção de objetos semelhantes.
+ 
+Considere as afirmativas acima, e marque a alternativa correta.
+
+<h4 id="alternativas-q14">Alternativas</h4>
+
+- (A) II, III e IV, apenas.
+
+- (B) I e II, apenas.
+
+- (C) II e IV, apenas.
+
+- (D) I, II e III, apenas.
+
+- (E) I, II, III e IV.
+
+<h4 id="resposta-q14">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q14">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q15">Questão 15</h3>
+
+Observe as considerações a seguir.
+
+I. Objetos com os mesmos atributos e operações possuem a mesma identidade, podendo ser referenciados por outros objetos.
+
+II. Uma classe especifica uma estrutura de dados e os métodos operacionais permissíveis que se aplicam a cada um de seus objetos. Pode ter sua própria estrutura de dados e métodos, bem como pode herdá-la de sua superclasse.
+
+III. As variáveis de uma classe só podem ser alteradas por métodos definidos nos seus objetos.
+
+IV. Um construtor visa inicializar os atributos e pode ser executado automaticamente sempre que um novo objeto é criado.
+
+Considere as afirmativas acima, e marque a alternativa correta.
+
+<h4 id="alternativas-q15">Alternativas</h4>
+
+- (A)  II, III e IV, apenas.
+
+- (B) I e II, apenas.
+
+- (C) II e IV, apenas.
+
+- (D) I, II e III, apenas.
+
+- (E) I, II, III e IV.
+
+<h4 id="resposta-q15">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q15">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q16">Questão 16</h3>
+
+Na programação orientada a objetos, é o princípio que oferece a capacidade de um método poder ser implementado de diferentes formas, ou mesmo de realizar coisas diferentes, ou seja, um único serviço pode oferecer variações, conforme se aplique a diferentes subclasses de uma superclasse
+
+Marque a alternativa correta que cujo texto explica esse recurso.
+
+<h4 id="alternativas-q16">Alternativas</h4>
+
+- (A) No contexto, o termo método é o mecanismo pelo qual um objeto utiliza os recursos de outro.
+
+- (B) No contexto, o termo método é uma instância de uma classe.
+
+- (C) No contexto, o termo método é o elemento que define as habilidades do objeto.
+
+- (D) No contexto, o termo método é uma chamada a um objeto para invocar uma classe.
+
+- (E) No contexto, o termo método é um objeto capaz de armazenar estados através de seus atributos.
+
+<h4 id="resposta-q16">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q16">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q17">Questão 17</h3>
+
+Na programação orientada a objetos, as classes podem conter, dentre outros elementos, métodos e atributos. Marque a alternativa correta nas afirmações abaixo.
+
+<h4 id="alternativas-q17">Alternativas</h4>
+
+- (A) Os métodos devem receber apenas parâmetros do mesmo tipo.
+
+- (B) Os métodos não podem ser sobrecarregados em uma mesma classe.
+
+- (C) Os métodos precisam possuir corpo em interfaces e classes abstratas.
+
+- (D) Os métodos podem ser sobrescritos em aplicações que possuem relação de herança.
+
+- (E) Os métodos definidos como private só podem ser acessados de classes do mesmo pacote.
+
+<h4 id="resposta-q17">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q17">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q18">Questão 18</h3>
+
+Sobre Interfaces, considere as afirmações abaixo.
+
+I. Os métodos públicos de uma classe definem a interface da classe.
+
+II. Os métodos privativos de uma classe não fazem parte da interface da classe.
+
+III. Interfaces são usadas para implementar ou não seus métodos em classes filhas.
+
+IV. Na programação orientada a objetos, as classes podem conter, dentre outros elementos, métodos e atributos. Os métodos precisam possuir corpo em interfaces e classes abstratas.
+
+Marque a alternativa correta nas afirmações a seguir.
+
+<h4 id="alternativas-q18">Alternativas</h4>
+
+- (A) II, III e IV, apenas.
+
+- (B) I e II, apenas.
+
+- (C) II e IV, apenas.
+
+- (D) I, II e III, apenas.
+
+- (E) I, II, III e IV.
+
+<h4 id="resposta-q18">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q18">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q19">Questão 19</h3>
+
+Sobre a visibilidade dos métodos na orientação a objetos considere:
+
+I. Os métodos públicos de uma classe definem a interface da classe.
+
+II. Os métodos privativos de uma classe não fazem parte da interface da classe.
+
+III. O nome dos métodos é a informação reconhecida como a assinatura dos métodos.
+
+Marque a alternativa correta nas afirmações abaixo.
+
+<h4 id="alternativas-q19">Alternativas</h4>
+
+- (A) Está correto o que consta APENAS em I e II.
+
+- (B) Está correto o que consta APENAS em I e III.
+
+- (C) Está correto o que consta APENAS em II e III.
+
+- (D) Está correto o que consta APENAS em II.
+
+- (E) Está correto o que consta APENAS em I.
+
+<h4 id="resposta-q19">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q19">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q20">Questão 20</h3>
+
+Considere o texto abaixo.
+
+> “A classe Pedido contém um método chamado obter Produtos() que retorna uma lista de produtos 
+> pertencentes a um determinado pedido. O código que usa esta classe desconhece completamente como 
+> esta lista de produtos é montada. Tudo que interessa é a lista de produtos que o método retorna.”
+
+Na essência, o texto explica um dos fundamentos das linguagens Orientado a Objeto. Marque a alternativa 
+correta nas afirmações a seguir
+<h4 id="alternativas-q20">Alternativas</h4>
+
+- (A) Trata-se de polimorfismo.
+
+- (B) Trata-se de encapsulamento.
+
+- (C) Trata-se de dependência.
+
+- (D) Trata-se de herança múltipla.
+
+- (E) Trata-se de estereotipagem.
+
+<h4 id="resposta-q20">Resposta</h4>
+
+```plain
+
+```
+
+<h4 id="justificativa-q20">Justificativa</h4>
+
+```plain
+
+```
 
