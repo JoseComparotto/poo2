@@ -35,8 +35,9 @@
 
 <h2 id="referencias">Referências</h2>
 
+- Booch, G., Rumbaugh, J., & Jacobson, I. (2006). UML - Guia do Usuário (12ª reimpressão). Elsevier.
+- Stroustrup, B. (2013). The C++ Programming Language (4th Edition). Addison-Wesley.
 - Cplusplus.com. (n.d.). Standard C++ Library reference. Disponível em: <[https://cplusplus.com/reference/](https://cplusplus.com/reference/)>.
-- Booch, G., Rumbaugh, J., & Jacobson, I. (2006). UML - Guia do Usuário (tradução de Fábio Freitas da Silva e Cristina de Amorim Machado. – Rio de Janeiro: Elsevier, 2012. – 12ª reimpressão.). Página 117.
  
 <h2 id="questoes">Questões</h2>
   
