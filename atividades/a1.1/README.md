@@ -16,7 +16,7 @@
 |  [2](#questao-q2)  | B            | O polimorfismo permite que um método com o mesmo nome seja implementado de maneiras diferentes em classes distintas, dependendo do objeto que o invoca.
 |  [3](#questao-q3)  | D            | Encapsulamento é o mecanismo que protege o estado interno de um objeto, permitindo que ele seja acessado e modificado apenas através de métodos específicos, evitando o acesso direto às variáveis internas.
 |  [4](#questao-q4)  | A            | Herança é o mecanismo pelo qual uma classe (subclasse) pode estender outra classe (superclasse), reutilizando e especializando seus métodos e atributos.
-|  [5](#questao-q5)  | C            | Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
+|  [5](#questao-q5)  | C            | Apenas a primeira asserção (I) está correta. O encapsulamento protege os atributos internos de um objeto, permitindo acesso apenas via métodos definidos. As asserções II e III estão incorretas: <br/> II: Polimorfismo não se refere à herança, mas à capacidade de métodos com o mesmo nome terem comportamentos diferentes em classes distintas. <br/> III: O que foi descrito é sobrecarga de métodos, que permite múltiplos métodos com o mesmo nome em uma classe, desde que tenham assinaturas diferentes.
 |  [6](#questao-q6)  | A            | Herança permite que uma classe aproveite os métodos e atributos de outra, formando uma hierarquia. Métodos e atributos são as ações e propriedades que definem o comportamento e estado dos objetos.
 |  [7](#questao-q7)  | C            |	A afirmação II é verdadeira porque uma classe especifica o formato geral de seus objetos. A afirmação IV é verdadeira porque a orientação a objetos permite a reutilização de classes em vários projetos.
 |  [8](#questao-q8)  | C            | A afirmação I é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais. A afirmação III é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
@@ -36,14 +36,14 @@
 <h2 id="referencias">Referências</h2>
 
 - Booch, G., Rumbaugh, J., & Jacobson, I. (2006). UML - Guia do Usuário (12ª reimpressão). Elsevier.
-- Stroustrup, B. (2013). The C++ Programming Language (4th Edition). Addison-Wesley.
 - Cplusplus.com. (n.d.). Standard C++ Library reference. Disponível em: <[https://cplusplus.com/reference/](https://cplusplus.com/reference/)>.
+- Stroustrup, B. (2013). The C++ Programming Language (4th Edition). Addison-Wesley.
  
 <h2 id="questoes">Questões</h2>
   
 <h3 id="questao-q1">Questão 01</h3>
 
-Sobre programação estruturada e programação orientada a objetos, marque a afirmação incorreta.</summary>
+Sobre programação estruturada e programação orientada a objetos, marque a afirmação incorreta.
 
 <h4 id="alternativas-q1">Alternativas</h4>
 
@@ -66,7 +66,7 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 <h4 id="justificativa-q1">Justificativa</h4>
 
 ```palin
-A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
+A afirmação da alternativa (E) é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
 ```
 
 <h3 id="questao-q2">Questão 02</h3>
@@ -186,7 +186,9 @@ Marque a alternativa que representa corretamente as definições acima.
 <h4 id="justificativa-q5">Justificativa</h4>
 
 ```plain
-Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
+Apenas a primeira asserção (I) está correta. O encapsulamento protege os atributos internos de um objeto, permitindo acesso apenas via métodos definidos. As asserções II e III estão incorretas:
+II: Polimorfismo não se refere à herança, mas à capacidade de métodos com o mesmo nome terem comportamentos diferentes em classes distintas.
+III: O que foi descrito é sobrecarga de métodos, que permite múltiplos métodos com o mesmo nome em uma classe, desde que tenham assinaturas diferentes.
 ```
 
 <h3 id="questao-q6">Questão 06</h3>
@@ -214,7 +216,7 @@ Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
 <h4 id="justificativa-q6">Justificativa</h4>
 
 ```plain
-
+Herança permite que uma classe aproveite os métodos e atributos de outra, formando uma hierarquia. Métodos e atributos são as ações e propriedades que definem o comportamento e estado dos objetos.
 ```
 
 <h3 id="questao-q7">Questão 07</h3>
@@ -252,7 +254,7 @@ Marque a alternativa que representa corretamente as definições acima.
 <h4 id="justificativa-q7">Justificativa</h4>
 
 ```plain
-
+A afirmação II é verdadeira porque uma classe especifica o formato geral de seus objetos. A afirmação IV é verdadeira porque a orientação a objetos permite a reutilização de classes em vários projetos.
 ```
 
 <h3 id="questao-q8">Questão 08</h3>
@@ -290,8 +292,7 @@ Marque Verdadeiro ou Falso nas afirmações abaixo.
 <h4 id="justificativa-q8">Justificativa</h4>
 
 ```plain
-  A afirmação “I” é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais.
-  A afirmação “III” é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
+A afirmação I é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais. A afirmação III é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
 ```
 
 <h3 id="questao-q9">Questão 09</h3>
@@ -321,7 +322,7 @@ Marque a alternativa que representa as lacunas a serem preenchidas.
 <h4 id="justificativa-q9">Justificativa</h4>
 
 ```plain
-
+Classe é uma estrutura composta por atributos que descrevem suas propriedades e também por operações que moldam seu comportamento. Objetos são instâncias dessa estrutura e só existem em tempo de execução.
 ```
 
 <h3 id="questao-q10">Questão 10</h3>
@@ -361,7 +362,7 @@ VI. Herança é uma relação entre classes.
 <h4 id="justificativa-q10">Justificativa</h4>
 
 ```plain
-A afirmação “II” é incorreta pois Herança é uma relação entre classes e não entre objetos. A afirmação “IV” é incorreta pois classe são mais do que agrupamento de métodos. São definições da estrutura de objetos, que podem conter métodos.
+A afirmação II é incorreta pois Herança é uma relação entre classes e não entre objetos. A afirmação IV é incorreta pois classes são mais do que agrupamentos de métodos. São definições da estrutura de objetos, que podem conter métodos.
 ```
 
 <h3 id="questao-q11">Questão 11</h3>
@@ -389,7 +390,7 @@ Classes  e  objetos  são  dois  conceitos-chave  da  programação  orientada  
 <h4 id="justificativa-q11">Justificativa</h4>
 
 ```plain
-
+A resposta (C) é correta porque define uma classe como uma abstração que representa algo no domínio do problema ou em sua implementação. Essa definição reflete a capacidade de um sistema de manter informações sobre a entidade representada pela classe e de interagir com ela, seja para manipular seus dados ou realizar operações.
 ```
 
 <h3 id="questao-q12">Questão 12</h3>
@@ -402,7 +403,7 @@ Considerando a definição teórica de OBJETO, na Programação Orientada a Obje
 
 - (B) Um objeto é um conjunto de atributos primitivos tipados contido em uma classe.
 
-- (C) Um objeto é uma entidade que possui um estado e um conjunto definido de operações definidas para funcionar nesse estado.
+- ***(C) Um objeto é uma entidade que possui um estado e um conjunto definido de operações definidas para funcionar nesse estado.***
 
 - (D) Um objeto é um elemento de uma classe que representa uma operação (a implementação de uma operação).
 
@@ -411,13 +412,13 @@ Considerando a definição teórica de OBJETO, na Programação Orientada a Obje
 <h4 id="resposta-q12">Resposta</h4>
 
 ```plain
-
+(C) Um objeto é uma entidade que possui um estado e um conjunto definido de operações definidas para funcionar nesse estado.
 ```
 
 <h4 id="justificativa-q12">Justificativa</h4>
 
 ```plain
-
+Um objeto é definido como uma entidade que possui um estado (atributos) e um conjunto de operações (métodos) que atuam sobre esse estado. Essa é a definição mais completa e correta no contexto de POO.
 ```
 
 <h3 id="questao-q13">Questão 13</h3>
@@ -431,7 +432,7 @@ Marque a alternativa que explica a afirmação.
 
 - (A) um objeto pode ser chamado por objetos de classe diferente da sua.
 
-- (B) as classes podem ser potencialmente reutilizáveis.
+- ***(B) as classes podem ser potencialmente reutilizáveis.***
 
 - (C) as classes devem ser concretas ou abstratas.
 
@@ -442,13 +443,13 @@ Marque a alternativa que explica a afirmação.
 <h4 id="resposta-q13">Resposta</h4>
 
 ```plain
-
+(B) as classes podem ser potencialmente reutilizáveis.
 ```
 
 <h4 id="justificativa-q13">Justificativa</h4>
 
 ```plain
-
+A reutilização de classes é uma das principais vantagens da POO, o que aumenta a produtividade e facilita a manutenção do código.
 ```
 
 <h3 id="questao-q14">Questão 14</h3>
@@ -467,7 +468,7 @@ Considere as afirmativas acima, e marque a alternativa correta.
 
 <h4 id="alternativas-q14">Alternativas</h4>
 
-- (A) II, III e IV, apenas.
+- ***(A) II, III e IV, apenas.***
 
 - (B) I e II, apenas.
 
@@ -480,13 +481,13 @@ Considere as afirmativas acima, e marque a alternativa correta.
 <h4 id="resposta-q14">Resposta</h4>
 
 ```plain
-
+(A) II, III e IV, apenas.
 ```
 
 <h4 id="justificativa-q14">Justificativa</h4>
 
 ```plain
-
+As afirmações II, III e IV são corretas, pois refletem conceitos fundamentais da POO, enquanto a afirmação I está incorreta quanto ao comportamento e estado dos objetos.
 ```
 
 <h3 id="questao-q15">Questão 15</h3>
@@ -505,7 +506,7 @@ Considere as afirmativas acima, e marque a alternativa correta.
 
 <h4 id="alternativas-q15">Alternativas</h4>
 
-- (A)  II, III e IV, apenas.
+- ***(A)  II, III e IV, apenas.***
 
 - (B) I e II, apenas.
 
@@ -518,13 +519,13 @@ Considere as afirmativas acima, e marque a alternativa correta.
 <h4 id="resposta-q15">Resposta</h4>
 
 ```plain
-
+(A)  II, III e IV, apenas.
 ```
 
 <h4 id="justificativa-q15">Justificativa</h4>
 
 ```plain
-
+As afirmações II, III e IV são verdadeiras. A primeira afirmação está incorreta, pois a identidade de um objeto é única e não compartilhada por outros objetos, mesmo que tenham os mesmos atributos e operações.
 ```
 
 <h3 id="questao-q16">Questão 16</h3>
@@ -539,7 +540,7 @@ Marque a alternativa correta que cujo texto explica esse recurso.
 
 - (B) No contexto, o termo método é uma instância de uma classe.
 
-- (C) No contexto, o termo método é o elemento que define as habilidades do objeto.
+- ***(C) No contexto, o termo método é o elemento que define as habilidades do objeto.***
 
 - (D) No contexto, o termo método é uma chamada a um objeto para invocar uma classe.
 
@@ -548,13 +549,13 @@ Marque a alternativa correta que cujo texto explica esse recurso.
 <h4 id="resposta-q16">Resposta</h4>
 
 ```plain
-
+(C) No contexto, o termo método é o elemento que define as habilidades do objeto.
 ```
 
 <h4 id="justificativa-q16">Justificativa</h4>
 
 ```plain
-
+O método define as habilidades ou comportamentos de um objeto. O princípio mencionado é o polimorfismo, que permite que um método seja implementado de diferentes formas.
 ```
 
 <h3 id="questao-q17">Questão 17</h3>
@@ -569,20 +570,20 @@ Na programação orientada a objetos, as classes podem conter, dentre outros ele
 
 - (C) Os métodos precisam possuir corpo em interfaces e classes abstratas.
 
-- (D) Os métodos podem ser sobrescritos em aplicações que possuem relação de herança.
+- ***(D) Os métodos podem ser sobrescritos em aplicações que possuem relação de herança.***
 
 - (E) Os métodos definidos como private só podem ser acessados de classes do mesmo pacote.
 
 <h4 id="resposta-q17">Resposta</h4>
 
 ```plain
-
+(D) Os métodos podem ser sobrescritos em aplicações que possuem relação de herança.
 ```
 
 <h4 id="justificativa-q17">Justificativa</h4>
 
 ```plain
-
+Métodos podem ser sobrescritos em subclasses, permitindo que as classes derivadas alterem ou extendam o comportamento dos métodos herdados.
 ```
 
 <h3 id="questao-q18">Questão 18</h3>
@@ -603,7 +604,7 @@ Marque a alternativa correta nas afirmações a seguir.
 
 - (A) II, III e IV, apenas.
 
-- (B) I e II, apenas.
+- ***(B) I e II, apenas.***
 
 - (C) II e IV, apenas.
 
@@ -614,13 +615,13 @@ Marque a alternativa correta nas afirmações a seguir.
 <h4 id="resposta-q18">Resposta</h4>
 
 ```plain
-
+(B) I e II, apenas.
 ```
 
 <h4 id="justificativa-q18">Justificativa</h4>
 
 ```plain
-
+As afirmações I e II são corretas. Interfaces definem contratos, mas os métodos em interfaces não precisam ter corpo, exceto se forem métodos padrão (default) em interfaces modernas (Java 8+, C# 8.0+).
 ```
 
 <h3 id="questao-q19">Questão 19</h3>
@@ -637,7 +638,7 @@ Marque a alternativa correta nas afirmações abaixo.
 
 <h4 id="alternativas-q19">Alternativas</h4>
 
-- (A) Está correto o que consta APENAS em I e II.
+- ***(A) Está correto o que consta APENAS em I e II.***
 
 - (B) Está correto o que consta APENAS em I e III.
 
@@ -650,13 +651,13 @@ Marque a alternativa correta nas afirmações abaixo.
 <h4 id="resposta-q19">Resposta</h4>
 
 ```plain
-
+(A) Está correto o que consta APENAS em I e II.
 ```
 
 <h4 id="justificativa-q19">Justificativa</h4>
 
 ```plain
-
+As afirmações I e II são corretas, descrevendo a interface pública e a ocultação dos detalhes de implementação em uma classe. A terceira afirmação está incorreta, pois a assinatura de um método inclui o nome e os parâmetros, não apenas o nome.
 ```
 
 <h3 id="questao-q20">Questão 20</h3>
@@ -673,7 +674,7 @@ correta nas afirmações a seguir
 
 - (A) Trata-se de polimorfismo.
 
-- (B) Trata-se de encapsulamento.
+- ***(B) Trata-se de encapsulamento.***
 
 - (C) Trata-se de dependência.
 
@@ -684,12 +685,12 @@ correta nas afirmações a seguir
 <h4 id="resposta-q20">Resposta</h4>
 
 ```plain
-
+(B) Trata-se de encapsulamento.
 ```
 
 <h4 id="justificativa-q20">Justificativa</h4>
 
 ```plain
-
+O texto descreve o encapsulamento, que é o conceito de esconder a implementação interna e expor apenas uma interface pública para interação com o objeto.
 ```
 
