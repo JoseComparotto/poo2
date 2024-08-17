@@ -12,26 +12,26 @@
 
 | **Questão**        | **Resposta** | **Justificativa** 
 | :----------------: | :----------: | :----------------
-|  [1](#questao-q1)  | E            | A afirmação da alternativa (E) é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C. Conforme especificado na página inicial do guia de referência da linguagem C++ (Cplusplus.com).
-|  [2](#questao-q2)  | B            | 
-|  [3](#questao-q3)  | D            | 
-|  [4](#questao-q4)  | A            | 
+|  [1](#questao-q1)  | E            | A afirmação da alternativa (E) é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
+|  [2](#questao-q2)  | B            | O polimorfismo permite que um método com o mesmo nome seja implementado de maneiras diferentes em classes distintas, dependendo do objeto que o invoca.
+|  [3](#questao-q3)  | D            | Encapsulamento é o mecanismo que protege o estado interno de um objeto, permitindo que ele seja acessado e modificado apenas através de métodos específicos, evitando o acesso direto às variáveis internas.
+|  [4](#questao-q4)  | A            | Herança é o mecanismo pelo qual uma classe (subclasse) pode estender outra classe (superclasse), reutilizando e especializando seus métodos e atributos.
 |  [5](#questao-q5)  | C            | Apenas a primeira asserção é verdadeira. As II e III estão invertidas.
-|  [6](#questao-q6)  | A            | 
-|  [7](#questao-q7)  | C            | 
-|  [8](#questao-q8)  | C            | A afirmação “I” é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais. <br/> A afirmação “III” é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
-|  [9](#questao-q9)  | C            | 
-| [10](#questao-q10) | B            | 
-| [11](#questao-q11) | C            | 
-| [12](#questao-q12) |              | 
-| [13](#questao-q13) |              | 
-| [14](#questao-q14) |              | 
-| [15](#questao-q15) |              |  
-| [16](#questao-q16) |              | 
-| [17](#questao-q17) |              | 
-| [18](#questao-q18) |              | 
-| [19](#questao-q19) |              | 
-| [20](#questao-q20) |              | 
+|  [6](#questao-q6)  | A            | Herança permite que uma classe aproveite os métodos e atributos de outra, formando uma hierarquia. Métodos e atributos são as ações e propriedades que definem o comportamento e estado dos objetos.
+|  [7](#questao-q7)  | C            |	A afirmação II é verdadeira porque uma classe especifica o formato geral de seus objetos. A afirmação IV é verdadeira porque a orientação a objetos permite a reutilização de classes em vários projetos.
+|  [8](#questao-q8)  | C            | A afirmação I é incorreta por causa do termo “utilizar amplamente os tipos abstratos de dados”, que é uma característica das LOO e não das linguagens procedurais. A afirmação III é incorreta pois as linguagens citadas são reconhecidas por serem Orientadas a Objetos, por mais que permita o uso de blocos procedurais em suas partes.
+|  [9](#questao-q9)  | C            | Classe é uma estrutura composta por atributos que descrevem suas propriedades e também por operações que moldam seu comportamento. Objetos são instâncias dessa estrutura e só existem em tempo de execução.
+| [10](#questao-q10) | B            | A afirmação II é incorreta pois Herança é uma relação entre classes e não entre objetos. A afirmação IV é incorreta pois classes são mais do que agrupamentos de métodos. São definições da estrutura de objetos, que podem conter métodos.
+| [11](#questao-q11) | C            | A resposta (C) é correta porque define uma classe como uma abstração que representa algo no domínio do problema ou em sua implementação. Essa definição reflete a capacidade de um sistema de manter informações sobre a entidade representada pela classe e de interagir com ela, seja para manipular seus dados ou realizar operações.
+| [12](#questao-q12) | C            | Um objeto é definido como uma entidade que possui um estado (atributos) e um conjunto de operações (métodos) que atuam sobre esse estado. Essa é a definição mais completa e correta no contexto de POO.
+| [13](#questao-q13) | B            | A reutilização de classes é uma das principais vantagens da POO, o que aumenta a produtividade e facilita a manutenção do código.
+| [14](#questao-q14) | A            | As afirmações II, III e IV são corretas, pois refletem conceitos fundamentais da POO, enquanto a afirmação I está incorreta quanto ao comportamento e estado dos objetos.
+| [15](#questao-q15) | A            | As afirmações II, III e IV são verdadeiras. A primeira afirmação está incorreta, pois a identidade de um objeto é única e não compartilhada por outros objetos, mesmo que tenham os mesmos atributos e operações.
+| [16](#questao-q16) | C            | O método define as habilidades ou comportamentos de um objeto. O princípio mencionado é o polimorfismo, que permite que um método seja implementado de diferentes formas.
+| [17](#questao-q17) | D            | Métodos podem ser sobrescritos em subclasses, permitindo que as classes derivadas alterem ou extendam o comportamento dos métodos herdados.
+| [18](#questao-q18) | B            | As afirmações I e II são corretas. Interfaces definem contratos, mas os métodos em interfaces não precisam ter corpo, exceto se forem métodos padrão (default) em interfaces modernas (Java 8+, C# 8.0+).
+| [19](#questao-q19) | A            | As afirmações I e II são corretas, descrevendo a interface pública e a ocultação dos detalhes de implementação em uma classe. A terceira afirmação está incorreta, pois a assinatura de um método inclui o nome e os parâmetros, não apenas o nome.
+| [20](#questao-q20) | B            | O texto descreve o encapsulamento, que é o conceito de esconder a implementação interna e expor apenas uma interface pública para interação com o objeto.
 
 <h2 id="referencias">Referências</h2>
 
@@ -66,7 +66,6 @@ Sobre programação estruturada e programação orientada a objetos, marque a af
 
 ```palin
 A afirmação é incorreta pois apesar da linguagem C++ permitir o uso do paradigma Orientado a Objetos, ela também suporta a utilização do paradigma estruturado como na linguagem C.
-Conforme especificado na página inicial do guia de referência da linguagem C++ (Cplusplus.com).
 ```
 
 <h3 id="questao-q2">Questão 02</h3>
@@ -96,7 +95,6 @@ Marque qual afirmação explica este aspecto.
 
 ```palin
 O polimorfismo permite que um método com o mesmo nome seja implementado de maneiras diferentes em classes distintas, dependendo do objeto que o invoca.
-Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 117.
 ```
 
 <h3 id="questao-q3">Questão 03</h3>
@@ -125,7 +123,6 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 ```palin
 Encapsulamento é o mecanismo que protege o estado interno de um objeto, permitindo que ele seja acessado e modificado apenas através de métodos específicos, evitando o acesso direto às variáveis internas.
-Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 307.
 ```
 
 <h3 id="questao-q4">Questão 04</h3>
@@ -154,7 +151,6 @@ Dentro do paradigma de programação orientada a objetos (POO), há um mecanismo
 
 ```palin
 Herança é o mecanismo pelo qual uma classe (subclasse) pode estender outra classe (superclasse), reutilizando e especializando seus métodos e atributos.
-Conforme explicado em "UML: Guia do Usuário" de BOOCH, RUMBAUGH e JACOBSON. Página 118.
 ```
 
 <h3 id="questao-q5">Questão 05</h3>
