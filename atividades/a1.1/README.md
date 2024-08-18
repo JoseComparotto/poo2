@@ -6,7 +6,7 @@
 | Professor:    | [Luiz Augusto Rodrigues <code>@profluizao</code>](https://github.com/profluizao)      |                      |
 | Disciplina:   | Programação Orientada a Objetos II                                                    | 2024.2 - 6º Semestre |
 | Universidade: | [Anhanguera-Uniderp - Matriz](https://www.uniderp.com.br/)                            | Campo Grande, MS     |
-| Atividade:    | [Atividade A1 - Pate 1](docs/POO2%20-%20Atividade%20A1-1.pdf)                         | Data: 05/08/2024     |
+| Atividade:    | [Atividade A1 - Parte 1](docs/POO2%20-%20Atividade%20A1-1.pdf)                         | Data: 05/08/2024     |
 
 <h2 id="gabarito">Gabarito</h2>
 
