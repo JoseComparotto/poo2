@@ -11,4 +11,8 @@ public class ClasseProduto extends BaseId {
         super(id, descricao, dataInclusao);
     }
 
+    public ClasseProduto(){
+        super();
+    }
+
 }

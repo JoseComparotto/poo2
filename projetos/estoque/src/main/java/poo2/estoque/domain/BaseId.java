@@ -13,13 +13,13 @@ public abstract class BaseId {
     protected String descricao;
     protected LocalDate dataInclusao;
 
-    public BaseId(){
-    }
-
     public BaseId(long id, String descricao, LocalDate dataInclusao) {
         this.id = id;
         this.descricao = descricao;
         this.dataInclusao = dataInclusao;
+    }
+
+    public BaseId(){
     }
 
     public long getId() {
