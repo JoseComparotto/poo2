@@ -1,5 +1,7 @@
 # Projeto API do Estoque
 
+Projeto para aplicar os conhecimentos da disciplina de POO2.
+
 | Academico:    | [José A. Q. C. Gomes <code>@JoseComparotto</code>](https://github.com/JoseComparotto) | RA: 398439413098     |
 | ------------- | ------------------------------------------------------------------------------------- | :------------------: |
 | Curso:        | Ciência da Computação                                                                 | Noturno              |
