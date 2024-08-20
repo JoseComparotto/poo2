@@ -16,11 +16,14 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
         long nextId = this.storage.parallelStream()
             .map(t -> t.getId())
             .max((a, b)-> Long.compare(a, b))
-            .orElse(Long.valueOf(0)) + 1;
+            .orElse(0L) + 1;
 
         object.setId(nextId);
-        
-        return object;
+
+        if(this.storage.add(object))
+            return object;
+        else
+            return null;
     }
 
     @Override
@@ -28,19 +31,19 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
         return this.storage.parallelStream()
             .filter( t -> t.getId() == id )
             .findFirst()
-            .orElseThrow();
+            .orElse(null);
     }
 
     @Override
-    public ClasseProduto Update(int id, ClasseProduto object) {
+    public ClasseProduto Update(ClasseProduto object) {
         ClasseProduto p = this.storage.parallelStream()
-            .filter( t -> t.getId() == id )
+            .filter( t -> t.getId() == object.getId() )
             .findFirst()
-            .orElseThrow();
+            .orElse(null);
         
-        p.setDescricao(object.getDescricao());
-        p.setDataInclusao(object.getDataInclusao());
+        if(p == null) return null;
 
+        p.setDescricao(object.getDescricao());
         return p;
     }
 
@@ -51,11 +54,11 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
             .filter( t -> t.getId() == id )
             .findFirst()
             .orElse(null);
-        
-        if(this.storage.remove(p))
+
+        if(p!=null && this.storage.remove(p))
             return p;
-        else
-            return null;
+        
+        return null;
     }
     
 }
