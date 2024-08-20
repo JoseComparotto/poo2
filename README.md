@@ -10,3 +10,7 @@
 ## Atividades
 
 -  **[Atividade A1 - Parte 1](atividades/a1.1)**
+
+## Projetos
+
+- **[Projeto API do Estoque](projetos/estoque)**
