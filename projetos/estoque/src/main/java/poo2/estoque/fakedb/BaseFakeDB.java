@@ -11,8 +11,10 @@ public abstract class BaseFakeDB<TDomain> {
 
     public BaseFakeDB() {
         lista = new ArrayList<>();
-        preencherLista();
+        this.preencherLista();
     }
+
+    protected abstract void preencherLista();
 
     public List<TDomain> getLista() {
         return lista;
@@ -21,7 +23,5 @@ public abstract class BaseFakeDB<TDomain> {
     public void setLista(List<TDomain> lista) {
         this.lista = lista;
     }
-
-    protected abstract void preencherLista();
-
+    
 }

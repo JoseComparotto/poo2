@@ -10,6 +10,7 @@ public class ClasseProdutoFakeDB extends BaseFakeDB<ClasseProduto> {
         super();
     }
 
+    @Override
     protected void preencherLista() {
         this.lista.add(new ClasseProduto(1L, "Carnes", LocalDate.now()));
         this.lista.add(new ClasseProduto(2L, "Bebidas", LocalDate.now()));
