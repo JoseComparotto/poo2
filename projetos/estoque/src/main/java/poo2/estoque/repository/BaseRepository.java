@@ -9,13 +9,13 @@ public abstract class BaseRepository<TDomain> {
     
     protected List<TDomain> storage;
     
-    public List<TDomain> ReadAll(){
+    public List<TDomain> readAll(){
         return storage;
     }
 
-    public abstract TDomain Create(TDomain object);
-    public abstract TDomain Read(int id);
-    public abstract TDomain Update(TDomain object);
-    public abstract TDomain Delete(int id);
+    public abstract TDomain create(TDomain object);
+    public abstract TDomain read(long id);
+    public abstract TDomain update(TDomain object);
+    public abstract TDomain delete(long id);
 
 }

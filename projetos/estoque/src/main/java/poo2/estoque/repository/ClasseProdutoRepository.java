@@ -11,7 +11,7 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto Create(ClasseProduto object) {
+    public ClasseProduto create(ClasseProduto object) {
         
         long nextId = this.storage.parallelStream()
             .map(t -> t.getId())
@@ -27,7 +27,7 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto Read(int id) {
+    public ClasseProduto read(long id) {
         return this.storage.parallelStream()
             .filter( t -> t.getId() == id )
             .findFirst()
@@ -35,7 +35,7 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto Update(ClasseProduto object) {
+    public ClasseProduto update(ClasseProduto object) {
         ClasseProduto p = this.storage.parallelStream()
             .filter( t -> t.getId() == object.getId() )
             .findFirst()
@@ -48,7 +48,7 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto Delete(int id) {
+    public ClasseProduto delete(long id) {
         
         ClasseProduto p = this.storage.parallelStream()
             .filter( t -> t.getId() == id )
