@@ -26,7 +26,7 @@ public class ClasseProdutoController {
         this.service = s;
     }
 
-    @GetMapping
+    @GetMapping("/")
     public List<ClasseProduto> getAll(){
         List<ClasseProduto> cp = this.service.browse();
         return cp;
@@ -38,13 +38,13 @@ public class ClasseProdutoController {
         return cp;
     } 
 
-    @PostMapping
+    @PostMapping("/")
     public ClasseProduto post(@RequestBody ClasseProduto cp) {
         ClasseProduto cpnew = this.service.add(cp);
         return cpnew;
     }
 
-    @PutMapping
+    @PutMapping("/")
     public ClasseProduto put(@RequestBody ClasseProduto cp){
         ClasseProduto cpalt = this.service.edit(cp);
         return cpalt;
