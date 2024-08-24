@@ -3,7 +3,12 @@
   "info": {
     "title": "Projeto API do Estoque",
     "description": "Projeto para aplicar os conhecimentos da disciplina de POO2.",
-    "version": "0.0.1-SNAPSHOT"
+    "version": "0.0.1-SNAPSHOT",
+    "contact": {
+      "name": "José A. Q. C. Gomes",
+      "email": "jose.comparotto@gmail.com",
+      "url": "https://github.com/JoseComparotto/poo2"
+    }
   },
   "servers": [
     {
@@ -17,12 +22,13 @@
     }
   ],
   "paths": {
-    "/classeproduto/": {
+    "/classeproduto": {
       "get": {
+        "description": "Retorna uma lista com todas as classes de produtos.",
+        "operationId": "GetAllClasseProduto",
         "tags": [
           "ClasseProduto"
         ],
-        "operationId": "GetAllClasseProduto",
         "responses": {
           "200": {
             "description": "OK",
@@ -37,6 +43,7 @@
         }
       },
       "post": {
+        "description": "Cadastra uma nova classe de produto.",
         "tags": [
           "ClasseProduto"
         ],
@@ -78,10 +85,11 @@
         }
       ],
       "get": {
+        "description": "Retorna as informações da classe de produto com o Id especificado.",
+        "operationId": "GetClasseProdutoById",
         "tags": [
           "ClasseProduto"
         ],
-        "operationId": "GetClasseProdutoById",
         "responses": {
           "200": {
             "description": "OK",
@@ -96,10 +104,11 @@
         }
       },
       "put": {
+        "description": "Atualiza as informações da classe de produto com o Id especificado.",
+        "operationId": "UpdateClasseProdutoById",
         "tags": [
           "ClasseProduto"
         ],
-        "operationId": "UpdateClasseProdutoById",
         "requestBody":{
           "required": true,
           "content": {
@@ -124,6 +133,7 @@
         }
       },
       "delete": {
+        "description": "Exclui a classe de produto com o Id especificado.",
         "tags": [
           "ClasseProduto"
         ],

@@ -26,7 +26,7 @@ public class ClasseProdutoController {
         this.service = s;
     }
 
-    @GetMapping("/")
+    @GetMapping("")
     public List<ClasseProduto> getAll(){
         List<ClasseProduto> cp = this.service.browse();
         return cp;
