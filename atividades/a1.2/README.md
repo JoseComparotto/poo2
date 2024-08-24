@@ -20,7 +20,7 @@
 |  [6](#questao-q6)  | B            | Segundo a MDN Web Docs, "O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers." (Mozilla Contributors, 2023).
 |  [7](#questao-q7)  | A            | O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente ou criar um novo recurso em uma URL específica, substituindo a representação anterior. Por outro lado, o método POST é utilizado para criar um novo recurso no servidor, geralmente enviando dados que serão processados para criar uma nova entrada. De acordo com a MDN Web Docs, "O método de requisição HTTP PUT cria um novo recurso ou substitui uma representação do recurso de destino com os novos dados. A diferença entre PUT e POST é que PUT é idempotente, ou seja, chamá-lo várias vezes terá o mesmo efeito" (Mozilla Contributors, 2023).
 |  [8](#questao-q8)  | D            | De acordo com a MDN Web Docs, "O método HTTP HEAD solicita os cabeçalhos retornados de um recurso específico que foi requisitado por um método HTTP GET. Tal solicitação pode ser feita antes de baixar um grande recurso para economizar largura de banda, por exemplo. Uma resposta para um método HEAD não deve ter um corpo. Se tiver, deve ser ignorado." (Mozilla Contributors, 2023).
-|  [9](#questao-q9)  |              | 
+|  [9](#questao-q9)  | D            | De acordo com a MDN Web Docs, "O método HTTP POST envia dados ao servidor. [...] Uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor." (Mozilla Contributors, 2023).
 | [10](#questao-q10) |              | 
 | [11](#questao-q11) |              | 
 | [12](#questao-q12) |              | 
@@ -43,6 +43,7 @@
 - Mozilla Contributors. (2023). HTTP Status 301. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method PUT. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method HEAD. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Method POST. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -268,4 +269,32 @@ Qual dos seguintes métodos HTTP é utilizado para obter informações sobre um 
 
 ```plain
 De acordo com a MDN Web Docs, "O método HTTP HEAD solicita os cabeçalhos retornados de um recurso específico que foi requisitado por um método HTTP GET. Tal solicitação pode ser feita antes de baixar um grande recurso para economizar largura de banda, por exemplo. Uma resposta para um método HEAD não deve ter um corpo. Se tiver, deve ser ignorado." (Mozilla Contributors, 2023).
+```
+
+<h3 id="questao-q9">Questão 09</h3>
+
+Qual dos seguintes métodos HTTP é projetado para enviar dados ao servidor para criar um novo recurso e, geralmente, deve ser usado quando se deseja submeter dados para processamento, como em um formulário de web?
+
+<h4 id="alternativas-q9">Alternativas</h4>
+
+- (A) GET
+
+- (B) DELETE
+
+- (C) PUT
+
+- ***(D) POST*** 
+
+- (E) OPTIONS
+
+<h4 id="resposta-q9">Resposta</h4>
+
+```palin
+(D) POST
+```
+
+<h4 id="justificativa-q9">Justificativa</h4>
+
+```plain
+De acordo com a MDN Web Docs, "O método HTTP POST envia dados ao servidor. [...] Uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor." (Mozilla Contributors, 2023).
 ```
