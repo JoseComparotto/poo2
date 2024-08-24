@@ -22,7 +22,7 @@
     }
   ],
   "paths": {
-    "/classeproduto": {
+    "/classe-produto": {
       "get": {
         "description": "Retorna uma lista com todas as classes de produtos.",
         "operationId": "GetAllClasseProduto",
@@ -72,7 +72,7 @@
         }
       }
     },
-    "/classeproduto/{id}": {
+    "/classe-produto/{id}": {
       "parameters": [
         {
           "in": "path",
