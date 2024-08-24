@@ -11,10 +11,10 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 ## Pilha de Tecnologias
 
-- *OpenAPI 3.0:* Padrão de aplicação RESTfull
+- **OpenAPI 3.0:** Padrão de aplicação RESTfull
 
-- *Java 21.0: *Linguagem de Programação (Back-end)
+- **Java 21.0:** Linguagem de Programação (Back-end)
 
-- *Maven 4.0:* Gerenciador de Pacotes Java
+- **Maven 4.0:** Gerenciador de Pacotes Java
 
-- *Spring-Boot 3.3:* Framework Spring para Back-end
+- **Spring-Boot 3.3:** Framework Spring para Back-end
