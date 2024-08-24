@@ -12,7 +12,7 @@
 
 | **Questão**        | **Resposta** | **Justificativa** 
 | :----------------: | :----------: | :----------------
-|  [1](#questao-q1)  | C            | De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
+|  [1](#questao-q1)  | C            | De acordo com a documentação da MDN Web Docs (2023), o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
 |  [2](#questao-q2)  | C            | De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023).
 |  [3](#questao-q3)  | B            | Embora o HTTP opere na camada de aplicação, o HTTPS utiliza TLS/SSL para garantir a segurança da comunicação, e esse processo ocorre entre a camada de transporte (TCP) e a camada de aplicação. De acordo com a MDN Web Docs, "HTTPS (HTTP Secure) é uma versão do protocolo HTTP criptografado. É normalmente usado SSL ou TLS para criptografar toda a comunicação entre um cliente e um servidor" (Mozilla Contributors, 2023).
 |  [4](#questao-q4)  | D            | De acordo com a MDN Web Docs, "O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida." (Mozilla Contributors, 2023).
@@ -39,6 +39,7 @@
 - Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTPS. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
+
 <h2 id="questoes">Questões</h2>
   
 <h3 id="questao-q1">Questão 01</h3>
@@ -66,7 +67,7 @@ Qual das seguintes afirmativas sobre o protocolo HTTP (Hypertext Transfer Protoc
 <h4 id="justificativa-q1">Justificativa</h4>
 
 ```plain
-De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
+De acordo com a documentação da MDN Web Docs (2023), o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
 ```
 
 <h3 id="questao-q2">Questão 02</h3>
