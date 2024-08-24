@@ -8,7 +8,7 @@ public class SubclasseProduto extends BaseId {
     
     private long idClasse;
 
-    public SubclasseProduto(long id, String descricao, LocalDate dataExclusao, long idClasse) {
+    public SubclasseProduto(long id, long idClasse, String descricao, LocalDate dataExclusao) {
         super(id, descricao, dataExclusao);
         this.idClasse = idClasse;
     }

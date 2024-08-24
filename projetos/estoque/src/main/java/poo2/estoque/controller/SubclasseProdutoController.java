@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 import poo2.estoque.domain.SubclasseProduto;
 import poo2.estoque.service.BaseBreadService;
 
-//@RestController
-//@RequestMapping("/api/estoque/classeproduto")
+@RestController
+@RequestMapping("/api/estoque/subclasseproduto")
 public class SubclasseProdutoController extends BaseRestController<SubclasseProduto> {
     
     public SubclasseProdutoController(BaseBreadService<SubclasseProduto> s) {
