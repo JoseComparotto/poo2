@@ -12,15 +12,15 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import jakarta.persistence.MappedSuperclass;
 import poo2.estoque.domain.BaseId;
-import poo2.estoque.service.BaseService;
+import poo2.estoque.service.BaseBreadService;
 
 @MappedSuperclass
 public abstract class BaseIdController<TDomain extends BaseId> {
     
     @Autowired
-    protected BaseService<TDomain> service;
+    protected BaseBreadService<TDomain> service;
 
-    public BaseIdController(BaseService<TDomain> s){
+    public BaseIdController(BaseBreadService<TDomain> s){
         this.service = s;
     }
 

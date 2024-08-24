@@ -9,12 +9,12 @@ import poo2.estoque.domain.BaseId;
 import poo2.estoque.repository.BaseRepository;
 
 @MappedSuperclass
-public abstract class BaseService<TDomain extends BaseId> {
+public abstract class BaseBreadService<TDomain extends BaseId> {
     
     @Autowired
     protected BaseRepository<TDomain> repo;
 
-    public BaseService(BaseRepository<TDomain> repository){
+    public BaseBreadService(BaseRepository<TDomain> repository){
         this.repo = repository;
     }
 

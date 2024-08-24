@@ -6,7 +6,7 @@ import poo2.estoque.domain.ClasseProduto;
 import poo2.estoque.repository.BaseRepository;
 
 @Service
-public class ClasseProdutoService extends BaseService<ClasseProduto> {
+public class ClasseProdutoService extends BaseBreadService<ClasseProduto> {
 
     public ClasseProdutoService(BaseRepository<ClasseProduto> repository) {
         super(repository);

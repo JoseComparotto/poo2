@@ -4,13 +4,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import poo2.estoque.domain.ClasseProduto;
-import poo2.estoque.service.BaseService;
+import poo2.estoque.service.BaseBreadService;
 
 @RestController
 @RequestMapping("/api/estoque/classeproduto")
 public class ClasseProdutoController extends BaseIdController<ClasseProduto> {
     
-    public ClasseProdutoController(BaseService<ClasseProduto> s) {
+    public ClasseProdutoController(BaseBreadService<ClasseProduto> s) {
         super(s);
     }
 
