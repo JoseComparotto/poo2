@@ -11,14 +11,18 @@
 	<groupId>poo2</groupId>
 	<artifactId>estoque</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>estoque</name>
-	<description>Demo project for Spring Boot</description>
-	<url/>
+	<name>Projeto API do Estoque</name>
+	<description>Projeto para aplicar os conhecimentos da disciplina de POO2</description>
+	<url>https://github.com/JoseComparotto/poo2/tree/main/projetos/estoque</url>
 	<licenses>
 		<license/>
 	</licenses>
 	<developers>
-		<developer/>
+		<developer>
+			<name>José A. Q. C. Gomes</name>
+			<email>jose.comparotto@gmail.com</email>
+			<url>https://github.com/JoseComparotto</url>
+		</developer>
 	</developers>
 	<scm>
 		<connection/>
