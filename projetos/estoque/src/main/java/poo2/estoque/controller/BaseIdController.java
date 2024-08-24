@@ -11,10 +11,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import jakarta.persistence.MappedSuperclass;
+import poo2.estoque.domain.BaseId;
 import poo2.estoque.service.BaseService;
 
 @MappedSuperclass
-public abstract class BaseIdController<TDomain> {
+public abstract class BaseIdController<TDomain extends BaseId> {
     
     @Autowired
     protected BaseService<TDomain> service;

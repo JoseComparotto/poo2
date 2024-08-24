@@ -3,9 +3,10 @@ package poo2.estoque.repository;
 import java.util.List;
 
 import jakarta.persistence.MappedSuperclass;
+import poo2.estoque.domain.BaseId;
 
 @MappedSuperclass
-public abstract class BaseRepository<TDomain> {
+public abstract class BaseRepository<TDomain extends BaseId> {
     
     protected List<TDomain> storage;
     
