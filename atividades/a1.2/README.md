@@ -36,7 +36,7 @@
 <h2 id="referencias">Referências</h2>
 
 - Mozilla Contributors. (2023). HTTP. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)>. Acesso em 24 de Agosto de 2024.
-- Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: [<https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type>](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type). Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
