@@ -12,8 +12,8 @@
 
 | **Questão**        | **Resposta** | **Justificativa** 
 | :----------------: | :----------: | :----------------
-|  [1](#questao-q1)  |              | 
-|  [2](#questao-q2)  |              | 
+|  [1](#questao-q1)  | C            | De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
+|  [2](#questao-q2)  | C            | De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023). Esse cabeçalho é essencial para que o cliente possa interpretar corretamente o conteúdo da resposta.
 |  [3](#questao-q3)  |              | 
 |  [4](#questao-q4)  |              | 
 |  [5](#questao-q5)  |              | 
@@ -35,32 +35,64 @@
 
 <h2 id="referencias">Referências</h2>
 
--
+- Mozilla Contributors. (2023). HTTP. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: [<https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type>](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type). Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
 <h3 id="questao-q1">Questão 01</h3>
 
+Qual das seguintes afirmativas sobre o protocolo HTTP (Hypertext Transfer Protocol) está correta?
+
 <h4 id="alternativas-q1">Alternativas</h4>
 
-- (A)
+- (A) HTTP é um protocolo de comunicação que funciona apenas na camada de rede do modelo OSI.
 
-- (B) 
+- (B) O HTTP permite a comunicação entre cliente e servidor usando pacotes de dados criptografados por padrão.
 
-- (C) 
+- ***(C) O HTTP utiliza o modelo cliente-servidor para a troca de mensagens e opera tipicamente na camada de aplicação do modelo OSI.***
 
-- (D) 
+- (D) O HTTP é um protocolo que requer uma conexão constante e de longa duração entre cliente e servidor.
 
-- (E) 
+- (E) O HTTP é um protocolo orientado à conexão que garante a entrega de pacotes na ordem correta.
 
 <h4 id="resposta-q1">Resposta</h4>
 
 ```palin
-
+(C) O HTTP utiliza o modelo cliente-servidor para a troca de mensagens e opera tipicamente na camada de aplicação do modelo OSI.
 ```
 
 <h4 id="justificativa-q1">Justificativa</h4>
 
-```palin
-
+```plain
+De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
 ```
+
+<h3 id="questao-q2">Questão 02</h3>
+
+Qual dos seguintes cabeçalhos HTTP é usado para especificar o tipo de mídia do corpo da resposta, informando ao cliente o formato dos dados recebidos?
+
+<h4 id="alternativas-q2">Alternativas</h4>
+
+- (A) Content-Length
+
+- (B) Accept
+
+- ***(C) Content-Type***
+
+- (D) Authorization
+
+- (E) Location
+
+<h4 id="resposta-q2">Resposta</h4>
+
+```palin
+(C) Content-Type
+```
+
+<h4 id="justificativa-q2">Justificativa</h4>
+
+```plain
+De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023). Esse cabeçalho é essencial para que o cliente possa interpretar corretamente o conteúdo da resposta.
+```
+
