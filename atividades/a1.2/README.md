@@ -38,7 +38,7 @@
 - Mozilla Contributors. (2023). HTTP. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTPS. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS)>. Acesso em 24 de Agosto de 2024.
-
+- Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
 <h2 id="questoes">Questões</h2>
   
 <h3 id="questao-q1">Questão 01</h3>
@@ -105,7 +105,7 @@ Qual das seguintes afirmações sobre HTTPS (Hypertext Transfer Protocol Secure)
 
 - (A) HTTPS é uma extensão do HTTP que utiliza a criptografia AES para proteger a comunicação, mas não fornece autenticação do servidor.
 
-- (B) HTTPS opera sobre a camada de transporte do modelo OSI e utiliza criptografia SSL/TLS para garantir a segurança da comunicação entre cliente e servidor.
+- ***(B) HTTPS opera sobre a camada de transporte do modelo OSI e utiliza criptografia SSL/TLS para garantir a segurança da comunicação entre cliente e servidor.***
 
 - (C) HTTPS é um protocolo que utiliza a criptografia somente para o armazenamento de dados no servidor, e não para a transmissão de dados entre cliente e servidor.
 
@@ -127,28 +127,29 @@ Embora o HTTP opere na camada de aplicação, o HTTPS utiliza TLS/SSL para garan
 
 <h3 id="questao-q4">Questão 04</h3>
 
+Qual dos seguintes códigos de status HTTP indica que a solicitação foi bem-sucedida e que a resposta contém a representação solicitada do recurso?
 
 <h4 id="alternativas-q4">Alternativas</h4>
 
-- (A)  
+- (A) 301 Moved Permanently
 
-- (B) 
+- (B) 404 Not Found
 
-- (C) 
+- (C) 500 Internal Server Error
 
-- (D) 
+- ***(D) 200 OK***
 
-- (E) 
+- (E) 401 Unauthorized
 
 <h4 id="resposta-q4">Resposta</h4>
 
 ```palin
-
+(D) 200 OK
 ```
 
 <h4 id="justificativa-q4">Justificativa</h4>
 
 ```plain
-
+De acordo com a MDN Web Docs, "O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida." (Mozilla Contributors, 2023).
 ```
 
