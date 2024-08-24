@@ -41,7 +41,8 @@
 - Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 400. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 301. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
-- Mozilla Contributors. (2023). HTTP Method PUT. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Method PUT. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Method HEAD. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -241,3 +242,30 @@ No contexto do protocolo HTTP, qual das seguintes afirmações é verdadeira sob
 O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente ou criar um novo recurso em uma URL específica, substituindo a representação anterior. Por outro lado, o método POST é utilizado para criar um novo recurso no servidor, geralmente enviando dados que serão processados para criar uma nova entrada. De acordo com a MDN Web Docs, "O método de requisição HTTP PUT cria um novo recurso ou substitui uma representação do recurso de destino com os novos dados. A diferença entre PUT e POST é que PUT é idempotente, ou seja, chamá-lo várias vezes terá o mesmo efeito" (Mozilla Contributors, 2023).
 ```
 
+<h3 id="questao-q8">Questão 08</h3>
+
+Qual dos seguintes métodos HTTP é utilizado para obter informações sobre um recurso sem modificar seu estado e é semelhante ao método GET, mas não inclui o corpo da resposta?
+
+<h4 id="alternativas-q8">Alternativas</h4>
+
+- (A) PUT
+
+- (B) POST
+
+- (C) OPTIONS
+
+- ***(D) HEAD***
+
+- (E) PATCH
+
+<h4 id="resposta-q8">Resposta</h4>
+
+```palin
+(D) HEAD
+```
+
+<h4 id="justificativa-q8">Justificativa</h4>
+
+```plain
+De acordo com a MDN Web Docs, "O método HTTP HEAD solicita os cabeçalhos retornados de um recurso específico que foi requisitado por um método HTTP GET. Tal solicitação pode ser feita antes de baixar um grande recurso para economizar largura de banda, por exemplo. Uma resposta para um método HEAD não deve ter um corpo. Se tiver, deve ser ignorado." (Mozilla Contributors, 2023).
+```
