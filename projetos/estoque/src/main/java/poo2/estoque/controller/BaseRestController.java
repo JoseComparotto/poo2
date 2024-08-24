@@ -15,12 +15,12 @@ import poo2.estoque.domain.BaseId;
 import poo2.estoque.service.BaseBreadService;
 
 @MappedSuperclass
-public abstract class BaseIdController<TDomain extends BaseId> {
+public abstract class BaseRestController<TDomain extends BaseId> {
     
     @Autowired
     protected BaseBreadService<TDomain> service;
 
-    public BaseIdController(BaseBreadService<TDomain> s){
+    public BaseRestController(BaseBreadService<TDomain> s){
         this.service = s;
     }
 

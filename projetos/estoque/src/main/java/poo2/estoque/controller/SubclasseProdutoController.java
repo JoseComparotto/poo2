@@ -8,7 +8,7 @@ import poo2.estoque.service.BaseBreadService;
 
 //@RestController
 //@RequestMapping("/api/estoque/classeproduto")
-public class SubclasseProdutoController extends BaseIdController<SubclasseProduto> {
+public class SubclasseProdutoController extends BaseRestController<SubclasseProduto> {
     
     public SubclasseProdutoController(BaseBreadService<SubclasseProduto> s) {
         super(s);
