@@ -18,7 +18,7 @@
 |  [4](#questao-q4)  | D            | De acordo com a MDN Web Docs, "O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida." (Mozilla Contributors, 2023).
 |  [5](#questao-q5)  | A            | O código de status HTTP 400 Bad Request é apropriado quando a solicitação do cliente está malformada ou falta dados essenciais, e o servidor não consegue processar a solicitação devido a essas falhas. Segundo a MDN Web Docs, "O código de status HTTP 400 Bad Request indica que o servidor não pode ou não irá processar a solicitação devido a um erro do cliente" (Mozilla Contributors, 2023).
 |  [6](#questao-q6)  | B            | Segundo a MDN Web Docs, "O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers." (Mozilla Contributors, 2023).
-|  [7](#questao-q7)  |              |	
+|  [7](#questao-q7)  | A            | O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente ou criar um novo recurso em uma URL específica, substituindo a representação anterior. Por outro lado, o método POST é utilizado para criar um novo recurso no servidor, geralmente enviando dados que serão processados para criar uma nova entrada. De acordo com a MDN Web Docs, "O método de requisição HTTP PUT cria um novo recurso ou substitui uma representação do recurso de destino com os novos dados. A diferença entre PUT e POST é que PUT é idempotente, ou seja, chamá-lo várias vezes terá o mesmo efeito" (Mozilla Contributors, 2023).
 |  [8](#questao-q8)  |              | 
 |  [9](#questao-q9)  |              | 
 | [10](#questao-q10) |              | 
@@ -41,6 +41,7 @@
 - Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 400. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 301. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Method PUT. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -210,5 +211,33 @@ Em um cenário onde um cliente tenta acessar um recurso que foi removido e o ser
 
 ```plain
 Segundo a MDN Web Docs, "O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers." (Mozilla Contributors, 2023).
+```
+
+<h3 id="questao-q7">Questão 07</h3>
+
+No contexto do protocolo HTTP, qual das seguintes afirmações é verdadeira sobre os métodos de requisição e suas respectivas semânticas?
+
+<h4 id="alternativas-q7">Alternativas</h4>
+
+- ***(A) O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente, e o método POST é utilizado para criar um novo recurso no servidor.***
+
+- (B) O método HTTP GET é usado para enviar dados ao servidor, enquanto o método DELETE é utilizado para recuperar informações de um recurso especificado
+
+- (C) O método HTTP PATCH é utilizado para substituir completamente o recurso de destino, enquanto o método OPTIONS é usado para modificar parcialmente um recurso.
+
+- (D) O método HTTP HEAD é semelhante ao método GET, mas não retorna o corpo da resposta, enquanto o método PUT é utilizado para atualizar parcialmente um recurso no servidor.
+
+- (E) O método HTTP TRACE é utilizado para depurar a comunicação entre cliente e servidor, retornando o conteúdo da requisição no corpo da resposta, enquanto o método PUT é usado para enviar uma nova representação de um recurso ao servidor.
+
+<h4 id="resposta-q7">Resposta</h4>
+
+```palin
+(A) O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente, e o método POST é utilizado para criar um novo recurso no servidor.
+```
+
+<h4 id="justificativa-q7">Justificativa</h4>
+
+```plain
+O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente ou criar um novo recurso em uma URL específica, substituindo a representação anterior. Por outro lado, o método POST é utilizado para criar um novo recurso no servidor, geralmente enviando dados que serão processados para criar uma nova entrada. De acordo com a MDN Web Docs, "O método de requisição HTTP PUT cria um novo recurso ou substitui uma representação do recurso de destino com os novos dados. A diferença entre PUT e POST é que PUT é idempotente, ou seja, chamá-lo várias vezes terá o mesmo efeito" (Mozilla Contributors, 2023).
 ```
 
