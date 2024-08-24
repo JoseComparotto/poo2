@@ -39,6 +39,7 @@
 - Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTPS. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Status 400. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -152,5 +153,33 @@ Qual dos seguintes códigos de status HTTP indica que a solicitação foi bem-su
 
 ```plain
 De acordo com a MDN Web Docs, "O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida." (Mozilla Contributors, 2023).
+```
+
+<h3 id="questao-q5">Questão 05</h3>
+
+Qual dos seguintes códigos de status HTTP é apropriado para uma resposta quando um cliente envia uma solicitação que está faltando dados essenciais, e o servidor não pode processar a solicitação devido a essa falta de informações?
+
+<h4 id="alternativas-q5">Alternativas</h4>
+
+- (A) 400 Bad Request
+
+- (B) 403 Forbidden
+
+- (C) 422 Unprocessable Entity
+
+- (D) 405 Method Not Allowed
+
+- (E) 409 Conflict
+
+<h4 id="resposta-q5">Resposta</h4>
+
+```palin
+(A) 400 Bad Request
+```
+
+<h4 id="justificativa-q5">Justificativa</h4>
+
+```plain
+O código de status HTTP 400 Bad Request é apropriado quando a solicitação do cliente está malformada ou falta dados essenciais, e o servidor não consegue processar a solicitação devido a essas falhas. Segundo a MDN Web Docs, "O código de status HTTP 400 Bad Request indica que o servidor não pode ou não irá processar a solicitação devido a um erro do cliente" (Mozilla Contributors, 2023).
 ```
 
