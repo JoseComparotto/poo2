@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "vmware.vscode-boot-dev-pack",
+        "vscjava.vscode-java-pack",
+        "bierner.markdown-preview-github-styles",
+        "42crunch.vscode-openapi"
+    ]
+}
