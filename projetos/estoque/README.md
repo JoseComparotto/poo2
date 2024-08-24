@@ -9,3 +9,12 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 | Disciplina:   | Programação Orientada a Objetos II                                                    | 2024.2 - 6º Semestre |
 | Universidade: | [Anhanguera-Uniderp - Matriz](https://www.uniderp.com.br/)                            | Campo Grande, MS     |
 
+## Pilha de Tecnologias
+
+- *OpenAPI 3.0:* Padrão de aplicação RESTfull
+
+- *Java 21.0: *Linguagem de Programação (Back-end)
+
+- *Maven 4.0:* Gerenciador de Pacotes Java
+
+- *Spring-Boot 3.3:* Framework Spring para Back-end
