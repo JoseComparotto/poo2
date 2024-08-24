@@ -44,7 +44,7 @@ public class ClasseProdutoController {
         return cpnew;
     }
 
-    @PutMapping("/")
+    @PutMapping("/{id}")
     public ClasseProduto put(@RequestBody ClasseProduto cp){
         ClasseProduto cpalt = this.service.edit(cp);
         return cpalt;
