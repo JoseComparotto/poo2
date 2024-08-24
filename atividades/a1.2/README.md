@@ -13,7 +13,7 @@
 | **Questão**        | **Resposta** | **Justificativa** 
 | :----------------: | :----------: | :----------------
 |  [1](#questao-q1)  | C            | De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
-|  [2](#questao-q2)  | C            | De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023). Esse cabeçalho é essencial para que o cliente possa interpretar corretamente o conteúdo da resposta.
+|  [2](#questao-q2)  | C            | De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023).
 |  [3](#questao-q3)  |              | 
 |  [4](#questao-q4)  |              | 
 |  [5](#questao-q5)  |              | 
@@ -93,6 +93,6 @@ Qual dos seguintes cabeçalhos HTTP é usado para especificar o tipo de mídia d
 <h4 id="justificativa-q2">Justificativa</h4>
 
 ```plain
-De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023). Esse cabeçalho é essencial para que o cliente possa interpretar corretamente o conteúdo da resposta.
+De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023).
 ```
 
