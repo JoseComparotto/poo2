@@ -17,7 +17,7 @@
 |  [3](#questao-q3)  | B            | Embora o HTTP opere na camada de aplicação, o HTTPS utiliza TLS/SSL para garantir a segurança da comunicação, e esse processo ocorre entre a camada de transporte (TCP) e a camada de aplicação. De acordo com a MDN Web Docs, "HTTPS (HTTP Secure) é uma versão do protocolo HTTP criptografado. É normalmente usado SSL ou TLS para criptografar toda a comunicação entre um cliente e um servidor" (Mozilla Contributors, 2023).
 |  [4](#questao-q4)  | D            | De acordo com a MDN Web Docs, "O código HTTP 200 OK é a resposta de status de sucesso que indica que a requisição foi bem sucedida." (Mozilla Contributors, 2023).
 |  [5](#questao-q5)  | A            | O código de status HTTP 400 Bad Request é apropriado quando a solicitação do cliente está malformada ou falta dados essenciais, e o servidor não consegue processar a solicitação devido a essas falhas. Segundo a MDN Web Docs, "O código de status HTTP 400 Bad Request indica que o servidor não pode ou não irá processar a solicitação devido a um erro do cliente" (Mozilla Contributors, 2023).
-|  [6](#questao-q6)  |              | 
+|  [6](#questao-q6)  | B            | Segundo a MDN Web Docs, "O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers." (Mozilla Contributors, 2023).
 |  [7](#questao-q7)  |              |	
 |  [8](#questao-q8)  |              | 
 |  [9](#questao-q9)  |              | 
@@ -40,6 +40,7 @@
 - Mozilla Contributors. (2023). HTTPS. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 200. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Status 400. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/400)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Status 301. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/301)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -181,5 +182,33 @@ Qual dos seguintes códigos de status HTTP é apropriado para uma resposta quand
 
 ```plain
 O código de status HTTP 400 Bad Request é apropriado quando a solicitação do cliente está malformada ou falta dados essenciais, e o servidor não consegue processar a solicitação devido a essas falhas. Segundo a MDN Web Docs, "O código de status HTTP 400 Bad Request indica que o servidor não pode ou não irá processar a solicitação devido a um erro do cliente" (Mozilla Contributors, 2023).
+```
+
+<h3 id="questao-q6">Questão 06</h3>
+
+Em um cenário onde um cliente tenta acessar um recurso que foi removido e o servidor deseja informar ao cliente que o recurso foi movido permanentemente para uma nova URL, qual código de status HTTP deve ser retornado?
+
+<h4 id="alternativas-q6">Alternativas</h4>
+
+- (A) 410 Gone
+
+- ***(B) 301 Moved Permanently***
+
+- (C) 302 Found
+
+- (D) 307 Temporary Redirect
+
+- (E) 403 Forbidden 
+
+<h4 id="resposta-q6">Resposta</h4>
+
+```palin
+(B) 301 Moved Permanently
+```
+
+<h4 id="justificativa-q6">Justificativa</h4>
+
+```plain
+Segundo a MDN Web Docs, "O código de resposta de status de redirecionamento 301 Moved Permanently do protocolo HTTP indica que o recurso requisitado foi movido permanentemente para a URL dada pelo cabeçalho Localização headers." (Mozilla Contributors, 2023).
 ```
 
