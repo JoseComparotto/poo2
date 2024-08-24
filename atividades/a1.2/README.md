@@ -96,3 +96,57 @@ Qual dos seguintes cabeçalhos HTTP é usado para especificar o tipo de mídia d
 De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023).
 ```
 
+<h3 id="questao-q3">Questão 03</h3>
+
+
+<h4 id="alternativas-q3">Alternativas</h4>
+
+- (A) Content-Length
+
+- (B) Accept
+
+- (C) Content-Type
+
+- (D) Authorization
+
+- (E) Location
+
+<h4 id="resposta-q3">Resposta</h4>
+
+```palin
+
+```
+
+<h4 id="justificativa-q3">Justificativa</h4>
+
+```plain
+
+```
+
+<h3 id="questao-q4">Questão 04</h3>
+
+
+<h4 id="alternativas-q4">Alternativas</h4>
+
+- (A)  
+
+- (B) 
+
+- (C) 
+
+- (D) 
+
+- (E) 
+
+<h4 id="resposta-q4">Resposta</h4>
+
+```palin
+
+```
+
+<h4 id="justificativa-q4">Justificativa</h4>
+
+```plain
+
+```
+
