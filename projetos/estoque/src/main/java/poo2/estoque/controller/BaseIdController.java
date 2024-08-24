@@ -35,7 +35,7 @@ public abstract class BaseIdController<TDomain> {
         return td;
     } 
 
-    @PostMapping("/")
+    @PostMapping("")
     public TDomain post(@RequestBody TDomain td) {
         TDomain tdnew = this.service.add(td);
         return tdnew;
