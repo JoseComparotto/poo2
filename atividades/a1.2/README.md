@@ -14,7 +14,7 @@
 | :----------------: | :----------: | :----------------
 |  [1](#questao-q1)  | C            | De acordo com a documentação da MDN Web Docs, o HTTP (Hypertext Transfer Protocol) opera na camada de aplicação do modelo OSI e utiliza o modelo cliente-servidor para a troca de mensagens.
 |  [2](#questao-q2)  | C            | De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente qual é o tipo de conteúdo que a resposta, de fato, tem" (Mozilla Contributors, 2023).
-|  [3](#questao-q3)  |              | 
+|  [3](#questao-q3)  | B            | Embora o HTTP opere na camada de aplicação, o HTTPS utiliza TLS/SSL para garantir a segurança da comunicação, e esse processo ocorre entre a camada de transporte (TCP) e a camada de aplicação. De acordo com a MDN Web Docs, "HTTPS (HTTP Secure) é uma versão do protocolo HTTP criptografado. É normalmente usado SSL ou TLS para criptografar toda a comunicação entre um cliente e um servidor" (Mozilla Contributors, 2023).
 |  [4](#questao-q4)  |              | 
 |  [5](#questao-q5)  |              | 
 |  [6](#questao-q6)  |              | 
@@ -37,6 +37,7 @@
 
 - Mozilla Contributors. (2023). HTTP. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). Content-Type. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Headers/Content-Type)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTPS. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS](https://developer.mozilla.org/pt-BR/docs/Glossary/HTTPS)>. Acesso em 24 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -98,29 +99,30 @@ De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente q
 
 <h3 id="questao-q3">Questão 03</h3>
 
+Qual das seguintes afirmações sobre HTTPS (Hypertext Transfer Protocol Secure) é verdadeira?
 
 <h4 id="alternativas-q3">Alternativas</h4>
 
-- (A)
+- (A) HTTPS é uma extensão do HTTP que utiliza a criptografia AES para proteger a comunicação, mas não fornece autenticação do servidor.
 
-- (B) 
+- (B) HTTPS opera sobre a camada de transporte do modelo OSI e utiliza criptografia SSL/TLS para garantir a segurança da comunicação entre cliente e servidor.
 
-- (C) 
+- (C) HTTPS é um protocolo que utiliza a criptografia somente para o armazenamento de dados no servidor, e não para a transmissão de dados entre cliente e servidor.
 
-- (D) 
+- (D) HTTPS é um protocolo de comunicação que é mais rápido que HTTP porque elimina a necessidade de criptografia e autenticação.
 
-- (E) 
+- (E) HTTPS não é compatível com certificados digitais e, portanto, não pode validar a identidade do servidor.
 
 <h4 id="resposta-q3">Resposta</h4>
 
 ```palin
-
+(B) HTTPS opera sobre a camada de transporte do modelo OSI e utiliza criptografia SSL/TLS para garantir a segurança da comunicação entre cliente e servidor.
 ```
 
 <h4 id="justificativa-q3">Justificativa</h4>
 
 ```plain
-
+Embora o HTTP opere na camada de aplicação, o HTTPS utiliza TLS/SSL para garantir a segurança da comunicação, e esse processo ocorre entre a camada de transporte (TCP) e a camada de aplicação. De acordo com a MDN Web Docs, "HTTPS (HTTP Secure) é uma versão do protocolo HTTP criptografado. É normalmente usado SSL ou TLS para criptografar toda a comunicação entre um cliente e um servidor" (Mozilla Contributors, 2023).
 ```
 
 <h3 id="questao-q4">Questão 04</h3>
