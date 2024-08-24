@@ -15,7 +15,7 @@ public abstract class BaseRepository<TDomain> {
 
     public abstract TDomain create(TDomain object);
     public abstract TDomain read(long id);
-    public abstract TDomain update(TDomain object);
+    public abstract TDomain update(long id, TDomain object);
     public abstract TDomain delete(long id);
 
 }

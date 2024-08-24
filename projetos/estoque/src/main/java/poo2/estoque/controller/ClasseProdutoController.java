@@ -45,8 +45,8 @@ public class ClasseProdutoController {
     }
 
     @PutMapping("/{id}")
-    public ClasseProduto put(@RequestBody ClasseProduto cp){
-        ClasseProduto cpalt = this.service.edit(cp);
+    public ClasseProduto put(@PathVariable Long id, @RequestBody ClasseProduto cp){
+        ClasseProduto cpalt = this.service.edit(id, cp);
         return cpalt;
     }
 

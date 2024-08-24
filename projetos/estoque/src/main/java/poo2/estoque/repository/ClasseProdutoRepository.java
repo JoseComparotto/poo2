@@ -35,9 +35,9 @@ public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto update(ClasseProduto object) {
+    public ClasseProduto update(long id, ClasseProduto object) {
         ClasseProduto p = this.storage.parallelStream()
-            .filter( t -> t.getId() == object.getId() )
+            .filter( t -> t.getId() == id )
             .findFirst()
             .orElse(null);
         

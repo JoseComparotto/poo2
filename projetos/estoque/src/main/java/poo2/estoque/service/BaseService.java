@@ -12,7 +12,7 @@ public abstract class BaseService<TDomain> {
 
     public abstract List<TDomain> browse();
     public abstract TDomain read(long id);
-    public abstract TDomain edit(TDomain object);
+    public abstract TDomain edit(long id, TDomain object);
     public abstract TDomain add(TDomain object);
     public abstract TDomain delete(long id);
 

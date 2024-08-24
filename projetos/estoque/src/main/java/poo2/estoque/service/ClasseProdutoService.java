@@ -25,8 +25,8 @@ public class ClasseProdutoService extends BaseService<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto edit(ClasseProduto object) {
-        return this.repo.update(object);
+    public ClasseProduto edit(long id, ClasseProduto object) {
+        return this.repo.update(id, object);
     }
 
     @Override
