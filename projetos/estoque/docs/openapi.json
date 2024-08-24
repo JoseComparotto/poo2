@@ -35,6 +35,34 @@
             }
           }
         }
+      },
+      "post": {
+        "tags": [
+          "ClasseProduto"
+        ],
+        "operationId": "CreateClasseProduto",
+        "requestBody":{
+          "required": true,
+          "content": {
+            "application/json":{
+              "schema":{
+                "$ref": "#/components/schemas/ClasseProdutoRequest"
+              }
+            } 
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json":{
+                "schema":{
+                  "$ref": "#/components/schemas/ClasseProduto"
+                }
+              }
+            }
+          }
+        }
       }
     },
     "/classeproduto/{id}": {
@@ -53,7 +81,7 @@
         "tags": [
           "ClasseProduto"
         ],
-        "operationId": "UpdateClasseProdutoById",
+        "operationId": "GetClasseProdutoById",
         "responses": {
           "200": {
             "description": "OK",
@@ -68,13 +96,16 @@
         }
       },
       "put": {
-        "tags": ["ClasseProduto"],
+        "tags": [
+          "ClasseProduto"
+        ],
+        "operationId": "UpdateClasseProdutoById",
         "requestBody":{
           "required": true,
           "content": {
             "application/json":{
               "schema":{
-                "$ref": "#/components/schemas/ClasseProdutoPutRequest"
+                "$ref": "#/components/schemas/ClasseProdutoRequest"
               }
             } 
           }
@@ -114,7 +145,7 @@
   },
   "components": {
     "schemas": {
-      "ClasseProdutoPutRequest": {
+      "ClasseProdutoRequest": {
         "type": "object",
         "properties": {
           "descricao": {
