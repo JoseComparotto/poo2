@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Projeto API do Estoque",
+    "description": "Projeto para aplicar os conhecimentos da disciplina de POO2.",
+    "version": "0.0.1-SNAPSHOT"
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8080/api/estoque"
+    }
+  ],
+  "tags": [
+    {
+      "name": "ClasseProduto",
+      "description": "Macro-agrupador de produtos"
+    }
+  ],
+  "paths": {
+    "/classeproduto/": {
+      "get": {
+        "tags": [
+          "ClasseProduto"
+        ],
+        "operationId": "GetAllClasseProduto",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClasseProdutoArray"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/classeproduto/{id}": {
+      "parameters": [
+        {
+          "in": "path",
+          "name": "id",
+          "required": true,
+          "schema": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      ],
+      "get": {
+        "tags": [
+          "ClasseProduto"
+        ],
+        "operationId": "UpdateClasseProdutoById",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClasseProdutoArray"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": ["ClasseProduto"],
+        "requestBody":{
+          "required": true,
+          "content": {
+            "application/json":{
+              "schema":{
+                "$ref": "#/components/schemas/ClasseProdutoPutRequest"
+              }
+            } 
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json":{
+                "schema":{
+                  "$ref": "#/components/schemas/ClasseProduto"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "ClasseProduto"
+        ],
+        "operationId": "DeleteClasseProdutoById",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ClasseProdutoArray"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ClasseProdutoPutRequest": {
+        "type": "object",
+        "properties": {
+          "descricao": {
+            "type": "string",
+            "description": "Descrição da classe"
+          }
+        }
+      },
+      "ClasseProduto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Identificador único"
+          },
+          "descricao": {
+            "type": "string",
+            "description": "Descrição da classe"
+          },
+          "dataInclusao": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "ClasseProdutoArray": {
+        "type": "array",
+        "items": {
+          "$ref": "#/components/schemas/ClasseProduto"
+        }
+      }
+    }
+  }
+}
