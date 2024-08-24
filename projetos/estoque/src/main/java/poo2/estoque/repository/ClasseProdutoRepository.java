@@ -2,9 +2,12 @@ package poo2.estoque.repository;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Repository;
+
 import poo2.estoque.domain.ClasseProduto;
 import poo2.estoque.fakedb.ClasseProdutoFakeDB;
 
+@Repository
 public class ClasseProdutoRepository extends BaseRepository<ClasseProduto> {
 
     public ClasseProdutoRepository(){

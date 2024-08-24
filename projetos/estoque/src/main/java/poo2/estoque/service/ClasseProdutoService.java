@@ -1,42 +1,15 @@
 package poo2.estoque.service;
 
-import java.util.List;
-
 import org.springframework.stereotype.Service;
 
 import poo2.estoque.domain.ClasseProduto;
-import poo2.estoque.repository.ClasseProdutoRepository;
+import poo2.estoque.repository.BaseRepository;
 
 @Service
 public class ClasseProdutoService extends BaseService<ClasseProduto> {
 
-    public ClasseProdutoService(){
-        this.repo = new ClasseProdutoRepository();
+    public ClasseProdutoService(BaseRepository<ClasseProduto> repository) {
+        super(repository);
     }
 
-    @Override
-    public List<ClasseProduto> browse() {
-        return this.repo.readAll();
-    }
-
-    @Override
-    public ClasseProduto read(long id) {
-        return this.repo.read(id);
-    }
-
-    @Override
-    public ClasseProduto edit(long id, ClasseProduto object) {
-        return this.repo.update(id, object);
-    }
-
-    @Override
-    public ClasseProduto add(ClasseProduto object) {
-        return this.repo.create(object);
-    }
-
-    @Override
-    public ClasseProduto delete(long id) {
-        return this.repo.delete(id);
-    }
-    
 }
