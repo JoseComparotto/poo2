@@ -101,15 +101,15 @@ De acordo com a MDN Web Docs, "Em respostas, o Content-Type diz para o cliente q
 
 <h4 id="alternativas-q3">Alternativas</h4>
 
-- (A) Content-Length
+- (A)
 
-- (B) Accept
+- (B) 
 
-- (C) Content-Type
+- (C) 
 
-- (D) Authorization
+- (D) 
 
-- (E) Location
+- (E) 
 
 <h4 id="resposta-q3">Resposta</h4>
 
