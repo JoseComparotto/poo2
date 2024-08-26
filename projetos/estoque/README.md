@@ -17,7 +17,7 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 - **Maven 4.0:** Gerenciador de Pacotes Java
 
-- **Spring-Boot 3.3:** Framework Spring para Back-end
+- **Spring-Boot 3.3:** Framework do ecossistema Spring para Back-end
 
 ## Definições UML
 
