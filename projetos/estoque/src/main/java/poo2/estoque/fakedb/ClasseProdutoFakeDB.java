@@ -2,8 +2,11 @@ package poo2.estoque.fakedb;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
 import poo2.estoque.domain.ClasseProduto;
 
+@Component
 public class ClasseProdutoFakeDB extends BaseFakeDB<ClasseProduto> {
     
     public ClasseProdutoFakeDB(){

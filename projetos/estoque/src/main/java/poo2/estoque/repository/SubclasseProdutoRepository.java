@@ -2,17 +2,17 @@ package poo2.estoque.repository;
 
 import java.time.LocalDate;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import poo2.estoque.domain.SubclasseProduto;
-import poo2.estoque.fakedb.SubclasseProdutoFakeDB;
+import poo2.estoque.fakedb.BaseFakeDB;
 
 @Repository
 public class SubclasseProdutoRepository extends BaseListRepository<SubclasseProduto> {
 
-    public SubclasseProdutoRepository(){
-        SubclasseProdutoFakeDB db = new SubclasseProdutoFakeDB();
-        storage = db.getLista();
+    public SubclasseProdutoRepository(@Autowired BaseFakeDB<SubclasseProduto> db) {
+        super(db);
     }
 
     @Override
@@ -31,10 +31,10 @@ public class SubclasseProdutoRepository extends BaseListRepository<SubclasseProd
         SubclasseProduto existing = read(id);
         if(existing == null) return null;
 
-        object.setIdClasse(object.getIdClasse());
-        object.setDescricao(object.getDescricao());
+        existing.setIdClasse(object.getIdClasse());
+        existing.setDescricao(object.getDescricao());
 
-        return object;
+        return existing;
     }
     
 }
