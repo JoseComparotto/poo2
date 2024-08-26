@@ -175,7 +175,11 @@
             "type": "string",
             "description": "Descrição da classe"
           },
-          "dataInclusao": {
+          "data_inclusao": {
+            "type": "string",
+            "format": "date"
+          },
+          "data_alteracao": {
             "type": "string",
             "format": "date"
           }
