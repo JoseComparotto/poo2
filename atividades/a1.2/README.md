@@ -28,7 +28,7 @@
 | [14](#questao-q14) | C            | De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 são caracterizadas por utilizar um único método HTTP, frequentemente POST, e um único endpoint para todas as operações. Nesse nível, a API não explora amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota URLs hierárquicas para representar diferentes recursos. Essas práticas são desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura mais detalhada e uma representação mais clara dos recursos.
 | [15](#questao-q15) | D            | A limitação das APIs no Nível 1 do Modelo de Maturidade de Richardson (2008) está no uso inadequado dos métodos HTTP e das URLs para representar operações em recursos. Nessa abordagem, é comum que as operações de CRUD sejam realizadas utilizando um único método HTTP (como POST) para todas as ações,  ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: /produtos/update para atualização), o que viola as práticas RESTful.
 | [16](#questao-q16) | C            | O Nível 2 do Modelo de Maturidade de Richardson se distingue do Nível 1 pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE) para suas respectivas operações e pelo uso de códigos de status HTTP adequados. No Nível 1, as APIs podem até usar diferentes métodos HTTP, mas geralmente de forma inconsistente ou inadequada, e com URLs que não seguem padrões RESTful. No Nível 2, essas práticas são ajustadas para aderir aos princípios REST, proporcionando uma interface mais clara e semântica.
-| [17](#questao-q17) |              | 
+| [17](#questao-q17) | B            | No Nível 2 do Modelo de Maturidade de Richardson, a API se diferencia do Nível 1 principalmente pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE), que são aplicados conforme a semântica de cada operação. Além disso, as URLs são estruturadas de maneira a refletir a hierarquia e a natureza dos recursos, facilitando a identificação e manipulação dos mesmos. No Nível 1, essa distinção não é feita de forma consistente, resultando em uma API menos clara e padronizada.
 | [18](#questao-q18) |              | 
 | [19](#questao-q19) |              | 
 | [20](#questao-q20) |              | 
@@ -709,4 +709,47 @@ Nível 1, as APIs podem até usar diferentes métodos HTTP, mas geralmente de
 forma inconsistente ou inadequada, e com URLs que não seguem padrões RESTful. 
 No Nível 2, essas práticas são ajustadas para aderir aos princípios REST, 
 proporcionando uma interface mais clara e semântica.
+```
+
+<h3 id="questao-q17">Questão 17</h3>
+
+No Nível 2 do Modelo de Maturidade de Richardson, qual das seguintes práticas 
+é uma característica distintiva que separa esse nível do Nível 1?
+
+<h4 id="alternativas-q17">Alternativas</h4>
+
+- (A) A API utiliza um único método HTTP (geralmente POST) para todas as 
+operações e um único endpoint para todos os recursos.
+
+- ***(B) A API usa URLs hierárquicas para representar recursos e suas 
+coleções e utiliza métodos HTTP distintos (GET, POST, PUT, DELETE) para 
+diferentes tipos de operações.***
+
+- (C) A API fornece links dinâmicos e informações de navegação para que os 
+clientes descubram e naveguem entre diferentes recursos e operações.
+
+- (D) A API permite a realização de consultas avançadas e paginação de 
+resultados para otimizar a recuperação de grandes conjuntos de dados.
+
+- (E) A API utiliza um único formato de resposta e não faz negociação de 
+formatos com base nas preferências do cliente.
+
+<h4 id="resposta-q17">Resposta</h4>
+
+```palin
+(B) A API usa URLs hierárquicas para representar recursos e suas coleções e 
+utiliza métodos HTTP distintos (GET, POST, PUT, DELETE) para diferentes tipos 
+de operações.
+```
+
+<h4 id="justificativa-q17">Justificativa</h4>
+
+```plain
+No Nível 2 do Modelo de Maturidade de Richardson, a API se diferencia do 
+Nível 1 principalmente pela adoção correta dos métodos HTTP (GET, POST, PUT, 
+DELETE), que são aplicados conforme a semântica de cada operação. Além disso, 
+as URLs são estruturadas de maneira a refletir a hierarquia e a natureza dos 
+recursos, facilitando a identificação e manipulação dos mesmos. No Nível 1, 
+essa distinção não é feita de forma consistente, resultando em uma API menos 
+clara e padronizada.
 ```
