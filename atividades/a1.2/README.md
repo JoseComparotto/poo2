@@ -29,7 +29,7 @@
 | [15](#questao-q15) | D            | A limitação das APIs no Nível 1 do Modelo de Maturidade de Richardson (2008) está no uso inadequado dos métodos HTTP e das URLs para representar operações em recursos. Nessa abordagem, é comum que as operações de CRUD sejam realizadas utilizando um único método HTTP (como POST) para todas as ações,  ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: /produtos/update para atualização), o que viola as práticas RESTful.
 | [16](#questao-q16) | C            | O Nível 2 do Modelo de Maturidade de Richardson se distingue do Nível 1 pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE) para suas respectivas operações e pelo uso de códigos de status HTTP adequados. No Nível 1, as APIs podem até usar diferentes métodos HTTP, mas geralmente de forma inconsistente ou inadequada, e com URLs que não seguem padrões RESTful. No Nível 2, essas práticas são ajustadas para aderir aos princípios REST, proporcionando uma interface mais clara e semântica.
 | [17](#questao-q17) | B            | No Nível 2 do Modelo de Maturidade de Richardson, a API se diferencia do Nível 1 principalmente pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE), que são aplicados conforme a semântica de cada operação. Além disso, as URLs são estruturadas de maneira a refletir a hierarquia e a natureza dos recursos, facilitando a identificação e manipulação dos mesmos. No Nível 1, essa distinção não é feita de forma consistente, resultando em uma API menos clara e padronizada.
-| [18](#questao-q18) |              | 
+| [18](#questao-q18) | C            | No Nível 2 do Modelo de Maturidade de Richardson, o uso de métodos HTTP distintos melhora significativamente a clareza e a semântica das operações na API. Cada método HTTP (GET, POST, PUT, DELETE) está claramente associado a uma operação específica sobre os recursos, o que não só facilita o entendimento do comportamento da API como também promove uma interação mais intuitiva e alinhada aos princípios REST. Isso contrasta com o uso de um único método HTTP para todas as operações, que pode levar a ambiguidades e a uma estrutura menos organizada.
 | [19](#questao-q19) |              | 
 | [20](#questao-q20) |              | 
 
@@ -752,4 +752,47 @@ as URLs são estruturadas de maneira a refletir a hierarquia e a natureza dos
 recursos, facilitando a identificação e manipulação dos mesmos. No Nível 1, 
 essa distinção não é feita de forma consistente, resultando em uma API menos 
 clara e padronizada.
+```
+
+<h3 id="questao-q18">Questão 18</h3>
+
+No Nível 2 do Modelo de Maturidade de Richardson, qual é a principal vantagem 
+do uso de métodos HTTP distintos (GET, POST, PUT, DELETE) em comparação com o 
+uso de um único método HTTP para todas as operações?
+
+<h4 id="alternativas-q18">Alternativas</h4>
+
+- (A) Permite a autenticação e autorização detalhada em cada operação 
+individual.
+
+- (B) Facilita a definição de formatos de resposta múltiplos para diferentes 
+tipos de dados.
+
+- ***(C) Melhora a clareza e a semântica das operações, permitindo que cada 
+método HTTP represente uma ação específica sobre os recursos.***
+
+- (D) Oferece suporte a consultas avançadas e paginação automática dos 
+resultados.
+
+- (E) Reduz a complexidade da API ao permitir que todos os dados sejam 
+enviados e recebidos em um único formato.
+
+<h4 id="resposta-q18">Resposta</h4>
+
+```palin
+(C) Melhora a clareza e a semântica das operações, permitindo que cada 
+método HTTP represente uma ação específica sobre os recursos.
+```
+
+<h4 id="justificativa-q18">Justificativa</h4>
+
+```plain
+No Nível 2 do Modelo de Maturidade de Richardson, o uso de métodos HTTP 
+distintos melhora significativamente a clareza e a semântica das operações na 
+API. Cada método HTTP (GET, POST, PUT, DELETE) está claramente associado a 
+uma operação específica sobre os recursos, o que não só facilita o 
+entendimento do comportamento da API como também promove uma interação mais 
+intuitiva e alinhada aos princípios REST. Isso contrasta com o uso de um 
+único método HTTP para todas as operações, que pode levar a ambiguidades e a 
+uma estrutura menos organizada.
 ```
