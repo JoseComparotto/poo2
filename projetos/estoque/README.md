@@ -88,7 +88,7 @@ classDiagram
     BasePessoa <|-- Fornecedor : extends
 
     SubclasseProduto "1" o-- "*" Produto : aggregation
-    ClasseProduto "1" o-- "*" SubclasseProduto : aggregation
+    ClasseProduto "1" *-- "*" SubclasseProduto : composition
 
     TipoFuncionario "1" o-- "*" Funcionario: aggregation
 
