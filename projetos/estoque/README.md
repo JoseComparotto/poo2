@@ -18,3 +18,78 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 - **Maven 4.0:** Gerenciador de Pacotes Java
 
 - **Spring-Boot 3.3:** Framework Spring para Back-end
+
+## Definições UML
+
+### Diagrama de Classes
+
+```mermaid
+---
+title: Entidades de Domínio
+---
+classDiagram
+
+    class BaseId {  <<Abstract>>
+        # id: long
+        # dataInclusao: Date
+        # dataAlteracao: Date
+    }
+    
+    class BaseDescricao {  <<Abstract>>
+        # descricao : string
+    }
+    
+    class BasePessoa {  <<Abstract>>
+        # nome : string
+        # endereco : string
+        # cidade : string
+        # estado : string
+        # cep : string
+        # telefone : string
+        # email : string
+    }
+
+    class ClasseProduto {
+    }
+
+    class SubclasseProduto {
+        - idClasse : long
+    }
+
+    class Produto {
+        - idSubclasse : long
+    }
+
+    class TipoFuncionario {
+    }
+
+    class Funcionario {
+        - idTipoFuncionario : long
+        - senha : string
+    }
+
+    class Cliente {
+        - cpf : string
+    }
+
+    class Fornecedor {
+        - cnpj : string
+    }
+
+    BaseId <|-- BaseDescricao : extends
+    BaseId <|-- BasePessoa : extends
+    BaseDescricao <|-- ClasseProduto : extends
+    BaseDescricao <|-- SubclasseProduto : extends
+    BaseDescricao <|-- Produto : extends
+    BaseDescricao <|-- TipoFuncionario : extends
+
+    BasePessoa <|-- Funcionario : extends
+    BasePessoa <|-- Cliente : extends
+    BasePessoa <|-- Fornecedor : extends
+
+    SubclasseProduto "1" o-- "*" Produto : aggregation
+    ClasseProduto "1" o-- "*" SubclasseProduto : aggregation
+
+    TipoFuncionario "1" o-- "*" Funcionario: aggregation
+
+```
