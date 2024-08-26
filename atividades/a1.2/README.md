@@ -23,7 +23,7 @@
 |  [9](#questao-q9)  | D            | De acordo com a MDN Web Docs, "O método HTTP POST envia dados ao servidor. [...] Uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor." (Mozilla Contributors, 2023).
 | [10](#questao-q10) | **N.D.A.**   | <p>A RFC 5789, na seção 2, especifica que:</p><blockquote>The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented in a format called a 'patch document' identified by a media type. [...] PATCH is neither safe nor idempotent as defined by [RFC2616], Section 9.1. A PATCH request can be issued in such a way as to be idempotent, which also helps prevent bad outcomes from collisions between two PATCH requests on the same resource in a similar time frame.</blockquote><p>Portanto, a afirmação correta seria: <p>**PATCH** é utilizado para aplicar modificações parciais a um recurso. Apesar de não ser garantidamente idempotente, o método pode ser implementado de forma a ser idempotente, mas isso não é uma exigência obrigatória.</p><p>**PUT** é utilizado para substituir um recurso inteiro e é garantidamente idempotente, significando que múltiplas requisições PUT idênticas terão o mesmo efeito que uma única requisição.</p><p> Logo, com base na descrição fornecida, **nenhuma das alternativas é completamente correta.** A questão pode ser considerada ambígua e pode precisar ser revisada ou anulada, pois a descrição se refere a um comportamento de PATCH que não é garantido por padrão.</p>
 | [11](#questao-q11) | C            | De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica modificações parciais a um recurso. O método HTTP PUT permite apenas substituições completas de um documento."(Mozilla Contributors, 2023).
-| [12](#questao-q12) |              | 
+| [12](#questao-q12) | B            | <p>Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" (CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o  estado da sessão entre as requisições. Isso significa que cada solicitação  enviada pelo cliente ao servidor deve conter todas as informações necessárias para ser processada, sem depender de qualquer contexto previamente armazenado no servidor. O estado da sessão é mantido exclusivamente no lado do cliente.</p><p>Fielding explica:</p><blockquote>"The client-stateless-server style derives from client-server with the additional constraint that no session state is allowed on the server component. Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is kept entirely on the client." (Fielding, 2000, p. 47)</blockquote>
 | [13](#questao-q13) |              | 
 | [14](#questao-q14) |              | 
 | [15](#questao-q15) |              | 
@@ -44,9 +44,9 @@
 - Mozilla Contributors. (2023). HTTP Method PUT. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method HEAD. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/HEAD)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method POST. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)>. Acesso em 24 de Agosto de 2024.
-- RFC 5789 - PATCH Method for HTTP. (2010): Semantics and Content. Section 2.
-Disponível em: <[https://datatracker.ietf.org/doc/html/rfc5789#section-2](https://datatracker.ietf.org/doc/html/rfc5789#section-2)>. Acesso em 24 de Agosto de 2024.
+- RFC 5789 - PATCH Method for HTTP. (2010). Disponível em: <[https://datatracker.ietf.org/doc/html/rfc5789#section-2](https://datatracker.ietf.org/doc/html/rfc5789#section-2)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method PATCH. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH)>. Acesso em 26 de Agosto de 2024.
+- Fielding, R. T. (2000). Architectural Styles and the Design of Network-based Software Architectures (Doctoral dissertation, University of California, Irvine). Disponível em: <[https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf)>.
 
 <h2 id="questoes">Questões</h2>
   
@@ -448,9 +448,9 @@ existente com uma nova representação.
 servidor, enquanto o método PUT é usado para enviar uma modificação parcial ao
 recurso existente.
 
-- (C) O método PUT substitui completamente o recurso existente com uma nova
+- ***(C) O método PUT substitui completamente o recurso existente com uma nova
 representação fornecida pelo cliente, enquanto o método PATCH aplica
-alterações parciais ao recurso existente.
+alterações parciais ao recurso existente.***
 
 - (D) O método PATCH cria um novo recurso no servidor com base nos dados 
 enviados, enquanto o método PUT é usado para recuperar informações sobre um
@@ -474,4 +474,55 @@ alterações parciais ao recurso existente.
 De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica
 modificações parciais a um recurso.O método HTTP PUT permite apenas
 substituições completas de um documento."(Mozilla Contributors, 2023).
+```
+
+<h3 id="questao-q12">Questão 12</h3>
+
+Qual das seguintes afirmações descreve corretamente o conceito de "stateless"
+em uma API RESTful?
+
+<h4 id="alternativas-q12">Alternativas</h4>
+
+- (A) Em uma API RESTful, "stateless" significa que o servidor armazena o
+estado da sessão do cliente entre diferentes requisições.
+
+- (B) Em uma API RESTful, "stateless" implica que o cliente deve enviar todas
+as informações necessárias para processar a requisição em cada solicitação,
+pois o servidor não armazena nenhum estado entre as requisições.
+
+- (C) Em uma API RESTful, "stateless" significa que o servidor mantém o estado
+global da aplicação, mas não o estado específico do cliente.
+
+- (D) Em uma API RESTful, "stateless" permite que o servidor armazene dados
+temporários para melhorar o desempenho das requisições frequentes do mesmo
+cliente.
+
+- (E) Em uma API RESTful, "stateless" indica que a comunicação entre cliente e
+servidor é realizada usando uma conexão persistente durante a duração da
+sessão.
+
+<h4 id="resposta-q12">Resposta</h4>
+
+```palin
+(B) Em uma API RESTful, "stateless" implica que o cliente deve enviar todas as
+informações necessárias para processar a requisição em cada solicitação,
+pois o servidor não armazena nenhum estado entre as requisições.
+```
+
+<h4 id="justificativa-q12">Justificativa</h4>
+
+```plain
+Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" 
+(CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o 
+estado da sessão entre as requisições. Isso significa que cada solicitação 
+enviada pelo cliente ao servidor deve conter todas as informações necessárias 
+para ser processada, sem depender de qualquer contexto previamente armazenado 
+no servidor. O estado da sessão é mantido exclusivamente no lado do cliente. 
+Fielding explica: 
+    "The client-stateless-server style derives from client-server with the 
+    additional constraint that no session state is allowed on the server 
+    component. Each request from client to server must contain all of the 
+    information necessary to understand the request, and cannot take advantage 
+    of any stored context on the server. Session state is kept entirely on the 
+    client." (Fielding, 2000, p. 47)
 ```
