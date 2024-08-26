@@ -616,11 +616,10 @@ operações.
 
 ```plain
 De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 
-são caracterizadas por utilizar um único método HTTP, frequentemente POST, e 
-um único endpoint para todas as operações. Nesse nível, a API não explora 
-amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, 
-DELETE) nem adota URLs hierárquicas para representar diferentes recursos. 
-Essas práticas são desenvolvidas nos níveis seguintes do modelo, que 
-introduzem uma estrutura mais detalhada e uma representação mais clara dos 
-recursos.
+são caracterizadas por utilizar um único método HTTP, frequentemente POST,
+para todas as operações. Nesse nível, a API não explora amplamente o uso dos 
+métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota 
+URLs hierárquicas para representar diferentes recursos. Essas práticas são 
+desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura 
+mais detalhada e uma representação mais clara dos recursos.
 ```
