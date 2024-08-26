@@ -21,6 +21,7 @@ public class SubclasseProdutoRepository extends BaseListRepository<SubclasseProd
 
         object.setId(nextId);
         object.setDataInclusao(LocalDate.now());
+        object.setDataAlteracao(LocalDate.now());
 
         boolean added = this.storage.add(object);
         return added ? object : null;
@@ -33,6 +34,7 @@ public class SubclasseProdutoRepository extends BaseListRepository<SubclasseProd
 
         existing.setIdClasse(object.getIdClasse());
         existing.setDescricao(object.getDescricao());
+        existing.setDataAlteracao(LocalDate.now());
 
         return existing;
     }

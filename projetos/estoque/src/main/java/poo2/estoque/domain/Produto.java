@@ -4,13 +4,14 @@ import java.time.LocalDate;
 import jakarta.persistence.Entity;
 
 @Entity
-public class Produto extends BaseId {
+public class Produto extends BaseDescricao {
     
     private long idSubclasse;
     private double valor;
-    
-    public Produto(long id, String descricao, LocalDate dataExclusao, long idSubclasse, double valor) {
-        super(id, descricao, dataExclusao);
+
+    public Produto(long id, LocalDate dataInclusao, LocalDate dataAlteracao, String descricao, long idSubclasse,
+            double valor) {
+        super(id, dataInclusao, dataAlteracao, descricao);
         this.idSubclasse = idSubclasse;
         this.valor = valor;
     }
@@ -34,5 +35,5 @@ public class Produto extends BaseId {
     public void setValor(double valor) {
         this.valor = valor;
     }
-
+    
 }

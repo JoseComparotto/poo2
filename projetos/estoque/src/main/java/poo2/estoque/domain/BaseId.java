@@ -10,16 +10,16 @@ public abstract class BaseId {
 
     @Id
     protected long id;
-    protected String descricao;
     protected LocalDate dataInclusao;
+    protected LocalDate dataAlteracao;
 
-    public BaseId(long id, String descricao, LocalDate dataInclusao) {
+    public BaseId(long id, LocalDate dataInclusao, LocalDate dataAlteracao) {
         this.id = id;
-        this.descricao = descricao;
         this.dataInclusao = dataInclusao;
+        this.dataAlteracao = dataAlteracao;
     }
 
-    public BaseId(){
+    public BaseId() {
     }
 
     public long getId() {
@@ -30,21 +30,20 @@ public abstract class BaseId {
         this.id = id;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public LocalDate getDataInclusao() {
         return dataInclusao;
     }
 
-    public void setDataInclusao(LocalDate dataExclusao) {
-        this.dataInclusao = dataExclusao;
+    public void setDataInclusao(LocalDate dataInclusao) {
+        this.dataInclusao = dataInclusao;
     }
 
+    public LocalDate getDataAlteracao() {
+        return dataAlteracao;
+    }
+
+    public void setDataAlteracao(LocalDate dataAlteracao) {
+        this.dataAlteracao = dataAlteracao;
+    }
     
 }

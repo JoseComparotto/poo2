@@ -4,16 +4,16 @@ import java.time.LocalDate;
 import jakarta.persistence.Entity;
 
 @Entity
-public class SubclasseProduto extends BaseId {
+public class SubclasseProduto extends BaseDescricao {
     
     private long idClasse;
-
-    public SubclasseProduto(long id, long idClasse, String descricao, LocalDate dataExclusao) {
-        super(id, descricao, dataExclusao);
+    
+    public SubclasseProduto(long id, LocalDate dataInclusao, LocalDate dataAlteracao, String descricao, long idClasse) {
+        super(id, dataInclusao, dataAlteracao, descricao);
         this.idClasse = idClasse;
     }
 
-    public SubclasseProduto(){
+    public SubclasseProduto() {
         super();
     }
 

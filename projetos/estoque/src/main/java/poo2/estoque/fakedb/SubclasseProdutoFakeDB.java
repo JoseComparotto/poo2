@@ -15,16 +15,16 @@ public class SubclasseProdutoFakeDB extends BaseFakeDB<SubclasseProduto> {
 
     @Override
     protected void preencherLista() {
-        this.lista.add(new SubclasseProduto(1L, 1L, "Carnes Bovinas", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(2L, 1L, "Carnes Suínas", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(3L, 2L, "Refrigerantes", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(4L, 2L, "Sucos", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(5L, 3L, "Queijos", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(6L, 3L, "Leite", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(7L, 4L, "Biscoitos Doces", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(8L, 4L, "Biscoitos Salgados", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(9L, 5L, "Detergentes", LocalDate.now()));
-        this.lista.add(new SubclasseProduto(10L, 5L, "Sabão em Pó", LocalDate.now()));
+        this.lista.add(new SubclasseProduto(1L, LocalDate.now(), LocalDate.now(), "Carnes Bovinas", 1L));
+        this.lista.add(new SubclasseProduto(2L, LocalDate.now(), LocalDate.now(), "Carnes Suínas", 1L));
+        this.lista.add(new SubclasseProduto(3L, LocalDate.now(), LocalDate.now(), "Refrigerantes", 2L));
+        this.lista.add(new SubclasseProduto(4L, LocalDate.now(), LocalDate.now(), "Sucos", 2L));
+        this.lista.add(new SubclasseProduto(5L, LocalDate.now(), LocalDate.now(), "Queijos", 3L));
+        this.lista.add(new SubclasseProduto(6L, LocalDate.now(), LocalDate.now(), "Leite", 3L));
+        this.lista.add(new SubclasseProduto(7L, LocalDate.now(), LocalDate.now(), "Biscoitos Doces", 4L));
+        this.lista.add(new SubclasseProduto(8L, LocalDate.now(), LocalDate.now(), "Biscoitos Salgados", 4L));
+        this.lista.add(new SubclasseProduto(9L, LocalDate.now(), LocalDate.now(), "Detergentes", 5L));
+        this.lista.add(new SubclasseProduto(10L, LocalDate.now(), LocalDate.now(), "Sabão em Pó", 5L));
     }
 
 }

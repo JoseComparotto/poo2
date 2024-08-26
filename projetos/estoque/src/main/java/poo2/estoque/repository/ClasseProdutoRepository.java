@@ -21,6 +21,7 @@ public class ClasseProdutoRepository extends BaseListRepository<ClasseProduto> {
 
         object.setId(nextId);
         object.setDataInclusao(LocalDate.now());
+        object.setDataAlteracao(LocalDate.now());
 
         boolean added = this.storage.add(object);
         return added ? object : null;
@@ -32,6 +33,7 @@ public class ClasseProdutoRepository extends BaseListRepository<ClasseProduto> {
         if(existing == null) return null;
 
         existing.setDescricao(object.getDescricao());
+        existing.setDataAlteracao(LocalDate.now());
 
         return existing;
     }
