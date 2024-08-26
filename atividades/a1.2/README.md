@@ -21,12 +21,12 @@
 |  [7](#questao-q7)  | A            | O método HTTP PUT é utilizado para enviar uma nova representação de um recurso existente ou criar um novo recurso em uma URL específica, substituindo a representação anterior. Por outro lado, o método POST é utilizado para criar um novo recurso no servidor, geralmente enviando dados que serão processados para criar uma nova entrada. De acordo com a MDN Web Docs, "O método de requisição HTTP PUT cria um novo recurso ou substitui uma representação do recurso de destino com os novos dados. A diferença entre PUT e POST é que PUT é idempotente, ou seja, chamá-lo várias vezes terá o mesmo efeito" (Mozilla Contributors, 2023).
 |  [8](#questao-q8)  | D            | De acordo com a MDN Web Docs, "O método HTTP HEAD solicita os cabeçalhos retornados de um recurso específico que foi requisitado por um método HTTP GET. Tal solicitação pode ser feita antes de baixar um grande recurso para economizar largura de banda, por exemplo. Uma resposta para um método HEAD não deve ter um corpo. Se tiver, deve ser ignorado." (Mozilla Contributors, 2023).
 |  [9](#questao-q9)  | D            | De acordo com a MDN Web Docs, "O método HTTP POST envia dados ao servidor. [...] Uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor." (Mozilla Contributors, 2023).
-| [10](#questao-q10) | **N.D.A.**   | <p>A RFC 5789, na seção 2, especifica que:</p><blockquote>The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented in a format called a 'patch document' identified by a media type. [...] PATCH is neither safe nor idempotent as defined by [RFC2616], Section 9.1. A PATCH request can be issued in such a way as to be idempotent, which also helps prevent bad outcomes from collisions between two PATCH requests on the same resource in a similar time frame.</blockquote><p>Portanto, a afirmação correta seria: <p>**PATCH** é utilizado para aplicar modificações parciais a um recurso. Apesar de não ser garantidamente idempotente, o método pode ser implementado de forma a ser idempotente, mas isso não é uma exigência obrigatória.</p><p>**PUT** é utilizado para substituir um recurso inteiro e é garantidamente idempotente, significando que múltiplas requisições PUT idênticas terão o mesmo efeito que uma única requisição.</p><p> Logo, com base na descrição fornecida, **nenhuma das alternativas é completamente correta.** A questão pode ser considerada ambígua e pode precisar ser revisada ou anulada, pois a descrição se refere a um comportamento de PATCH que não é garantido por padrão.</p>
+| [10](#questao-q10) | **N.D.A.**   | <p>A RFC 5789 especifica que:</p><blockquote>The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented in a format called a 'patch document' identified by a media type. [...] PATCH is neither safe nor idempotent as defined by [RFC2616], Section 9.1. A PATCH request can be issued in such a way as to be idempotent, which also helps prevent bad outcomes from collisions between two PATCH requests on the same resource in a similar time frame. (RFC 5789, Section 2).</blockquote><p>Portanto, a afirmação correta seria: <p>**PATCH** é utilizado para aplicar modificações parciais a um recurso. Apesar de não ser garantidamente idempotente, o método pode ser implementado de forma a ser idempotente, mas isso não é uma exigência obrigatória.</p><p>**PUT** é utilizado para substituir um recurso inteiro e é garantidamente idempotente, significando que múltiplas requisições PUT idênticas terão o mesmo efeito que uma única requisição.</p><p> Logo, com base na descrição fornecida, **nenhuma das alternativas é completamente correta.** A questão pode ser considerada ambígua e pode precisar ser revisada ou anulada, pois a descrição se refere a um comportamento de PATCH que não é garantido por padrão.</p>
 | [11](#questao-q11) | C            | De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica modificações parciais a um recurso. O método HTTP PUT permite apenas substituições completas de um documento."(Mozilla Contributors, 2023).
-| [12](#questao-q12) | B            | <p>Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" (CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o  estado da sessão entre as requisições. Isso significa que cada solicitação  enviada pelo cliente ao servidor deve conter todas as informações necessárias para ser processada, sem depender de qualquer contexto previamente armazenado no servidor. O estado da sessão é mantido exclusivamente no lado do cliente.</p><p>Fielding explica:</p><blockquote>"The client-stateless-server style derives from client-server with the additional constraint that no session state is allowed on the server component. Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is kept entirely on the client." (Fielding, 2000, p. 47)</blockquote>
+| [12](#questao-q12) | B            | <p>Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" (CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o  estado da sessão entre as requisições. Isso significa que cada solicitação  enviada pelo cliente ao servidor deve conter todas as informações necessárias para ser processada, sem depender de qualquer contexto previamente armazenado no servidor. O estado da sessão é mantido exclusivamente no lado do cliente.</p><p>Fielding explica:</p><blockquote>The client-stateless-server style derives from client-server with the additional constraint that no session state is allowed on the server component. Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is kept entirely on the client. (Fielding, 2000, p. 47)</blockquote>
 | [13](#questao-q13) | A & C           | <p>Ao projetar endpoints para uma API RESTful, é crucial seguir práticas que assegurem uma arquitetura clara e eficiente, conforme os princípios estabelecidos por Roy Fielding em sua dissertação. Fielding define um recurso como um "mapeamento conceitual para um conjunto de entidades", e a semântica desse mapeamento deve permanecer constante para garantir a distinção entre recursos (Fielding, 2000).</p><p>Neste contexto, a utilização de métodos HTTP distintos para operações CRUD em um único endpoint (Alternativa A) e a adoção de URLs hierárquicas para representar recursos e suas coleções (Alternativa C) são práticas que alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados para diferentes operações permite uma interação clara e semântica com os recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e intuitiva para a identificação dos recursos e suas coleções.</p>
 | [14](#questao-q14) | C            | De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 são caracterizadas por utilizar um único método HTTP, frequentemente POST, e um único endpoint para todas as operações. Nesse nível, a API não explora amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota URLs hierárquicas para representar diferentes recursos. Essas práticas são desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura mais detalhada e uma representação mais clara dos recursos.
-| [15](#questao-q15) |              | 
+| [15](#questao-q15) | D            | A limitação das APIs no Nível 1 do Modelo de Maturidade de Richardson (2008) está no uso inadequado dos métodos HTTP e das URLs para representar operações em recursos. Nessa abordagem, é comum que as operações de CRUD sejam realizadas utilizando um único método HTTP (como POST) para todas as ações,  ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: /produtos/update para atualização), o que viola as práticas RESTful.
 | [16](#questao-q16) |              | 
 | [17](#questao-q17) |              | 
 | [18](#questao-q18) |              | 
@@ -425,10 +425,8 @@ Portanto, a afirmação correta seria:
     idempotente, significando que múltiplas requisições PUT idênticas terão o
     mesmo efeito que uma única requisição.
 
-Conclusão:
-
-Com base na descrição fornecida, nenhuma das alternativas é completamente
-correta. A questão pode ser considerada ambígua e pode precisar ser revisada ou
+Logo, com base na descrição fornecida, nenhuma das alternativas é completamente 
+correta. A questão pode ser considerada ambígua e pode precisar ser revisada ou 
 anulada, pois a descrição se refere a um comportamento de PATCH que não é
 garantido por padrão.
 ```
@@ -622,4 +620,46 @@ métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota
 URLs hierárquicas para representar diferentes recursos. Essas práticas são 
 desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura 
 mais detalhada e uma representação mais clara dos recursos.
+```
+
+<h3 id="questao-q15">Questão 15</h3>
+
+Qual é uma limitação comum das APIs que operam no Nível 1 do Modelo de 
+Maturidade de Richardson?
+
+<h4 id="alternativas-q15">Alternativas</h4>
+
+- (A) Falta de suporte para operações de CRUD (Criar, Ler, Atualizar, 
+Excluir) através de métodos HTTP distintos e URLs específicas.
+
+- (B) Implementação de HATEOAS, fornecendo links dinâmicos que permitem ao 
+cliente navegar entre diferentes recursos e operações.
+
+- (C) Uso de múltiplos métodos HTTP para operações diferentes e fornecimento 
+de URLs hierárquicas para representar recursos e suas coleções.
+
+- ***(D) Utilização de URLs genéricas e um único método HTTP para todas as 
+operações, que pode dificultar a identificação e a manipulação específica dos 
+recursos.***
+
+- (E) Retorno de códigos de status HTTP apropriados e consistentes para 
+indicar o resultado das operações.
+
+<h4 id="resposta-q15">Resposta</h4>
+
+```palin
+(D) Utilização de URLs genéricas e um único método HTTP para todas as 
+operações, que pode dificultar a identificação e a manipulação específica dos 
+recursos.
+```
+
+<h4 id="justificativa-q15">Justificativa</h4>
+
+```plain
+A limitação das APIs no Nível 1 do Modelo de Maturidade de Richardson (2008) 
+está no uso inadequado dos métodos HTTP e das URLs para representar operações 
+em recursos. Nessa abordagem, é comum que as operações de CRUD sejam 
+realizadas utilizando um único método HTTP (como POST) para todas as ações, 
+ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: 
+/produtos/update para atualização), o que viola as práticas RESTful.
 ```
