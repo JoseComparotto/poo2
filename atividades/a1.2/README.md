@@ -31,7 +31,7 @@
 | [17](#questao-q17) | B            | No Nível 2 do Modelo de Maturidade de Richardson, a API se diferencia do Nível 1 principalmente pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE), que são aplicados conforme a semântica de cada operação. Além disso, as URLs são estruturadas de maneira a refletir a hierarquia e a natureza dos recursos, facilitando a identificação e manipulação dos mesmos. No Nível 1, essa distinção não é feita de forma consistente, resultando em uma API menos clara e padronizada.
 | [18](#questao-q18) | C            | No Nível 2 do Modelo de Maturidade de Richardson, o uso de métodos HTTP distintos melhora significativamente a clareza e a semântica das operações na API. Cada método HTTP (GET, POST, PUT, DELETE) está claramente associado a uma operação específica sobre os recursos, o que não só facilita o entendimento do comportamento da API como também promove uma interação mais intuitiva e alinhada aos princípios REST. Isso contrasta com o uso de um único método HTTP para todas as operações, que pode levar a ambiguidades e a uma estrutura menos organizada.
 | [19](#questao-q19) | B            | No Nível 3 do Modelo de Maturidade de Richardson, a principal característica que diferencia esse nível é a implementação de HATEOAS. Isso permite que a API forneça links dinâmicos nas respostas, facilitando a navegação e descoberta de recursos pelo cliente, sem depender de conhecimento prévio da API. Essa abordagem torna a API mais autossuficiente e verdadeiramente RESTful.
-| [20](#questao-q20) |              | 
+| [20](#questao-q20) | C            | A principal vantagem de HATEOAS é permitir que o cliente descubra e interaja dinamicamente com recursos e ações disponíveis, utilizando os links fornecidos na resposta da API. Isso torna a API mais flexível e autoexplicativa, reduzindo a necessidade de o cliente ter um conhecimento prévio fixo sobre a estrutura da API.
 
 <h2 id="referencias">Referências</h2>
 
@@ -686,9 +686,9 @@ todas as operações.***
 Nível 1 a API é capaz de lidar com múltiplos formatos de resposta, como JSON 
 e XML.
 
-- (E) No Nível 2, a API implementa suporte para consultas avançadas e paginação
-de resultados, enquanto
-no Nível 1 a API não oferece suporte a essas funcionalidades.
+- (E) No Nível 2, a API implementa suporte para consultas avançadas e paginação 
+de resultados, enquanto no Nível 1 a API não oferece suporte a essas 
+funcionalidades.
 
 <h4 id="resposta-q16">Resposta</h4>
 
@@ -839,3 +839,44 @@ API. Essa abordagem torna a API mais autossuficiente e verdadeiramente
 RESTful.
 ```
 
+<h3 id="questao-q20">Questão 20</h3>
+
+Qual das seguintes abordagens é uma vantagem principal do uso de HATEOAS 
+(Hypermedia as the Engine of Application State) no Nível 3 do Modelo de 
+Maturidade de Richardson?
+
+<h4 id="alternativas-q20">Alternativas</h4>
+
+- (A) Permite que a API se adapte automaticamente a diferentes métodos HTTP 
+para operações de CRUD.
+
+- (B) Facilita a comunicação de recursos e suas relações através de URLs 
+estáticas definidas previamente no cliente.
+
+- ***(C) Oferece ao cliente a capacidade de descobrir e interagir com 
+recursos e ações disponíveis dinamicamente, com base nos links fornecidos na 
+resposta da API.***
+
+- (D) Reduz a necessidade de uso de formatos de resposta variados, fixando um 
+formato único para todas as respostas.
+
+- (E) Implementa um sistema de cache robusto para melhorar o desempenho das 
+requisições em APIs com grande volume de dados.
+
+<h4 id="resposta-q20">Resposta</h4>
+
+```palin
+(C) Oferece ao cliente a capacidade de descobrir e interagir com recursos e 
+ações disponíveis dinamicamente, com base nos links fornecidos na resposta da 
+API.
+```
+
+<h4 id="justificativa-q20">Justificativa</h4>
+
+```plain
+A principal vantagem de HATEOAS é permitir que o cliente descubra e interaja 
+dinamicamente com recursos e ações disponíveis, utilizando os links 
+fornecidos na resposta da API. Isso torna a API mais flexível e 
+autoexplicativa, reduzindo a necessidade de o cliente ter um conhecimento 
+prévio fixo sobre a estrutura da API.
+```
