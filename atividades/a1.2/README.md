@@ -27,7 +27,7 @@
 | [13](#questao-q13) | A & C           | <p>Ao projetar endpoints para uma API RESTful, é crucial seguir práticas que assegurem uma arquitetura clara e eficiente, conforme os princípios estabelecidos por Roy Fielding em sua dissertação. Fielding define um recurso como um "mapeamento conceitual para um conjunto de entidades", e a semântica desse mapeamento deve permanecer constante para garantir a distinção entre recursos (Fielding, 2000).</p><p>Neste contexto, a utilização de métodos HTTP distintos para operações CRUD em um único endpoint (Alternativa A) e a adoção de URLs hierárquicas para representar recursos e suas coleções (Alternativa C) são práticas que alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados para diferentes operações permite uma interação clara e semântica com os recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e intuitiva para a identificação dos recursos e suas coleções.</p>
 | [14](#questao-q14) | C            | De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 são caracterizadas por utilizar um único método HTTP, frequentemente POST, e um único endpoint para todas as operações. Nesse nível, a API não explora amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota URLs hierárquicas para representar diferentes recursos. Essas práticas são desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura mais detalhada e uma representação mais clara dos recursos.
 | [15](#questao-q15) | D            | A limitação das APIs no Nível 1 do Modelo de Maturidade de Richardson (2008) está no uso inadequado dos métodos HTTP e das URLs para representar operações em recursos. Nessa abordagem, é comum que as operações de CRUD sejam realizadas utilizando um único método HTTP (como POST) para todas as ações,  ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: /produtos/update para atualização), o que viola as práticas RESTful.
-| [16](#questao-q16) |              | 
+| [16](#questao-q16) | C            | O Nível 2 do Modelo de Maturidade de Richardson se distingue do Nível 1 pela adoção correta dos métodos HTTP (GET, POST, PUT, DELETE) para suas respectivas operações e pelo uso de códigos de status HTTP adequados. No Nível 1, as APIs podem até usar diferentes métodos HTTP, mas geralmente de forma inconsistente ou inadequada, e com URLs que não seguem padrões RESTful. No Nível 2, essas práticas são ajustadas para aderir aos princípios REST, proporcionando uma interface mais clara e semântica.
 | [17](#questao-q17) |              | 
 | [18](#questao-q18) |              | 
 | [19](#questao-q19) |              | 
@@ -662,4 +662,51 @@ em recursos. Nessa abordagem, é comum que as operações de CRUD sejam
 realizadas utilizando um único método HTTP (como POST) para todas as ações, 
 ou que diferentes operações sejam mapeadas para diferentes URLs (exemplo: 
 /produtos/update para atualização), o que viola as práticas RESTful.
+```
+
+<h3 id="questao-q16">Questão 16</h3>
+
+No Modelo de Maturidade de Richardson para APIs RESTful, qual é a principal 
+característica que distingue o Nível 2 do Nível 1?
+
+<h4 id="alternativas-q16">Alternativas</h4>
+
+- (A) No Nível 2, a API usa URLs bem definidas para recursos e métodos HTTP, 
+enquanto no Nível 1 a API utiliza URLs genéricas e um único método HTTP.
+
+- (B) No Nível 2, a API implementa autenticação e autorização baseada em 
+tokens, enquanto no Nível 1 a API não utiliza nenhum mecanismo de segurança.
+
+- ***(C) No Nível 2, a API utiliza métodos HTTP corretamente (GET, POST, PUT,
+DELETE) e usa códigos de status HTTP apropriados para indicar o resultado das
+operações, enquanto no Nível 1 a API faz uso de um único método HTTP para 
+todas as operações.***
+
+- (D) No Nível 2, a API utiliza apenas um formato de resposta, enquanto no
+Nível 1 a API é capaz de lidar
+com múltiplos formatos de resposta, como JSON e XML.
+
+- (E) No Nível 2, a API implementa suporte para consultas avançadas e paginação
+de resultados, enquanto
+no Nível 1 a API não oferece suporte a essas funcionalidades.
+
+<h4 id="resposta-q16">Resposta</h4>
+
+```palin
+(C) No Nível 2, a API utiliza métodos HTTP corretamente (GET, POST, PUT,
+DELETE) e usa códigos de status HTTP apropriados para indicar o resultado das
+operações, enquanto no Nível 1 a API faz uso de um único método HTTP para 
+todas as operações.
+```
+
+<h4 id="justificativa-q16">Justificativa</h4>
+
+```plain
+O Nível 2 do Modelo de Maturidade de Richardson se distingue do Nível 1 pela 
+adoção correta dos métodos HTTP (GET, POST, PUT, DELETE) para suas 
+respectivas operações e pelo uso de códigos de status HTTP adequados. No 
+Nível 1, as APIs podem até usar diferentes métodos HTTP, mas geralmente de 
+forma inconsistente ou inadequada, e com URLs que não seguem padrões RESTful. 
+No Nível 2, essas práticas são ajustadas para aderir aos princípios REST, 
+proporcionando uma interface mais clara e semântica.
 ```
