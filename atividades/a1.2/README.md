@@ -24,7 +24,7 @@
 | [10](#questao-q10) | **N.D.A.**   | <p>A RFC 5789, na seção 2, especifica que:</p><blockquote>The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented in a format called a 'patch document' identified by a media type. [...] PATCH is neither safe nor idempotent as defined by [RFC2616], Section 9.1. A PATCH request can be issued in such a way as to be idempotent, which also helps prevent bad outcomes from collisions between two PATCH requests on the same resource in a similar time frame.</blockquote><p>Portanto, a afirmação correta seria: <p>**PATCH** é utilizado para aplicar modificações parciais a um recurso. Apesar de não ser garantidamente idempotente, o método pode ser implementado de forma a ser idempotente, mas isso não é uma exigência obrigatória.</p><p>**PUT** é utilizado para substituir um recurso inteiro e é garantidamente idempotente, significando que múltiplas requisições PUT idênticas terão o mesmo efeito que uma única requisição.</p><p> Logo, com base na descrição fornecida, **nenhuma das alternativas é completamente correta.** A questão pode ser considerada ambígua e pode precisar ser revisada ou anulada, pois a descrição se refere a um comportamento de PATCH que não é garantido por padrão.</p>
 | [11](#questao-q11) | C            | De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica modificações parciais a um recurso. O método HTTP PUT permite apenas substituições completas de um documento."(Mozilla Contributors, 2023).
 | [12](#questao-q12) | B            | <p>Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" (CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o  estado da sessão entre as requisições. Isso significa que cada solicitação  enviada pelo cliente ao servidor deve conter todas as informações necessárias para ser processada, sem depender de qualquer contexto previamente armazenado no servidor. O estado da sessão é mantido exclusivamente no lado do cliente.</p><p>Fielding explica:</p><blockquote>"The client-stateless-server style derives from client-server with the additional constraint that no session state is allowed on the server component. Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is kept entirely on the client." (Fielding, 2000, p. 47)</blockquote>
-| [13](#questao-q13) |              | 
+| [13](#questao-q13) | A & C           | <p>Ao projetar endpoints para uma API RESTful, é crucial seguir práticas que assegurem uma arquitetura clara e eficiente, conforme os princípios estabelecidos por Roy Fielding em sua dissertação. Fielding define um recurso como um "mapeamento conceitual para um conjunto de entidades", e a semântica desse mapeamento deve permanecer constante para garantir a distinção entre recursos (Fielding, 2000).</p><p>Neste contexto, a utilização de métodos HTTP distintos para operações CRUD em um único endpoint (Alternativa A) e a adoção de URLs hierárquicas para representar recursos e suas coleções (Alternativa C) são práticas que alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados para diferentes operações permite uma interação clara e semântica com os recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e intuitiva para a identificação dos recursos e suas coleções.</p>
 | [14](#questao-q14) |              | 
 | [15](#questao-q15) |              | 
 | [16](#questao-q16) |              | 
@@ -46,7 +46,7 @@
 - Mozilla Contributors. (2023). HTTP Method POST. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)>. Acesso em 24 de Agosto de 2024.
 - RFC 5789 - PATCH Method for HTTP. (2010). Disponível em: <[https://datatracker.ietf.org/doc/html/rfc5789#section-2](https://datatracker.ietf.org/doc/html/rfc5789#section-2)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method PATCH. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH)>. Acesso em 26 de Agosto de 2024.
-- Fielding, R. T. (2000). Architectural Styles and the Design of Network-based Software Architectures (Doctoral dissertation, University of California, Irvine). Disponível em: <[https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf)>.
+- Fielding, Roy Thomas. Architectural Styles and the Design of Network-based Software Architectures. Doctoral dissertation, University of California, Irvine, 2000. Disponível em: <[https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf)>. Acesso em 26 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -525,4 +525,55 @@ Fielding explica:
     information necessary to understand the request, and cannot take advantage 
     of any stored context on the server. Session state is kept entirely on the 
     client." (Fielding, 2000, p. 47)
+```
+
+<h3 id="questao-q13">Questão 13</h3>
+
+Qual das seguintes características é uma boa prática recomendada ao projetar 
+endpoints em uma API RESTful?
+
+<h4 id="alternativas-q13">Alternativas</h4>
+
+
+- ***(A) Utilizar métodos HTTP diferentes para operações CRUD em um único 
+endpoint.***
+
+- (B) Usar URLs dinâmicas e variáveis de consulta para criar endpoints de 
+recursos, permitindo flexibilidade ilimitada na estrutura dos recursos.
+
+- ***(C) Projetar endpoints que representam recursos e suas coleções usando URLs 
+hierárquicas e manter a consistência no uso dos métodos HTTP.***
+
+- (D) Permitir que todos os endpoints aceitem e retornem todos os formatos de 
+dados possíveis, sem especificar um formato padrão.
+
+- (E) Implementar um sistema de autenticação e autorização dentro dos próprios 
+endpoints de recursos, ao invés de utilizar um mecanismo centralizado.
+
+<h4 id="resposta-q13">Resposta</h4>
+
+```palin
+(A) Utilizar métodos HTTP diferentes para operações CRUD em um único 
+endpoint.
+(C) Projetar endpoints que representam recursos e suas coleções usando URLs 
+hierárquicas e manter a consistência no uso dos métodos HTTP.
+```
+
+<h4 id="justificativa-q13">Justificativa</h4>
+
+```plain
+Ao projetar endpoints para uma API RESTful, é crucial seguir práticas que 
+assegurem uma arquitetura clara e eficiente, conforme os princípios 
+estabelecidos por Roy Fielding em sua dissertação. Fielding define um recurso 
+como um "mapeamento conceitual para um conjunto de entidades", e a semântica 
+desse mapeamento deve permanecer constante para garantir a distinção entre 
+recursos (Fielding, 2000).
+
+Neste contexto, a utilização de métodos HTTP distintos para operações CRUD em 
+um único endpoint (Alternativa A) e a adoção de URLs hierárquicas para 
+representar recursos e suas coleções (Alternativa C) são práticas que 
+alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados 
+para diferentes operações permite uma interação clara e semântica com os 
+recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e 
+intuitiva para a identificação dos recursos e suas coleções.
 ```
