@@ -22,7 +22,7 @@
 |  [8](#questao-q8)  | D            | De acordo com a MDN Web Docs, "O método HTTP HEAD solicita os cabeçalhos retornados de um recurso específico que foi requisitado por um método HTTP GET. Tal solicitação pode ser feita antes de baixar um grande recurso para economizar largura de banda, por exemplo. Uma resposta para um método HEAD não deve ter um corpo. Se tiver, deve ser ignorado." (Mozilla Contributors, 2023).
 |  [9](#questao-q9)  | D            | De acordo com a MDN Web Docs, "O método HTTP POST envia dados ao servidor. [...] Uma solicitação POST geralmente é enviada por meio de um formulário HTML e resulta em uma alteração no servidor." (Mozilla Contributors, 2023).
 | [10](#questao-q10) | **N.D.A.**   | <p>A RFC 5789, na seção 2, especifica que:</p><blockquote>The PATCH method requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI. The set of changes is represented in a format called a 'patch document' identified by a media type. [...] PATCH is neither safe nor idempotent as defined by [RFC2616], Section 9.1. A PATCH request can be issued in such a way as to be idempotent, which also helps prevent bad outcomes from collisions between two PATCH requests on the same resource in a similar time frame.</blockquote><p>Portanto, a afirmação correta seria: <p>**PATCH** é utilizado para aplicar modificações parciais a um recurso. Apesar de não ser garantidamente idempotente, o método pode ser implementado de forma a ser idempotente, mas isso não é uma exigência obrigatória.</p><p>**PUT** é utilizado para substituir um recurso inteiro e é garantidamente idempotente, significando que múltiplas requisições PUT idênticas terão o mesmo efeito que uma única requisição.</p><p> Logo, com base na descrição fornecida, **nenhuma das alternativas é completamente correta.** A questão pode ser considerada ambígua e pode precisar ser revisada ou anulada, pois a descrição se refere a um comportamento de PATCH que não é garantido por padrão.</p>
-| [11](#questao-q11) |              | 
+| [11](#questao-q11) | C            | De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica modificações parciais a um recurso. O método HTTP PUT permite apenas substituições completas de um documento."(Mozilla Contributors, 2023).
 | [12](#questao-q12) |              | 
 | [13](#questao-q13) |              | 
 | [14](#questao-q14) |              | 
@@ -46,6 +46,7 @@
 - Mozilla Contributors. (2023). HTTP Method POST. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)>. Acesso em 24 de Agosto de 2024.
 - RFC 5789 - PATCH Method for HTTP. (2010): Semantics and Content. Section 2.
 Disponível em: <[https://datatracker.ietf.org/doc/html/rfc5789#section-2](https://datatracker.ietf.org/doc/html/rfc5789#section-2)>. Acesso em 24 de Agosto de 2024.
+- Mozilla Contributors. (2023). HTTP Method PATCH. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH)>. Acesso em 26 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -399,7 +400,7 @@ mesma operação múltiplas vezes deve resultar no mesmo estado final do recurso
 (N.D.A.) Nenhuma das Alternativas
 ```
 
-<h4 id="justificativa-q9">Justificativa</h4>
+<h4 id="justificativa-q10">Justificativa</h4>
 
 ```plain
 A RFC 5789 especifica que:
@@ -429,4 +430,48 @@ Com base na descrição fornecida, nenhuma das alternativas é completamente
 correta. A questão pode ser considerada ambígua e pode precisar ser revisada ou
 anulada, pois a descrição se refere a um comportamento de PATCH que não é
 garantido por padrão.
+```
+
+<h3 id="questao-q11">Questão 11</h3>
+
+Considere os métodos HTTP a seguir e suas descrições. Qual afirmação 
+corretamente descreve a diferença entre os métodos PUT e PATCH em termos de
+suas operações e características?
+
+<h4 id="alternativas-q11">Alternativas</h4>
+
+- (A) O método PUT é usado para criar um novo recurso em uma localização
+especificada, enquanto o método PATCH substitui completamente o recurso
+existente com uma nova representação.
+
+- (B) O método PATCH é utilizado para substituir um recurso completo no
+servidor, enquanto o método PUT é usado para enviar uma modificação parcial ao
+recurso existente.
+
+- (C) O método PUT substitui completamente o recurso existente com uma nova
+representação fornecida pelo cliente, enquanto o método PATCH aplica
+alterações parciais ao recurso existente.
+
+- (D) O método PATCH cria um novo recurso no servidor com base nos dados 
+enviados, enquanto o método PUT é usado para recuperar informações sobre um
+recurso sem alterá-lo.
+
+- (E) O método PUT retorna o estado atual do recurso após a modificação,
+enquanto o método PATCH não fornece nenhum feedback sobre o estado do recurso
+após a operação.
+
+<h4 id="resposta-q11">Resposta</h4>
+
+```palin
+(C) O método PUT substitui completamente o recurso existente com uma nova
+representação fornecida pelo cliente, enquanto o método PATCH aplica
+alterações parciais ao recurso existente.
+```
+
+<h4 id="justificativa-q11">Justificativa</h4>
+
+```plain
+De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica
+modificações parciais a um recurso.O método HTTP PUT permite apenas
+substituições completas de um documento."(Mozilla Contributors, 2023).
 ```
