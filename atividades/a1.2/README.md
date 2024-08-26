@@ -683,8 +683,8 @@ operações, enquanto no Nível 1 a API faz uso de um único método HTTP para
 todas as operações.***
 
 - (D) No Nível 2, a API utiliza apenas um formato de resposta, enquanto no
-Nível 1 a API é capaz de lidar
-com múltiplos formatos de resposta, como JSON e XML.
+Nível 1 a API é capaz de lidar com múltiplos formatos de resposta, como JSON 
+e XML.
 
 - (E) No Nível 2, a API implementa suporte para consultas avançadas e paginação
 de resultados, enquanto
