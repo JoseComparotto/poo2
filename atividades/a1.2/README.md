@@ -25,7 +25,7 @@
 | [11](#questao-q11) | C            | De acordo com a MDN Web Docs, "O método de requisição HTTP PATCH aplica modificações parciais a um recurso. O método HTTP PUT permite apenas substituições completas de um documento."(Mozilla Contributors, 2023).
 | [12](#questao-q12) | B            | <p>Segundo Fielding (2000), no estilo arquitetural "client-stateless-server" (CSS), que é derivado do modelo cliente-servidor, o servidor não armazena o  estado da sessão entre as requisições. Isso significa que cada solicitação  enviada pelo cliente ao servidor deve conter todas as informações necessárias para ser processada, sem depender de qualquer contexto previamente armazenado no servidor. O estado da sessão é mantido exclusivamente no lado do cliente.</p><p>Fielding explica:</p><blockquote>"The client-stateless-server style derives from client-server with the additional constraint that no session state is allowed on the server component. Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is kept entirely on the client." (Fielding, 2000, p. 47)</blockquote>
 | [13](#questao-q13) | A & C           | <p>Ao projetar endpoints para uma API RESTful, é crucial seguir práticas que assegurem uma arquitetura clara e eficiente, conforme os princípios estabelecidos por Roy Fielding em sua dissertação. Fielding define um recurso como um "mapeamento conceitual para um conjunto de entidades", e a semântica desse mapeamento deve permanecer constante para garantir a distinção entre recursos (Fielding, 2000).</p><p>Neste contexto, a utilização de métodos HTTP distintos para operações CRUD em um único endpoint (Alternativa A) e a adoção de URLs hierárquicas para representar recursos e suas coleções (Alternativa C) são práticas que alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados para diferentes operações permite uma interação clara e semântica com os recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e intuitiva para a identificação dos recursos e suas coleções.</p>
-| [14](#questao-q14) |              | 
+| [14](#questao-q14) | C            | De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 são caracterizadas por utilizar um único método HTTP, frequentemente POST, e um único endpoint para todas as operações. Nesse nível, a API não explora amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, DELETE) nem adota URLs hierárquicas para representar diferentes recursos. Essas práticas são desenvolvidas nos níveis seguintes do modelo, que introduzem uma estrutura mais detalhada e uma representação mais clara dos recursos.
 | [15](#questao-q15) |              | 
 | [16](#questao-q16) |              | 
 | [17](#questao-q17) |              | 
@@ -47,6 +47,7 @@
 - RFC 5789 - PATCH Method for HTTP. (2010). Disponível em: <[https://datatracker.ietf.org/doc/html/rfc5789#section-2](https://datatracker.ietf.org/doc/html/rfc5789#section-2)>. Acesso em 24 de Agosto de 2024.
 - Mozilla Contributors. (2023). HTTP Method PATCH. MDN Web Docs. Disponível em: <[https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH)>. Acesso em 26 de Agosto de 2024.
 - Fielding, Roy Thomas. Architectural Styles and the Design of Network-based Software Architectures. Doctoral dissertation, University of California, Irvine, 2000. Disponível em: <[https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf](https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf)>. Acesso em 26 de Agosto de 2024.
+- Richardson, Leonard (2008). "Justice Will Take Us Millions of Intricate Moves". Act Three: The Maturity Heuristic. Disponível em: <[https://www.crummy.com/writing/speaking/2008-QCon/act3.html](https://www.crummy.com/writing/speaking/2008-QCon/act3.html)>. Acesso em 26 de Agosto de 2024.
 
 <h2 id="questoes">Questões</h2>
   
@@ -486,9 +487,10 @@ em uma API RESTful?
 - (A) Em uma API RESTful, "stateless" significa que o servidor armazena o
 estado da sessão do cliente entre diferentes requisições.
 
-- (B) Em uma API RESTful, "stateless" implica que o cliente deve enviar todas
-as informações necessárias para processar a requisição em cada solicitação,
-pois o servidor não armazena nenhum estado entre as requisições.
+- ***(B) Em uma API RESTful, "stateless" implica que o cliente deve enviar 
+todas as informações necessárias para processar a requisição em cada 
+solicitação, pois o servidor não armazena nenhum estado entre as
+requisições.***
 
 - (C) Em uma API RESTful, "stateless" significa que o servidor mantém o estado
 global da aplicação, mas não o estado específico do cliente.
@@ -522,9 +524,9 @@ Fielding explica:
     "The client-stateless-server style derives from client-server with the 
     additional constraint that no session state is allowed on the server 
     component. Each request from client to server must contain all of the 
-    information necessary to understand the request, and cannot take advantage 
-    of any stored context on the server. Session state is kept entirely on the 
-    client." (Fielding, 2000, p. 47)
+    information necessary to understand the request, and cannot take 
+    advantage of any stored context on the server. Session state is kept 
+    entirely on the client." (Fielding, 2000, p. 47)
 ```
 
 <h3 id="questao-q13">Questão 13</h3>
@@ -534,21 +536,21 @@ endpoints em uma API RESTful?
 
 <h4 id="alternativas-q13">Alternativas</h4>
 
-
 - ***(A) Utilizar métodos HTTP diferentes para operações CRUD em um único 
 endpoint.***
 
 - (B) Usar URLs dinâmicas e variáveis de consulta para criar endpoints de 
 recursos, permitindo flexibilidade ilimitada na estrutura dos recursos.
 
-- ***(C) Projetar endpoints que representam recursos e suas coleções usando URLs 
-hierárquicas e manter a consistência no uso dos métodos HTTP.***
+- ***(C) Projetar endpoints que representam recursos e suas coleções usando 
+URLs hierárquicas e manter a consistência no uso dos métodos HTTP.***
 
 - (D) Permitir que todos os endpoints aceitem e retornem todos os formatos de 
 dados possíveis, sem especificar um formato padrão.
 
-- (E) Implementar um sistema de autenticação e autorização dentro dos próprios 
-endpoints de recursos, ao invés de utilizar um mecanismo centralizado.
+- (E) Implementar um sistema de autenticação e autorização dentro dos 
+próprios endpoints de recursos, ao invés de utilizar um mecanismo 
+centralizado.
 
 <h4 id="resposta-q13">Resposta</h4>
 
@@ -576,4 +578,49 @@ alinham-se com as diretrizes de Fielding. O uso de métodos HTTP apropriados
 para diferentes operações permite uma interação clara e semântica com os 
 recursos, enquanto URLs hierárquicas proporcionam uma estrutura organizada e 
 intuitiva para a identificação dos recursos e suas coleções.
+```
+
+<h3 id="questao-q14">Questão 14</h3>
+
+No contexto do Modelo de Maturidade de Richardson, qual das seguintes 
+características é típica de uma API que está no Nível 1 de maturidade?
+
+<h4 id="alternativas-q14">Alternativas</h4>
+
+- (A) A API utiliza múltiplos métodos HTTP (GET, POST, PUT, DELETE) e fornece 
+URLs hierárquicas para representar diferentes recursos.
+
+- (B) A API retorna códigos de status HTTP apropriados para indicar o 
+resultado das operações e utiliza URLs para representar recursos e suas 
+coleções.
+
+- ***(C) A API faz uso de um único método HTTP (geralmente POST) e um único 
+endpoint para todas as operações, sem distinguir entre diferentes tipos de 
+operações.***
+
+- (D) A API implementa HATEOAS, fornecendo links dinâmicos que permitem ao 
+cliente descobrir e navegar entre diferentes recursos e operações.
+
+- (E) A API permite a autenticação e autorização baseada em tokens e 
+implementa suporte para consultas avançadas e paginação de resultados.
+
+<h4 id="resposta-q14">Resposta</h4>
+
+```palin
+(C) A API faz uso de um único método HTTP (geralmente POST) e um único 
+endpoint para todas as operações, sem distinguir entre diferentes tipos de 
+operações.
+```
+
+<h4 id="justificativa-q14">Justificativa</h4>
+
+```plain
+De acordo com o Modelo de Maturidade de Richardson (2008), APIs no Nível 1 
+são caracterizadas por utilizar um único método HTTP, frequentemente POST, e 
+um único endpoint para todas as operações. Nesse nível, a API não explora 
+amplamente o uso dos métodos HTTP para diferenciar operações (como GET, PUT, 
+DELETE) nem adota URLs hierárquicas para representar diferentes recursos. 
+Essas práticas são desenvolvidas nos níveis seguintes do modelo, que 
+introduzem uma estrutura mais detalhada e uma representação mais clara dos 
+recursos.
 ```
