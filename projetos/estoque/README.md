@@ -97,3 +97,87 @@ classDiagram
     TipoFuncionario "1" o-- "*" Funcionario: aggregation
 
 ```
+
+### Diagrama Entidade-Relacionamento
+
+```mermaid
+erDiagram
+
+    ClasseProduto {
+        long id PK
+        string descricao
+        date dataInclusao
+        date dataAlteracao
+    }
+
+    SubclasseProduto {
+        long id PK
+        string descricao
+        date dataInclusao
+        date dataAlteracao
+        long idClasse FK
+    }
+
+    Produto {
+        long id PK
+        string descricao
+        date dataInclusao
+        date dataAlteracao
+        long idSubclasse FK
+    }
+
+    TipoFuncionario {
+        long id PK
+        string descricao
+        date dataInclusao
+        date dataAlteracao
+    }
+
+    Funcionario {
+        long id PK
+        string nome
+        string endereco
+        string cidade
+        string estado
+        string cep
+        string telefone
+        string email
+        string senha
+        date dataInclusao
+        date dataAlteracao
+        long idTipoFuncionario FK
+    }
+
+    Cliente {
+        long id PK
+        string nome
+        string endereco
+        string cidade
+        string estado
+        string cep
+        string telefone
+        string email
+        string cpf
+        date dataInclusao
+        date dataAlteracao
+    }
+
+    Fornecedor {
+        long id PK
+        string nome
+        string endereco
+        string cidade
+        string estado
+        string cep
+        string telefone
+        string email
+        string cnpj
+        date dataInclusao
+        date dataAlteracao
+    }
+
+    ClasseProduto ||--o{ SubclasseProduto : "has"
+    SubclasseProduto ||--o{ Produto : "has"
+    TipoFuncionario ||--o{ Funcionario : "has"
+
+```
