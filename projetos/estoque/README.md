@@ -11,7 +11,7 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 ## Pilha de Tecnologias
 
-- **OpenAPI 3.0:** Padrão de aplicação RESTfull
+- **OpenAPI 3.0:** Documentação da API compativel com o padrão RESTfull.
 
 - **Java 21.0:** Linguagem de Programação (Back-end)
 
