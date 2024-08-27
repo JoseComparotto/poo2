@@ -182,7 +182,7 @@ erDiagram
 
 ```
 
-## Especificações OpenAPI
+## [Especificações OpenAPI](./docs/openapi.json)
 
-https://github.com/JoseComparotto/poo2/blob/b8896325b84af7036f92c211ceae28a3dae19bde/projetos/estoque/docs/openapi.json#L1-L196
+
 
