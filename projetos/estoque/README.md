@@ -19,6 +19,10 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 - **Spring-Boot 3.3:** Framework do ecossistema Spring para Back-end
 
+- **Spring Data JPA e Hibernate**: Framework ORM para abstrair a camada de persistência de dados.
+
+- **H2 Database**: Banco de Dados In-Memory.
+
 ## Definições UML
 
 ### Diagrama de Classes
