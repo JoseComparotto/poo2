@@ -36,7 +36,7 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
    ┣ 📂repository   // Camada de Repositório (DDD)
    ┣ 📂service      // Camada de Serviço (Proxy Design Pattern)
    ┗ 📂fakedb       // FakeDB: Mock com dados de exemplo
- ``
+ ```
 
 ## Especificações da API
 
