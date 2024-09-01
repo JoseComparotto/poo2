@@ -23,7 +23,7 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 - **H2 Database**: Banco de Dados In-Memory.
 
-## Estrutura do Projeto
+## Estrutura dr Diretórios
 
 ```plain
 📦estoque
