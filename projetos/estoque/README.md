@@ -35,7 +35,8 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
    ┣ 📂domain       // Camada de Domínio (DDD)
    ┣ 📂repository   // Camada de Repositório (DDD)
    ┣ 📂service      // Camada de Serviço (Proxy Design Pattern)
-   ┗ 📂fakedb       // FakeDB: Mock com dados de exemplo
+   ┣ 📂fakedb       // FakeDB: Mock com dados de exemplo
+   ┗ 📜EstoqueApplication.java  // Classe Principal Java
  ```
 
 ## Especificações da API
