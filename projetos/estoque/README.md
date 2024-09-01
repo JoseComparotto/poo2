@@ -23,6 +23,21 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 - **H2 Database**: Banco de Dados In-Memory.
 
+## Estrutura do Projeto
+
+```plain
+📦estoque
+ ┣ 📂docs   // Documentação do projeto
+ ┣ 📂pages  // Página para o GitHub Pages com o Swagger UI
+ ┗ 📂src/main/java/poo2/estoque
+   ┣ 📂config       // Configurações para o Spring-Boot (Ex: CORS)
+   ┣ 📂controller   // Camada de Apresentação (DDD), neste caso com os End-Points da API
+   ┣ 📂domain       // Camada de Domínio (DDD)
+   ┣ 📂repository   // Camada de Repositório (DDD)
+   ┣ 📂service      // Camada de Serviço (Proxy Design Pattern)
+   ┗ 📂fakedb       // FakeDB: Mock com dados de exemplo
+ ``
+
 ## Especificações da API
 
 - [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
