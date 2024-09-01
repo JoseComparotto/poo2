@@ -23,6 +23,11 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 - **H2 Database**: Banco de Dados In-Memory.
 
+## Especificações da API
+
+- [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
+- [Open API (JSON)](./docs/openapi.json)
+
 ## Definições UML
 
 ### Diagrama de Classes
@@ -181,10 +186,3 @@ erDiagram
     TipoFuncionario ||--o{ Funcionario : "has"
 
 ```
-
-## Especificações da API
-
-- [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
-- [Open API (JSON)](./docs/openapi.json)
-
-
