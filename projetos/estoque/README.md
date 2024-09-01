@@ -41,8 +41,8 @@ Projeto para aplicar os conhecimentos da disciplina de POO2.
 
 ## Especificações da API
 
-- [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
 - [Open API (JSON)](./docs/openapi.json)
+- [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
 
 ## Definições UML
 
