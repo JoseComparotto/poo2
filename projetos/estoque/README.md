@@ -182,7 +182,9 @@ erDiagram
 
 ```
 
-## [Especificações OpenAPI](./docs/openapi.json)
+## Especificações da API
 
+- [Swagger UI](https://josecomparotto.github.io/poo2/projetos/estoque/pages/swagger-ui.html)
+- [Open API (JSON)](./docs/openapi.json)
 
 
