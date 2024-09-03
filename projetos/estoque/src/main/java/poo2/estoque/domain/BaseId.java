@@ -2,15 +2,24 @@ package poo2.estoque.domain;
 
 import java.time.LocalDate;
 
-import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.MappedSuperclass;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+import jakarta.persistence.Id;
 
 @MappedSuperclass
 public abstract class BaseId {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     protected long id;
+
+    @Temporal(TemporalType.DATE)
     protected LocalDate dataInclusao;
+
+    @Temporal(TemporalType.DATE)
     protected LocalDate dataAlteracao;
 
     public BaseId(long id, LocalDate dataInclusao, LocalDate dataAlteracao) {

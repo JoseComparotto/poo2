@@ -9,7 +9,7 @@ import poo2.estoque.domain.Fornecedor;
 import poo2.estoque.fakedb.BaseFakeDB;
 
 @Repository
-public class FornecedorRepository extends BaseListRepository<Fornecedor> {
+public class FornecedorRepository extends BaseRepository<Fornecedor> {
 
     public FornecedorRepository(@Autowired BaseFakeDB<Fornecedor> db) {
         super(db);

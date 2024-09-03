@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import jakarta.persistence.MappedSuperclass;
 import poo2.estoque.domain.BaseId;
-import poo2.estoque.repository.BaseListRepository;
+import poo2.estoque.repository.BaseRepository;
 
 @MappedSuperclass
 public abstract class BaseBreadService<TDomain extends BaseId> {
     
     @Autowired
-    protected BaseListRepository<TDomain> repo;
+    protected BaseRepository<TDomain> repo;
 
-    public BaseBreadService(BaseListRepository<TDomain> repository){
+    public BaseBreadService(BaseRepository<TDomain> repository){
         this.repo = repository;
     }
 

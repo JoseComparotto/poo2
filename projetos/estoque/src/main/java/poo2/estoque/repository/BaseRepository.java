@@ -9,11 +9,11 @@ import poo2.estoque.domain.BaseId;
 import poo2.estoque.fakedb.BaseFakeDB;
 
 @MappedSuperclass
-public abstract class BaseListRepository<TDomain extends BaseId> {
+public abstract class BaseRepository<TDomain extends BaseId> {
     
     protected List<TDomain> storage;
 
-    public BaseListRepository(@Autowired BaseFakeDB<TDomain> db){
+    public BaseRepository(@Autowired BaseFakeDB<TDomain> db){
         storage = db.getLista();
     }
     

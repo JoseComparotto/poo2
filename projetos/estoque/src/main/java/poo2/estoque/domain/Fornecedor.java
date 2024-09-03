@@ -1,7 +1,9 @@
 package poo2.estoque.domain;
 
 import java.time.LocalDate;
+import jakarta.persistence.Entity;
 
+@Entity
 public class Fornecedor extends BasePessoa {
     
     private String cnpj;
