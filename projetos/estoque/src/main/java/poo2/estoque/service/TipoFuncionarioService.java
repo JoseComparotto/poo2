@@ -1,15 +1,29 @@
 package poo2.estoque.service;
 
+import java.time.LocalDate;
+import java.util.Optional;
+
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import poo2.estoque.domain.TipoFuncionario;
-import poo2.estoque.repository.BaseRepository;
 
 @Service
 public class TipoFuncionarioService extends BaseBreadService<TipoFuncionario> {
 
-    public TipoFuncionarioService(BaseRepository<TipoFuncionario> repository) {
+    public TipoFuncionarioService(JpaRepository<TipoFuncionario, Long> repository) {
         super(repository);
     }
 
+    @Override
+    public TipoFuncionario edit(long id, TipoFuncionario object) {
+        Optional<TipoFuncionario> old = this.repo.findById(id);
+        if(!old.isPresent()) return null;
+        TipoFuncionario entity = old.get();
+
+        entity.setDescricao(object.getDescricao());
+        entity.setDataAlteracao(LocalDate.now());
+        
+        return repo.save(entity);
+    }
 }
