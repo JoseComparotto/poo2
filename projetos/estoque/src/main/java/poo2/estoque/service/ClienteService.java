@@ -16,9 +16,10 @@ public class ClienteService extends BaseBreadService<Cliente> {
     }
 
     @Override
-    public Cliente edit(long id, Cliente object) {
+    public Optional<Cliente> edit(long id, Cliente object) {
         Optional<Cliente> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
+        
         Cliente entity = old.get();
 
         entity.setCpf(object.getCpf());
@@ -32,6 +33,6 @@ public class ClienteService extends BaseBreadService<Cliente> {
 
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 }

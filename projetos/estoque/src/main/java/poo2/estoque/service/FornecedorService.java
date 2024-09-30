@@ -16,9 +16,9 @@ public class FornecedorService extends BaseBreadService<Fornecedor> {
     }
 
     @Override
-    public Fornecedor edit(long id, Fornecedor object) {
+    public Optional<Fornecedor> edit(long id, Fornecedor object) {
         Optional<Fornecedor> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
         Fornecedor entity = old.get();
 
         entity.setCnpj(object.getCnpj());
@@ -32,7 +32,7 @@ public class FornecedorService extends BaseBreadService<Fornecedor> {
 
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 
 }

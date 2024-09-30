@@ -16,16 +16,16 @@ public class SubclasseProdutoService extends BaseBreadService<SubclasseProduto> 
     }
 
     @Override
-    public SubclasseProduto edit(long id, SubclasseProduto object) {
+    public Optional<SubclasseProduto> edit(long id, SubclasseProduto object) {
         Optional<SubclasseProduto> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
         SubclasseProduto entity = old.get();
 
         entity.setIdClasse(object.getIdClasse());
         entity.setDescricao(object.getDescricao());
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 
 }

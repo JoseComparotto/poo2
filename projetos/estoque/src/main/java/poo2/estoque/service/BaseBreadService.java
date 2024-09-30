@@ -24,24 +24,23 @@ public abstract class BaseBreadService<TDomain extends BaseId> {
         return this.repo.findAll().stream().toList();
     }
 
-    public TDomain read(long id) {
-        return this.repo.findById(id).get();
+    public Optional<TDomain> read(long id) {
+        return this.repo.findById(id);
     }
 
-    public abstract TDomain edit(long id, TDomain object);
+    public abstract Optional<TDomain> edit(long id, TDomain object);
 
     public TDomain add(TDomain object) {
         object.setDataInclusao(LocalDate.now());
         return this.repo.save(object);
     }
 
-    public TDomain delete(long id) {
+    public Optional<TDomain> delete(long id) {
         Optional<TDomain> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        
+        if(old.isPresent()) this.repo.delete(old.get());
 
-        this.repo.delete(old.get());
-
-        return old.get();
+        return old;
     }
     
 }

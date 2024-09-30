@@ -16,14 +16,14 @@ public class TipoFuncionarioService extends BaseBreadService<TipoFuncionario> {
     }
 
     @Override
-    public TipoFuncionario edit(long id, TipoFuncionario object) {
+    public Optional<TipoFuncionario> edit(long id, TipoFuncionario object) {
         Optional<TipoFuncionario> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
         TipoFuncionario entity = old.get();
 
         entity.setDescricao(object.getDescricao());
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 }

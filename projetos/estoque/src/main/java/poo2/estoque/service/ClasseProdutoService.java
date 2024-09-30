@@ -16,15 +16,16 @@ public class ClasseProdutoService extends BaseBreadService<ClasseProduto> {
     }
 
     @Override
-    public ClasseProduto edit(long id, ClasseProduto object) {
+    public Optional<ClasseProduto> edit(long id, ClasseProduto object) {
         Optional<ClasseProduto> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
+
         ClasseProduto entity = old.get();
 
         entity.setDescricao(object.getDescricao());
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 
 }

@@ -16,9 +16,9 @@ public class FuncionarioService extends BaseBreadService<Funcionario> {
     }
 
     @Override
-    public Funcionario edit(long id, Funcionario object) {
+    public Optional<Funcionario> edit(long id, Funcionario object) {
         Optional<Funcionario> old = this.repo.findById(id);
-        if(!old.isPresent()) return null;
+        if(!old.isPresent()) return old;
         Funcionario entity = old.get();
 
         entity.setIdTipoFuncionario(object.getIdTipoFuncionario());
@@ -33,6 +33,6 @@ public class FuncionarioService extends BaseBreadService<Funcionario> {
 
         entity.setDataAlteracao(LocalDate.now());
         
-        return repo.save(entity);
+        return Optional.of(repo.save(entity));
     }
 }

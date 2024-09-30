@@ -1,8 +1,11 @@
 package poo2.estoque.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,33 +28,52 @@ public abstract class BaseRestController<TDomain extends BaseId> {
     }
 
     @GetMapping("")
-    public List<TDomain> getAll(){
+    public ResponseEntity<List<TDomain>> getAll(){
         List<TDomain> td = this.service.browse();
-        return td;
+        
+        if(td.size() == 0)
+            return new ResponseEntity<>(td, HttpStatus.NO_CONTENT);
+        else
+            return new ResponseEntity<>(td, HttpStatus.OK);
     }
 
     @GetMapping("/{id}")
-    public TDomain getById(@PathVariable Long id){        
-        TDomain td = this.service.read(id);
-        return td;
-    } 
+    public ResponseEntity<TDomain> getById(@PathVariable Long id){        
+        Optional<TDomain> opt = this.service.read(id);
+        
+        if(opt.isPresent()){
+            return new ResponseEntity<>(opt.get(), HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+    }
 
     @PostMapping("")
-    public TDomain post(@RequestBody TDomain td) {
+    public ResponseEntity<TDomain> post(@RequestBody TDomain td) {
         TDomain tdnew = this.service.add(td);
-        return tdnew;
+        return new ResponseEntity<>(tdnew, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public TDomain put(@PathVariable Long id, @RequestBody TDomain td){
-        TDomain tdalt = this.service.edit(id, td);
-        return tdalt;
+    public ResponseEntity<TDomain> put(@PathVariable Long id, @RequestBody TDomain td){
+        Optional<TDomain> opt = this.service.edit(id, td);
+
+        if(opt.isPresent()){
+            return new ResponseEntity<>(opt.get(), HttpStatus.OK);
+        }else{
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
     @DeleteMapping("/{id}")
-    public TDomain delete(@PathVariable Long id){
-        TDomain tddel = this.service.delete(id);
-        return tddel;
+    public ResponseEntity<TDomain> delete(@PathVariable Long id){
+        Optional<TDomain> opt = this.service.delete(id);
+
+        if(opt.isPresent()){
+            return new ResponseEntity<>(opt.get(), HttpStatus.NO_CONTENT);
+        }else{
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
     }
 
 }
