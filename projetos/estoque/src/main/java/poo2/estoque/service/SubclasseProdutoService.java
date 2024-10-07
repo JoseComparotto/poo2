@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import poo2.estoque.domain.SubclasseProduto;
+import poo2.estoque.model.SubclasseProduto;
 
 @Service
 public class SubclasseProdutoService extends BaseBreadService<SubclasseProduto> {
