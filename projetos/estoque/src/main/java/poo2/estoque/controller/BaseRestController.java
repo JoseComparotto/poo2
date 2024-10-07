@@ -14,11 +14,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import jakarta.persistence.MappedSuperclass;
-import poo2.estoque.domain.BaseId;
 import poo2.estoque.service.BaseBreadService;
 
 @MappedSuperclass
-public abstract class BaseRestController<TDomain extends BaseId> {
+public abstract class BaseRestController<TDomain> {
     
     @Autowired
     protected BaseBreadService<TDomain> service;
