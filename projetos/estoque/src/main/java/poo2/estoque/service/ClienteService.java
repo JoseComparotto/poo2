@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import poo2.estoque.domain.Cliente;
+import poo2.estoque.model.Cliente;
 
 @Service
 public class ClienteService extends BaseBreadService<Cliente> {
