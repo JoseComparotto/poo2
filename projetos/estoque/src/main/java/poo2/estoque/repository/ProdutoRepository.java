@@ -1,8 +1,9 @@
 package poo2.estoque.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import poo2.estoque.domain.Produto;
+import poo2.estoque.model.Produto;
 
 @Repository
-public interface ProdutoRepository extends IBaseJpaRepository<Produto> {
+public interface ProdutoRepository extends JpaRepository<Produto, Long> {
 }
