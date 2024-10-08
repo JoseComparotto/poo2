@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import poo2.estoque.domain.Fornecedor;
+import poo2.estoque.model.Fornecedor;
 
 @Service
 public class FornecedorService extends BaseBreadService<Fornecedor> {
