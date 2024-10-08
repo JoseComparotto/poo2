@@ -6,7 +6,7 @@ import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
-import poo2.estoque.domain.Funcionario;
+import poo2.estoque.model.Funcionario;
 
 @Service
 public class FuncionarioService extends BaseBreadService<Funcionario> {
