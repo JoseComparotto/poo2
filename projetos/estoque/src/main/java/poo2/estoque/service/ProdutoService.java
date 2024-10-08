@@ -23,6 +23,7 @@ public class ProdutoService extends BaseBreadService<Produto> {
 
         entity.setIdSubclasse(object.getIdSubclasse());
         entity.setDescricao(object.getDescricao());
+        entity.setValor(object.getValor());
         entity.setDataAlteracao(LocalDate.now());
         
         return Optional.of(repo.save(entity));

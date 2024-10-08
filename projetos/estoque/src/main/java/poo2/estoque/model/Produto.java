@@ -19,6 +19,7 @@ public class Produto {
     private long idSubclasse;
 
     private String descricao;
+    private double valor;
     
     @Temporal(TemporalType.DATE)
     private LocalDate dataInclusao;
@@ -26,10 +27,12 @@ public class Produto {
     @Temporal(TemporalType.DATE)
     private LocalDate dataAlteracao;
 
-    public Produto(long id, long idSubclasse, String descricao, LocalDate dataInclusao, LocalDate dataAlteracao) {
+    public Produto(long id, long idSubclasse, String descricao, double valor, LocalDate dataInclusao,
+            LocalDate dataAlteracao) {
         this.id = id;
         this.idSubclasse = idSubclasse;
         this.descricao = descricao;
+        this.valor = valor;
         this.dataInclusao = dataInclusao;
         this.dataAlteracao = dataAlteracao;
     }
@@ -59,6 +62,14 @@ public class Produto {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
     }
 
     public LocalDate getDataInclusao() {
