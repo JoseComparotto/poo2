@@ -1,0 +1,916 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "VetShop API",
+        "version": "1.0.0",
+        "description": "API REST para o sistema de gestão de um petshop",
+        "contact": {
+            "name": "José A. Q. C. Gomes",
+            "email": "jose.comparotto@gmail.com",
+            "url": "https://github.com/JoseComparotto/poo2"
+        }
+    },
+    "servers": [
+        {
+            "url": "http://127.0.0.1:8080/api/vetshop"
+        }
+    ],
+    "tags": [
+        {
+            "name": "Categoria",
+            "description": "Agrupador de produtos"
+        },
+        {
+            "name": "Produto",
+            "description": "Informações dos produtos"
+        },
+        {
+            "name": "Cliente",
+            "description": "Informações dos clientes"
+        },
+        {
+            "name": "Fornecedor",
+            "description": "Informações dos fornecedores"
+        }
+    ],
+    "paths": {
+        "/categorias": {
+            "get": {
+                "summary": "Retorna todas as categorias",
+                "operationId": "getAllCategorias",
+                "tags": [
+                    "Categoria"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de categorias",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Categoria"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "Nenhuma categoria encontrada"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Cria uma nova categoria",
+                "operationId": "createCategoria",
+                "tags": [
+                    "Categoria"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Categoria"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Categoria criada com sucesso"
+                    }
+                }
+            }
+        },
+        "/categorias/{id}": {
+            "get": {
+                "summary": "Retorna uma categoria pelo ID",
+                "operationId": "getCategoriaById",
+                "tags": [
+                    "Categoria"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Categoria encontrada",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Categoria"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Categoria não encontrada"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Atualiza uma categoria pelo ID",
+                "operationId": "updateCategoriaById",
+                "tags": [
+                    "Categoria"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Categoria"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Categoria atualizada com sucesso"
+                    },
+                    "404": {
+                        "description": "Categoria não encontrada"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deleta uma categoria pelo ID",
+                "operationId": "deleteCategoriaById",
+                "tags": [
+                    "Categoria"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Categoria deletada com sucesso"
+                    },
+                    "404": {
+                        "description": "Categoria não encontrada"
+                    }
+                }
+            }
+        },
+        "/clientes": {
+            "get": {
+                "summary": "Retorna todos os clientes",
+                "operationId": "getAllClientes",
+                "tags": [
+                    "Cliente"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Lista de clientes",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Cliente"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "Nenhum cliente encontrado"
+                    }
+                }
+            },
+            "post": {
+                "summary": "Cria um novo cliente",
+                "operationId": "createCliente",
+                "tags": [
+                    "Cliente"
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Cliente"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Cliente criado com sucesso"
+                    }
+                }
+            }
+        },
+        "/clientes/{id}": {
+            "get": {
+                "summary": "Retorna um cliente pelo ID",
+                "operationId": "getClienteById",
+                "tags": [
+                    "Cliente"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Cliente encontrado",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Cliente"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Cliente não encontrado"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Atualiza um cliente pelo ID",
+                "operationId": "updateClienteById",
+                "tags": [
+                    "Cliente"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Cliente"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Cliente atualizado com sucesso"
+                    },
+                    "404": {
+                        "description": "Cliente não encontrado"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Deleta um cliente pelo ID",
+                "operationId": "deleteClienteById",
+                "tags": [
+                    "Cliente"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Cliente deletado com sucesso"
+                    },
+                    "404": {
+                        "description": "Cliente não encontrado"
+                    }
+                }
+            }
+        },
+        "/fornecedores": {
+            "get": {
+                "summary": "Lista todos os fornecedores",
+                "tags": [
+                    "Fornecedor"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fornecedores retornados com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Fornecedor"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "summary": "Cria um novo fornecedor",
+                "tags": [
+                    "Fornecedor"
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Fornecedor"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Fornecedor criado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Fornecedor"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/fornecedores/{id}": {
+            "get": {
+                "summary": "Obter fornecedor por ID",
+                "tags": [
+                    "Fornecedor"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Fornecedor retornado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Fornecedor"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Fornecedor não encontrado"
+                    }
+                }
+            },
+            "put": {
+                "summary": "Atualizar um fornecedor existente",
+                "tags": [
+                    "Fornecedor"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Fornecedor"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Fornecedor atualizado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Fornecedor"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Fornecedor não encontrado"
+                    }
+                }
+            },
+            "delete": {
+                "summary": "Excluir fornecedor por ID",
+                "tags": [
+                    "Fornecedor"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "example": 1
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Fornecedor excluído com sucesso"
+                    },
+                    "404": {
+                        "description": "Fornecedor não encontrado"
+                    }
+                }
+            }
+        },
+        "/produtos": {
+            "get": {
+                "tags": [
+                    "Produto"
+                ],
+                "summary": "Lista todos os produtos",
+                "operationId": "getAllProdutos",
+                "responses": {
+                    "200": {
+                        "description": "Produtos recuperados com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Produto"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "Nenhum produto encontrado"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Produto"
+                ],
+                "summary": "Cria um novo produto",
+                "operationId": "createProduto",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Produto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Produto criado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Produto"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/produtos/{id}": {
+            "get": {
+                "tags": [
+                    "Produto"
+                ],
+                "summary": "Recupera um produto pelo ID",
+                "operationId": "getProdutoById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Produto recuperado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Produto"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Produto não encontrado"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Produto"
+                ],
+                "summary": "Atualiza um produto pelo ID",
+                "operationId": "updateProduto",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Produto"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Produto atualizado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Produto"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Produto não encontrado"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Produto"
+                ],
+                "summary": "Remove um produto pelo ID",
+                "operationId": "deleteProduto",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Produto removido com sucesso"
+                    },
+                    "404": {
+                        "description": "Produto não encontrado"
+                    }
+                }
+            }
+        },
+        "/pedidos": {
+            "get": {
+                "tags": [
+                    "Pedido"
+                ],
+                "summary": "Lista todos os pedidos, incluindo relações",
+                "operationId": "getAllPedidos",
+                "responses": {
+                    "200": {
+                        "description": "Pedidos recuperados com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "#/components/schemas/Pedido"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "204": {
+                        "description": "Nenhum pedido encontrado"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Pedido"
+                ],
+                "summary": "Cria um novo pedido",
+                "operationId": "createPedido",
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Pedido"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "201": {
+                        "description": "Pedido criado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Pedido"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/pedidos/{id}": {
+            "get": {
+                "tags": [
+                    "Pedido"
+                ],
+                "summary": "Recupera um pedido pelo ID, incluindo relações",
+                "operationId": "getPedidoById",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Pedido recuperado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Pedido"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Pedido não encontrado"
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "Pedido"
+                ],
+                "summary": "Atualiza um pedido pelo ID",
+                "operationId": "updatePedido",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "required": true,
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/Pedido"
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Pedido atualizado com sucesso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "$ref": "#/components/schemas/Pedido"
+                                }
+                            }
+                        }
+                    },
+                    "404": {
+                        "description": "Pedido não encontrado"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Pedido"
+                ],
+                "summary": "Remove um pedido pelo ID",
+                "operationId": "deletePedido",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer",
+                            "format": "int64"
+                        }
+                    }
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Pedido removido com sucesso"
+                    },
+                    "404": {
+                        "description": "Pedido não encontrado"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Categoria": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "nome": {
+                        "type": "string"
+                    },
+                    "produtos": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Produto"
+                        }
+                    }
+                }
+            },
+            "Cliente": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "nome": {
+                        "type": "string"
+                    },
+                    "cpf": {
+                        "type": "string"
+                    },
+                    "email": {
+                        "type": "string"
+                    },
+                    "telefone": {
+                        "type": "string"
+                    }
+                }
+            },
+            "Fornecedor": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "razao_social": {
+                        "type": "string",
+                        "example": "Fornecedor S.A."
+                    },
+                    "nome_fantasia": {
+                        "type": "string",
+                        "example": "Fornecedor de Produtos Veterinários"
+                    },
+                    "cnpj": {
+                        "type": "string",
+                        "example": "00.000.000/0001-00"
+                    },
+                    "email": {
+                        "type": "string",
+                        "example": "contato@fornecedor.com.br"
+                    },
+                    "telefone": {
+                        "type": "string",
+                        "example": "(11) 1234-5678"
+                    }
+                }
+            },
+            "Produto": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "nome": {
+                        "type": "string"
+                    },
+                    "preco": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                }
+            },
+            "Pedido": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer",
+                        "format": "int64",
+                        "example": 1
+                    },
+                    "nome": {
+                        "type": "string",
+                        "example": "Pedido de medicamentos"
+                    },
+                    "cliente": {
+                        "$ref": "#/components/schemas/Cliente"
+                    },
+                    "fornecedor": {
+                        "$ref": "#/components/schemas/Fornecedor"
+                    },
+                    "produtos": {
+                        "type": "array",
+                        "items": {
+                            "$ref": "#/components/schemas/Produto"
+                        }
+                    },
+                    "dataDeInclusao": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-10-15"
+                    },
+                    "dataDeAlteracao": {
+                        "type": "string",
+                        "format": "date",
+                        "example": "2024-10-20"
+                    }
+                }
+            }
+        }
+    }
+}
