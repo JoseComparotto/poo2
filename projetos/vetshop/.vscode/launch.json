@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VetshopApplication<vetshop>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.com.apirest.vetshop.VetshopApplication",
+            "projectName": "vetshop",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }  
+    ]
+}
