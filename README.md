@@ -10,9 +10,12 @@
 ## Projetos
 
 - **[Projeto API do Estoque](projetos/estoque)**
+- **[Projeto VetShop](projetos/vetshop)**
 
 ## Atividades
 
 -  **[Atividade A1 - Parte 1](atividades/a1.1)**
 
 -  **[Atividade A1 - Parte 2](atividades/a1.2)**
+
+-  **[Atividade A2 (Projeto VetShop)](projetos/vetshop)**
