@@ -3,12 +3,12 @@ package br.com.apirest.vetshop.model;
 import java.util.HashSet;
 import java.util.Set;
 
-import jakarta.persistence.CascadeType;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 
 @Entity
@@ -19,8 +19,8 @@ public class Categoria {
     private long id;
     private String nome;
 
-    @JoinColumn(name = "id_categoria")
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "categoria")
+    @JsonIgnoreProperties("categoria") // Ignora a categoria ao serializar a lista de produtos
     private Set<Produto> produtos = new HashSet<>();
 
     public Categoria(long id, String nome) {
