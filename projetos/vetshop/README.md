@@ -26,7 +26,7 @@ Projeto referente à Atividade A2 da disciplina de POO2
 ## Estrutura de Diretórios
 
 ```plain
-📦estoque
+📦vetshop
  ┣ 📂docs   // Documentação do projeto
  ┣ 📂pages  // Página para o GitHub Pages com o Swagger UI
  ┗ 📂src/main/java/br/com/apirest/vetshop
