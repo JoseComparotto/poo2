@@ -107,8 +107,8 @@ erDiagram
 
     Fornecedor {
         bigint id PK
-        varchar razaoSocial
-        varchar nomeFantasia
+        varchar razao_social
+        varchar nome_fantasia
         varchar cnpj
         varchar telefone
         varchar email
@@ -123,10 +123,10 @@ erDiagram
     Pedido {
         long id PK
         string nome
-        date dataDeInclusao
-        date dataDeAlteracao
         long id_cliente FK
         long id_fornecedor FK
+        date data_de_inclusao
+        date data_de_alteracao
     }
 
     Pedido_Produtos {
